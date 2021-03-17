@@ -37,7 +37,7 @@ class ArgsRank:
                                   "unless", "except", "apart from", "as long as", "if", "whereas", "instead of",
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
-        self.d = 0.5  # TODO: Figure out the best value for this param..
+        self.d = 0.6  # TODO: Figure out the best value for this param..
         self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -100,7 +100,7 @@ class ArgsRank:
         :param cluster: cluster of arguments
         :return: (numpy array) teleportation marix
         """
-
+        # TODO research for other methods
         row = []
 
         for argument_j in cluster:
@@ -133,7 +133,8 @@ class ArgsRank:
         :return:
         """
         messages = []
-
+        # TODO modelling the context of argument
+        # TODO Add more similar arguments in cluster
         for idx, cluster in enumerate(clusters):
             messages = []
             for argument in cluster:
@@ -141,10 +142,13 @@ class ArgsRank:
 
             message_embedding = [message.numpy() for message in self.embed(
                 messages)]  # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
-
+            # Centality Score
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
+            # Argumentative Score
+            #TODO test another methodss for argummentative score computation
             matrix = self.add_tp_ratio(cluster)
+            # TODO Question regarding need of adding argumentative score
             M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
 
             # p = self.power_method(M, 0.0000001)
@@ -179,8 +183,9 @@ class ArgsRank:
             m = p.search(arg_txt)
             return list(m.span())
         except Exception as e:
-            self.flask_app.logger.info('Failed in matching sentence in argument..')
-            self.flask_app.logger.error(str(e))
+            #self.flask_app.logger.info('Failed in matching sentence in argument..')
+            #self.flask_app.logger.error(str(e))
+            print('Execption in find_span()')
             return None
 
     def generate_snippet(self, args):
@@ -202,10 +207,11 @@ class ArgsRank:
 
             snippet_body = []
             for sentence in snippet_body_sentences:
-                #try:
-                sentence_span = self.find_span(arg_text, sentence)
-                snippet_body.append({'span': sentence_span, 'text': sentence})
-                #except Exception as e:
+                try:
+                    sentence_span = self.find_span(arg_text, sentence)
+                    snippet_body.append({'span': sentence_span, 'text': sentence})
+                except Exception as e:
+                    print('Exection in sem_similarity score')
                     #self.flask_app.logger.error(str(e))
 
             arg_snippet['body'] = snippet_body

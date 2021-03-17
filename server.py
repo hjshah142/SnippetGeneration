@@ -24,26 +24,23 @@ print(len(stored_snippets))
 snippet_gen_app = argsrank.ArgsRank()
 
 
-
-
-
-
-
-
-
 def get_snippets(json_arguments):
     cluster = []
     #json.loads(json_arguments, encoding='latin1')
     json_arguments = json_arguments['arguments']
+    print(json_arguments)
     for argument in json_arguments:
         print(argument["text"])
         arg = Argument()
         arg.premises = [{"text": argument["text"]}]
         arg.id = argument["id"]
+        # Argument Text
+
+        #Argument Sentence tokenization
         arg.set_sentences(argument["text"])
         cluster.append(arg)
-
-    print(cluster)
+    print(len(cluster))
+    #print(cluster)
     print('generated snippets...')
     snippets = snippet_gen_app.generate_snippet(cluster)
 

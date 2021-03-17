@@ -18,6 +18,8 @@ class Argument:
         :param
         cluster_map: dictionary with keys being the debate ids from the arguments. Value: List of arguments
         """
+
+        # TODO Add cluster maps
         self.premises = premises
         self.context = context
         self.id = id
@@ -27,6 +29,7 @@ class Argument:
         if premises != None:
             self.set_sentences(premises[0]["text"])
         self.cluster_map = cluster_map
+        print(cluster_map)
         if cluster_map is not None:
             if context["sourceId"] in cluster_map:
                 cluster_map[context["sourceId"]].append(self)
@@ -78,6 +81,7 @@ REMAP = {"-LRB-": "(", "-RRB-": ")", "-LCB-": "{", "-RCB-": "}",
 
 
 def clean(x):
+    print('test clean')
     return re.sub(
         r"-LRB-|-RRB-|-LCB-|-RCB-|-LSB-|-RSB-|``|''",
         lambda m: REMAP.get(m.group()), x)
