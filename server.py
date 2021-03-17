@@ -45,7 +45,6 @@ def get_snippets(json_arguments):
 
     print(cluster)
     print('generated snippets...')
-    cluster=argument
     snippets = snippet_gen_app.generate_snippet(cluster)
 
     return snippets
