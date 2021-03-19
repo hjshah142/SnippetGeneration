@@ -35,6 +35,7 @@ def get_snippets(json_arguments):
         arg = Argument()
         aspects = AspectsDetection().get_aspects(argument["text"])
         print(aspects)
+
         arg.premises = [{"text": argument["text"]}]
         arg.id = argument["id"]
         # Argument Text
