@@ -42,12 +42,14 @@ class Argument:
         :param text:
         :return:
         """
+        print(text)
         self.sentences = sent_tokenize(text)
-        #Remove sentences that are less than 3 words length
+        # Remove sentences that are less than 3 words length
         self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 2]
 
     @classmethod
     def from_json(cls, data, cluster_map=None):
+        print('data')
         return cls(cluster_map=cluster_map, **data)
 
     def get_topK(self, k):

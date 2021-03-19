@@ -11,6 +11,7 @@ from tensorflow import keras
 
 from lib import argsrank
 from lib.argument import Argument
+from lib.aspectsdetection import AspectsDetection
 
 
 json_argument = {"arguments": [{"id": "5",
@@ -21,7 +22,7 @@ json_argument = {"arguments": [{"id": "5",
 script_dir = os.path.dirname(__file__)
 stored_snippets = json.load(open(os.path.join(script_dir, "data/snippets.txt")))
 print(len(stored_snippets))
-snippet_gen_app = argsrank.ArgsRank()
+
 
 
 def get_snippets(json_arguments):
@@ -32,6 +33,8 @@ def get_snippets(json_arguments):
     for argument in json_arguments:
         print(argument["text"])
         arg = Argument()
+        aspects = AspectsDetection().get_aspects(argument["text"])
+        print(aspects)
         arg.premises = [{"text": argument["text"]}]
         arg.id = argument["id"]
         # Argument Text
@@ -43,9 +46,9 @@ def get_snippets(json_arguments):
     #print(cluster)
     print('generated snippets...')
     snippets = snippet_gen_app.generate_snippet(cluster)
-
+    print(type(snippets))
     return snippets
-
+snippet_gen_app = argsrank.ArgsRank()
 snippets= get_snippets(json_argument)
 
 print(snippets)
