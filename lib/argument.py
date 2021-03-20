@@ -28,14 +28,16 @@ class Argument:
         self.score = []
         if premises != None:
             self.set_sentences(premises[0]["text"])
+        cluster_map= {1 : ['Argument 1','Argument 2'] }
         self.cluster_map = cluster_map
         print(cluster_map)
+        """"
         if cluster_map is not None:
             if context["sourceId"] in cluster_map:
                 cluster_map[context["sourceId"]].append(self)
             else:
                 cluster_map[context["sourceId"]] = [self]
-
+        """
     def set_sentences(self, text):
         """
         Split text into list of sentences using NLTK
