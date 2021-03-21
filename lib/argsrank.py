@@ -21,7 +21,7 @@ class ArgsRank:
         f = open(os.path.join(script_dir, "../data/ClaimLexicon.txt"))
         self.claim_markers = f.read().split(", ")
         # for m in CLAIM_MARKERS:
-        print(len(self.claim_markers))
+        # print(len(self.claim_markers))
         # print(m)
 
         self.discourse_markers = ["for example", "such as", "for instance", "in the case of", "as revealed by",
@@ -37,7 +37,7 @@ class ArgsRank:
                                   "unless", "except", "apart from", "as long as", "if", "whereas", "instead of",
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
-        self.d = 0.6  # TODO: Figure out the best value for this param..
+        self.d = 0.15  # TODO: Figure out the best value for this param..
         self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -194,7 +194,7 @@ class ArgsRank:
 
         self.sem_similarty_scoring([args])
         for arg in args:
-            arg_text = arg.premises[0]["text"]
+            arg_text = arg.premises
             arg_snippet = {}
 
             # processing snippet title

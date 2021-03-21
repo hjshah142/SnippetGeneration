@@ -20,17 +20,18 @@ class Argument:
         """
 
         # TODO Add cluster maps
+
         self.premises = premises
         self.context = context
         self.id = id
         self.conclusion = conclusion
         self.sentences = []
         self.score = []
+
         if premises != None:
-            self.set_sentences(premises[0]["text"])
-        cluster_map= {1 : ['Argument 1','Argument 2'] }
+            self.set_sentences(premises)
+        # cluster_map= { 1: ['Argument 1','Argument 2'] }
         self.cluster_map = cluster_map
-        print(cluster_map)
         """"
         if cluster_map is not None:
             if context["sourceId"] in cluster_map:
@@ -44,14 +45,16 @@ class Argument:
         :param text:
         :return:
         """
-        print(text)
+        # print(text)
         self.sentences = sent_tokenize(text)
         # Remove sentences that are less than 3 words length
-        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 2]
+        # return none if words are less than 3
+        # TODO
+        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 0]
+
 
     @classmethod
     def from_json(cls, data, cluster_map=None):
-        print('data')
         return cls(cluster_map=cluster_map, **data)
 
     def get_topK(self, k):
@@ -60,6 +63,7 @@ class Argument:
         :param k:
         :return:
         """
+        print(self.sentences)
         if self.sentences and self.score:
             if k <= len(self.score) and k <= len(self.sentences):
                 # print(self.score)
