@@ -8,9 +8,10 @@ from flask import Response
 from flask import g
 """
 import json
-from lib import argsrank
+from lib.argsrank import ArgsRank
 from lib.argument import Argument
 from lib.aspectsdetection import AspectsDetection
+from lib.contextModelling import ContextModelling
 
 """"
 json_argument = {"arguments": [{"id": "5",
@@ -40,16 +41,20 @@ def get_snippets(json_arguments):
         # print(argument["sentences"])
         arg = Argument()
         argument_text = " ".join(argument["sentences"])
-        arg.aspects = AspectsDetection().get_aspects(argument_text)
-        print(arg.aspects)
-
         arg.premises = argument_text
         arg.id = argument["arg_id"]
-        # Argument Text
+        arg.aspects = AspectsDetection().get_aspects(argument_text)
 
-        # Argument Sentence tokenization
+
+        arg.id = argument["arg_id"]
+        # Argument Text
+        arg.context = argument["query"]
         arg.set_sentences(argument_text)
         print(arg.id)
+        context_ids, context_args = ContextModelling().get_similar_args(arg.context, arg.id)
+        # print(context_ids, "      ", context_args)
+        # Argument Sentence tokenization
+
         cluster.append(arg)
     print(len(cluster))
     # print(cluster)
@@ -58,7 +63,7 @@ def get_snippets(json_arguments):
     return snippets
 
 
-snippet_gen_app = argsrank.ArgsRank()
+snippet_gen_app = ArgsRank()
 snippets = get_snippets(data_snippets)
 
 

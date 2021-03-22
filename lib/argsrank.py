@@ -132,6 +132,7 @@ class ArgsRank:
         :param clusters:
         :return:
         """
+        print(clusters)
         messages = []
         # TODO modelling the context of argument
         # TODO Add more similar arguments in cluster
@@ -139,9 +140,10 @@ class ArgsRank:
             messages = []
             for argument in cluster:
                 messages = messages + argument.sentences
-
-            message_embedding = [message.numpy() for message in self.embed(
-                messages)]  # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+            print(messages)
+            print(argument.sentences)
+            message_embedding = [message.numpy() for message in self.embed(messages)]
+            # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
             # Centality Score
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
@@ -191,10 +193,10 @@ class ArgsRank:
     def generate_snippet(self, args):
 
         output = []
-
+        print(args)
         self.sem_similarty_scoring([args])
         for arg in args:
-            arg_text = arg.premises
+
             arg_snippet = {}
 
             # processing snippet title

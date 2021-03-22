@@ -91,7 +91,7 @@
     "text": [
       "The term abortion means the deliberate termination of a human pregnancy.",
       "1st round acceptance."
-    ]   ,
+    ],
     "aspects": {
       "abortion": 1.0
     }
