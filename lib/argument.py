@@ -6,7 +6,7 @@ import re
 
 class Argument:
 
-    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None):
+    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects= None):
         """
         Object representation of the args.me corpus.
         Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein. Data Acquisition for Argument Search: The args.me corpus. In 42nd German Conference on Artificial Intelligence (KI 2019), September 2019. Springer.
@@ -20,7 +20,7 @@ class Argument:
         """
 
         # TODO Add cluster maps
-
+        self.aspects = aspects
         self.premises = premises
         self.context = context
         self.id = id

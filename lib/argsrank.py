@@ -146,7 +146,7 @@ class ArgsRank:
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
             # Argumentative Score
-            #TODO test another methodss for argummentative score computation
+            # TODO test another methods for argummentative score computation
             matrix = self.add_tp_ratio(cluster)
             # TODO Question regarding need of adding argumentative score
             M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
@@ -183,8 +183,8 @@ class ArgsRank:
             m = p.search(arg_txt)
             return list(m.span())
         except Exception as e:
-            #self.flask_app.logger.info('Failed in matching sentence in argument..')
-            #self.flask_app.logger.error(str(e))
+            # self.flask_app.logger.info('Failed in matching sentence in argument..')
+            # self.flask_app.logger.error(str(e))
             print('Execption in find_span()')
             return None
 
@@ -217,7 +217,7 @@ class ArgsRank:
                     #self.flask_app.logger.error(str(e))
             """
             arg_snippet['text'] = snippet_body_sentences
-
+            arg_snippet['aspects'] = arg.aspects
 
             output.append(arg_snippet)
 

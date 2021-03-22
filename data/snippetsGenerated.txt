@@ -5,7 +5,11 @@
     "text": [
       "There are about 1.7% of abortion of women's ages from 15-44 each year.",
       "In the U.S. black women are 3.3 times likely to have an abortion than white women."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.5,
+      "women": 0.5
+    }
   },
   {
     "id": "abortion-02",
@@ -13,7 +17,10 @@
     "text": [
       "Abortion is MURDER!!!",
       "!"
-    ]
+    ],
+    "aspects": {
+      "abortion": 1.0
+    }
   },
   {
     "id": "abortion-03",
@@ -21,7 +28,12 @@
     "text": [
       "Abortion, what does this really mean?",
       "Abortion should have never been legal."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.8,
+      "mother teresa": 0.1,
+      "women": 0.1
+    }
   },
   {
     "id": "abortion-04",
@@ -29,7 +41,13 @@
     "text": [
       "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
       "*the fetus is a person because there is no way to determine that it is not a person."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.7142857142857143,
+      "depression": 0.07142857142857142,
+      "woman": 0.07142857142857142,
+      "women": 0.14285714285714285
+    }
   },
   {
     "id": "abortion-05",
@@ -37,7 +55,10 @@
     "text": [
       "Counter-arguments \"Note: My firs round was not meant to be taken literally, I just thought it did a fairly good job of summing up my point.",
       "References [1] [2]"
-    ]
+    ],
+    "aspects": {
+      "abortion": 1.0
+    }
   },
   {
     "id": "abortion-06",
@@ -45,7 +66,12 @@
     "text": [
       "In fact, 3 out of 10 women in the U.S. have an abortion by the time they are 45 years old.",
       "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.8461538461538461,
+      "controversy": 0.038461538461538464,
+      "women": 0.11538461538461539
+    }
   },
   {
     "id": "abortion-07",
@@ -53,7 +79,11 @@
     "text": [
       "Outlawing abortion is taking away a human right given to women.",
       "If the child has no organs developed that would be vital for the baby to survive outside the wound, than having an abortion is not murder."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.8333333333333334,
+      "women": 0.16666666666666666
+    }
   },
   {
     "id": "abortion-08",
@@ -61,7 +91,10 @@
     "text": [
       "The term abortion means the deliberate termination of a human pregnancy.",
       "1st round acceptance."
-    ]
+    ]   ,
+    "aspects": {
+      "abortion": 1.0
+    }
   },
   {
     "id": "abortion-09",
@@ -69,7 +102,11 @@
     "text": [
       "By the 22 century, the population estimated to be 11.2 billion people and if abortion were illegal, the population would be so much higher.",
       "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women."
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.5384615384615384,
+      "women": 0.46153846153846156
+    }
   },
   {
     "id": "abortion-10",
@@ -77,7 +114,14 @@
     "text": [
       "10% of women that go through with abortion have immediate complications.",
       "Don't hate too hard"
-    ]
+    ],
+    "aspects": {
+      "abortion": 0.8529411764705882,
+      "depression": 0.029411764705882353,
+      "rape": 0.029411764705882353,
+      "woman": 0.058823529411764705,
+      "women": 0.029411764705882353
+    }
   },
   {
     "id": "brexit-01",
@@ -85,7 +129,16 @@
     "text": [
       "As for Europe: the EU just lost its biggest economy.",
       "Now that countries are abandoning the network that has held relative peace in a whole continent, who knows what the disastrous consequenses will be?"
-    ]
+    ],
+    "aspects": {
+      "european union": 0.125,
+      "ireland": 0.25,
+      "japan": 0.125,
+      "nato": 0.125,
+      "northern ireland": 0.125,
+      "spain": 0.125,
+      "world war ii": 0.125
+    }
   },
   {
     "id": "brexit-02",
@@ -93,7 +146,10 @@
     "text": [
       "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
       "Seeing as you don't appear to have made any actual arguments as to why a Brexit will be beneficial, I shall refrain from expanding my arguments this round, seeing as I have nothing to respond to."
-    ]
+    ],
+    "aspects": {
+      "political correctness": 1.0
+    }
   },
   {
     "id": "brexit-03",
@@ -101,7 +157,10 @@
     "text": [
       "So for the leave side to be economically superior leaving would not be able to affect the UK by more than 0.3%.",
       "Sources:"
-    ]
+    ],
+    "aspects": {
+      "free trade": 1.0
+    }
   },
   {
     "id": "brexit-04",
@@ -109,7 +168,8 @@
     "text": [
       "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title.",
       "I strongly encourage voters to vote Con!"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "brexit-05",
@@ -117,7 +177,8 @@
     "text": [
       "However, this is not a conversation.",
       "So I say again, if you refuse to actually write anything substantive, I see no point in the further continuance of this debate."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "brexit-06",
@@ -125,14 +186,19 @@
     "text": [
       "The pound will depreciate against most major economies.",
       "Thus, even though Britain stands to suffer from leaving the European Union in terms of reduced trade and a sustained drop in its GDP, the net effect can turn out to be positive for India."
-    ]
+    ],
+    "aspects": {
+      "european union": 0.8,
+      "tax": 0.2
+    }
   },
   {
     "id": "brexit-07",
     "title": "So you are telling me I cannot go online to get data about anything but let's just leave it and all I wanna say in brexit is important for india as after exit of Britain from Russia it will use euro as its currency and that will be beneficial for INDIAN market",
     "text": [
       "So you are telling me I cannot go online to get data about anything but let's just leave it and all I wanna say in brexit is important for india as after exit of Britain from Russia it will use euro as its currency and that will be beneficial for INDIAN market"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "brexit-08",
@@ -140,7 +206,8 @@
     "text": [
       "Resoluton: Brexit was unwise.",
       "Definition: Unwise = Bringing about more disadvantages than advantages/benefits."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "brexit-09",
@@ -148,7 +215,8 @@
     "text": [
       "Thus, investors look elsewhere than UK.",
       "Come check them out!)"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "brexit-10",
@@ -156,7 +224,8 @@
     "text": [
       "I will be arguing that Brexit was a good thing for the UK.",
       "All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-01",
@@ -164,14 +233,16 @@
     "text": [
       "Climate change is happening, but is it man caused?",
       "I thank you for the debate."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-02",
     "title": "The effects of climate change will not necessarily be bad",
     "text": [
       "The effects of climate change will not necessarily be bad"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-03",
@@ -179,21 +250,24 @@
     "text": [
       "It is a violation of free speech.",
       "1."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-04",
     "title": "Countries are not treating climate change as a security issue",
     "text": [
       "Countries are not treating climate change as a security issue"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-05",
     "title": "Acting to `mitigate' climate change will cost a fortune.",
     "text": [
       "Acting to `mitigate' climate change will cost a fortune."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-06",
@@ -201,7 +275,10 @@
     "text": [
       "97% of scientists believe that climate change is primarily human caused.",
       "Global Climate Change: Consensus."
-    ]
+    ],
+    "aspects": {
+      "global warming": 1.0
+    }
   },
   {
     "id": "climate change-07",
@@ -209,7 +286,10 @@
     "text": [
       "There are a limited number of circumstances under which free speech can be restricted.",
       "If need be yes."
-    ]
+    ],
+    "aspects": {
+      "pornography": 1.0
+    }
   },
   {
     "id": "climate change-08",
@@ -217,7 +297,8 @@
     "text": [
       "Out of 918 peer-reviewed scientific papers on this subject, 0% disagreed that climate change is happening, but in newspaper articles, 53% were unsure.",
       "This proves that climate change is happening, but scientists are having trouble conveying the information and other data to the people of the world."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "climate change-09",
@@ -225,14 +306,20 @@
     "text": [
       "Pro argues that past climate doesn't count because we are only discussing the past century and the next century.\"",
       "[5] 8."
-    ]
+    ],
+    "aspects": {
+      "al gore": 0.3333333333333333,
+      "ms": 0.3333333333333333,
+      "race": 0.3333333333333333
+    }
   },
   {
     "id": "climate change-10",
     "title": "Climate change is real.",
     "text": [
       "Climate change is real."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "death_penalty-01",
@@ -240,7 +327,8 @@
     "text": [
       "Death penalty isn't only method to punish the murderer.",
       "People who are rich escaped from the death penalty or from the law."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "death_penalty-02",
@@ -248,7 +336,10 @@
     "text": [
       "The death penalty goes against many religions who regard it as immoral.",
       "Frankly, I see absolutely no benefits of the death penalty."
-    ]
+    ],
+    "aspects": {
+      "capital punishment": 1.0
+    }
   },
   {
     "id": "death_penalty-03",
@@ -256,7 +347,10 @@
     "text": [
       "The above link proves that inmates have been proven innocent while on death row, and sadly some have been killed and then later found innocent.",
       "The below links show the many other problems associated with the death penalty."
-    ]
+    ],
+    "aspects": {
+      "capital punishment": 1.0
+    }
   },
   {
     "id": "death_penalty-04",
@@ -264,7 +358,8 @@
     "text": [
       "1.",
       "my burden of proof is to show the death penalty is used not only for the offences my opponent claims is justifiable and to show innocents can and has been convicted with the death penalty as well as prove that the death penalty is hypocritical to the laws of the state."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "death_penalty-05",
@@ -272,7 +367,10 @@
     "text": [
       "Resolution: The death penalty should never be allowed as a form of punishment.",
       "capital punishment --noun punishment by death for a crime; death penalty."
-    ]
+    ],
+    "aspects": {
+      "capital punishment": 1.0
+    }
   },
   {
     "id": "death_penalty-06",
@@ -280,7 +378,8 @@
     "text": [
       "If you murder, death penalty.",
       "Breaking and entering along with grand larceny, death penalty."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "death_penalty-07",
@@ -288,7 +387,11 @@
     "text": [
       "States have different Almost all of these non-death penalty states, are generally small states.",
       "2."
-    ]
+    ],
+    "aspects": {
+      "gun control": 0.5,
+      "louisiana": 0.5
+    }
   },
   {
     "id": "death_penalty-08",
@@ -296,7 +399,10 @@
     "text": [
       "The case for this would be Kenneth Allen McDuff who was on Death Row when the death penalty was declared unconstitutional in the 1970's.",
       "My mistake."
-    ]
+    ],
+    "aspects": {
+      "tax": 1.0
+    }
   },
   {
     "id": "death_penalty-09",
@@ -304,7 +410,8 @@
     "text": [
       "Crime has decreased and the death penalty still lives.",
       "Probably could cause strikes on government, - Crime rate goes up It is on to you now"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "death_penalty-10",
@@ -312,7 +419,8 @@
     "text": [
       "I have no more to say, so I will sum up my arguments: 1.",
       "There are no benefits to death penalty and my opponent has failed to convince me otherwise by providing very vague arguments Thank you for the debate."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "donald trump-01",
@@ -320,7 +428,11 @@
     "text": [
       "Donald Trump is no racist and may be the least racist candidate.",
       "That's huge and there are many more ways he not racist."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 0.75,
+      "republican party": 0.25
+    }
   },
   {
     "id": "donald trump-02",
@@ -328,7 +440,10 @@
     "text": [
       "Pro It would be difficult for anyone to prove that Donald Trump would be a good president-because he wouldn't!",
       "It is no surprise that you couldn't prove that Donald Trump would be a good president."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "donald trump-03",
@@ -336,7 +451,14 @@
     "text": [
       "Here is another quote from Donald Trump.",
       "Note: This was copied from my previous debate."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 0.47619047619047616,
+      "ku klux klan": 0.047619047619047616,
+      "mexico": 0.23809523809523808,
+      "tax": 0.047619047619047616,
+      "women": 0.19047619047619047
+    }
   },
   {
     "id": "donald trump-04",
@@ -344,7 +466,10 @@
     "text": [
       "Illuminati: \"a Bavarian secret society founded in 1776, organized like the Freemasons.\"",
       "[1] [2] [3]"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "donald trump-05",
@@ -352,7 +477,10 @@
     "text": [
       "Pro \" As directed by the Constitution a presidential candidate must be a natural born citizen of the United States, a resident for 14 years, and 35 years of age or older.\"",
       "Sources: [1]"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "donald trump-06",
@@ -360,7 +488,10 @@
     "text": [
       "Let them be sure what they believe first.\"",
       "The conservative and independents are tired of being lied to , we can only hope that Donald Trump isn't just mouthing the words that the conservatives and independents wanted to hear and actually meant what he's been saying"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "donald trump-07",
@@ -368,7 +499,12 @@
     "text": [
       ".",
       "Is Donald Trump a chameleon changing to suit his purpose"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 0.6,
+      "william shakespeare": 0.2,
+      "women": 0.2
+    }
   },
   {
     "id": "donald trump-08",
@@ -376,7 +512,11 @@
     "text": [
       "I've done some research and found that Donald Trump has some unstable qualities.",
       "It will end badly."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 0.8,
+      "god": 0.2
+    }
   },
   {
     "id": "donald trump-09",
@@ -384,7 +524,10 @@
     "text": [
       "[1] Donald Trump is above the age of 35, as he is 69 years old.",
       "Sources: [1]"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "donald trump-10",
@@ -392,7 +535,16 @@
     "text": [
       "What's wrong with that?",
       "Those are a few of the reasons why I think you are wrong about Donald Trump, and why I am right."
-    ]
+    ],
+    "aspects": {
+      "cult": 0.03125,
+      "donald trump": 0.65625,
+      "drugs": 0.0625,
+      "islam": 0.09375,
+      "mexico": 0.03125,
+      "race": 0.03125,
+      "rape": 0.09375
+    }
   },
   {
     "id": "feminism-01",
@@ -400,7 +552,11 @@
     "text": [
       "Feminist responses have ranged from bafflement to vitriol or mockery to arguments that these women don\"t know what feminism is.",
       "But while this new movement has its silly aspects, it raises some much-needed questions about feminism\"s present and future state \" and, in the weeks since it first attracted notice, many prominent feminists have helped validate some of the criticisms."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.5,
+      "women": 0.5
+    }
   },
   {
     "id": "feminism-02",
@@ -408,7 +564,12 @@
     "text": [
       "They are highly capable of taking care of themselves, but you know who does?",
       "It is about equality or more likely dominating men."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.42857142857142855,
+      "woman": 0.14285714285714285,
+      "women": 0.42857142857142855
+    }
   },
   {
     "id": "feminism-03",
@@ -416,7 +577,10 @@
     "text": [
       "but this is completely a myth because men are oppressed all the time from every single way.",
       "so modern Feminism is not about equality it's about Female Supremacy to suppress to dominant over men."
-    ]
+    ],
+    "aspects": {
+      "feminism": 1.0
+    }
   },
   {
     "id": "feminism-04",
@@ -424,7 +588,12 @@
     "text": [
       "A blogger who goes by AstrokidNJ has analyzed a week\"s worth of posts on Women Against Feminism and found that 46 percent were egalitarian, 19 percent endorsed men\"s issues, and 12 percent criticized feminist intolerance toward dissent.",
       "Only 23 percent reflected traditionalist views such as support for distinct sex roles, chivalry, or full-time motherhood."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.42857142857142855,
+      "gender": 0.14285714285714285,
+      "women": 0.42857142857142855
+    }
   },
   {
     "id": "feminism-05",
@@ -432,7 +601,12 @@
     "text": [
       "Feminism encourages false rape accusations and stereotyping men as bad.",
       "I didn't know who to debate so I just put a random name lol"
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.5,
+      "rape": 0.25,
+      "women": 0.25
+    }
   },
   {
     "id": "feminism-06",
@@ -440,7 +614,14 @@
     "text": [
       "I am a Man And I am A Feminist.",
       "And Feminism has no gender, Nor Negative attributes."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.5833333333333334,
+      "gender": 0.16666666666666666,
+      "homosexuality": 0.08333333333333333,
+      "woman": 0.08333333333333333,
+      "women": 0.08333333333333333
+    }
   },
   {
     "id": "feminism-07",
@@ -448,7 +629,11 @@
     "text": [
       "Feminists just want to have equal rights, not overpower men.",
       "Feminism is about equality, nothing else."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.75,
+      "women": 0.25
+    }
   },
   {
     "id": "feminism-08",
@@ -456,7 +641,11 @@
     "text": [
       "Many women are against feminism because they like the traditional roles of women, like cooking, cleaning, taking care of the kids.",
       "Feminism is not about demolishing that idea, it is about opening up new opportunities for women, and men."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.4,
+      "women": 0.6
+    }
   },
   {
     "id": "feminism-09",
@@ -464,7 +653,10 @@
     "text": [
       "and to clearly show to me what they believe feminism to be.",
       "good luck"
-    ]
+    ],
+    "aspects": {
+      "feminism": 1.0
+    }
   },
   {
     "id": "feminism-10",
@@ -472,7 +664,13 @@
     "text": [
       "By this definition, you are a feminist.",
       "If you meant absurd, then I would agree that false rape accusations are deplorable, but again I would say that \"false rape reports\" is not a tenant of feminism nor is it a likely to occur."
-    ]
+    ],
+    "aspects": {
+      "feminism": 0.32,
+      "gender": 0.04,
+      "rape": 0.44,
+      "women": 0.2
+    }
   },
   {
     "id": "google-01",
@@ -480,7 +678,10 @@
     "text": [
       "\"As for Bing sounding better than Google, I'm going to have to disagree ;).\"",
       "For all I know, the rest of them might only use Bing now!"
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-02",
@@ -488,7 +689,10 @@
     "text": [
       "GOogle clearly stat es itself to be unreliable, so even if it may or may not be reliable, google tells you that it isn't reliable, leading the conclusion to be GOogle not being reliable to avoid the logical contradiction.",
       "Pro arguments are fake accoring to GOOGLE ITSELF, so if Pro is trying to say Google is reliable, Pro loses as the \"reliable\" source says that Pro's arguments are lies"
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-03",
@@ -496,7 +700,10 @@
     "text": [
       "Google said it is unreliable.",
       "Hmmmmm... logical contradiction If google is reliable: Then it says it is unreliable and if we trust it then we know it is not reliable If google is not reliable: I win the debate"
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-04",
@@ -504,7 +711,10 @@
     "text": [
       "But, I like google best, cause on google we can search up anything, even this very website.",
       "This website is awesome but google is better."
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-05",
@@ -512,7 +722,10 @@
     "text": [
       "I will be taking the CON side in this debate, because I will provide evidence that Google Inc. and all other services owned/managed by Google simply can't take over the world.",
       "Good luck to CON."
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-06",
@@ -520,7 +733,10 @@
     "text": [
       "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
       "Google wants us to think like Google and that how they will take over the world.A279;"
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-07",
@@ -528,7 +744,11 @@
     "text": [
       "People tend to prefer Google, so I would say Google is better than Bing.",
       "Google also has much more services associated with their site and company such as Gmail, mapping apps, and is associated with Youtube."
-    ]
+    ],
+    "aspects": {
+      "google": 0.875,
+      "youtube": 0.125
+    }
   },
   {
     "id": "google-08",
@@ -536,7 +756,11 @@
     "text": [
       "Bing is just another copy cat trying to be as big as Google and it will not happen.",
       "sources: your turn..."
-    ]
+    ],
+    "aspects": {
+      "google": 0.9285714285714286,
+      "youtube": 0.07142857142857142
+    }
   },
   {
     "id": "google-09",
@@ -544,7 +768,10 @@
     "text": [
       "This actually bolsters my case, because it shows that 67% of people would not ever use bing instead of google.",
       "I will use next round for refutations and for reiterating my constructive argument."
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "google-10",
@@ -552,28 +779,34 @@
     "text": [
       "Although Microsoft has Bing Maps, which is arguably better than Google Maps, Google adds in several more services, like Google Docs, Blogsearch and News, that easily best Bing's Web services.",
       "Microsoft must remember that."
-    ]
+    ],
+    "aspects": {
+      "google": 1.0
+    }
   },
   {
     "id": "nuclear_energy-01",
     "title": ": Nuclear energy risks being diverted to nuclear weapons development",
     "text": [
       ": Nuclear energy risks being diverted to nuclear weapons development"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-02",
     "title": ": Nuclear energy detracts resources from superior renewable energy",
     "text": [
       ": Nuclear energy detracts resources from superior renewable energy"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-03",
     "title": ": Nuclear energy detracts resources from superior renewable energy",
     "text": [
       ": Nuclear energy detracts resources from superior renewable energy"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-04",
@@ -581,14 +814,25 @@
     "text": [
       "Security of nuclear facilities.",
       "Thank you!"
-    ]
+    ],
+    "aspects": {
+      "chernobyl": 0.13333333333333333,
+      "fossil fuels": 0.13333333333333333,
+      "global warming": 0.06666666666666667,
+      "japan": 0.13333333333333333,
+      "nuclear power": 0.2,
+      "recycling": 0.06666666666666667,
+      "solar power": 0.13333333333333333,
+      "soviet union": 0.13333333333333333
+    }
   },
   {
     "id": "nuclear_energy-05",
     "title": "Centralized nuclear energy production is inefficient.",
     "text": [
       "Centralized nuclear energy production is inefficient."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-06",
@@ -596,14 +840,16 @@
     "text": [
       "Unless Con finds these definitions to be abusive, they are to be accepted.",
       "[1] [2]"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-07",
     "title": ": Nuclear-powered ships demonstrate safety of nuclear energy",
     "text": [
       ": Nuclear-powered ships demonstrate safety of nuclear energy"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-08",
@@ -611,21 +857,26 @@
     "text": [
       "This source of energy creates a low impact on the environment anyway.",
       "Thx for reading and good luck to my opponent"
-    ]
+    ],
+    "aspects": {
+      "nuclear power": 1.0
+    }
   },
   {
     "id": "nuclear_energy-09",
     "title": ": Nuclear energy is highly efficient",
     "text": [
       ": Nuclear energy is highly efficient"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "nuclear_energy-10",
     "title": ": General statements of support for nuclear energy",
     "text": [
       ": General statements of support for nuclear energy"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "trump-01",
@@ -633,7 +884,8 @@
     "text": [
       "[1] Life - the ability to grow, change, etc., that separates plants and animals from things like water or rocks [2] Now there are 7 qualifications in order for something to have life.",
       "[1] [2] [3]"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "trump-02",
@@ -641,14 +893,20 @@
     "text": [
       "They're a threat, people to be surveilled and harassed and hated and feared.",
       "It destroys communities, causes crime, etc.. Why would you EVER support Trump?"
-    ]
+    ],
+    "aspects": {
+      "black lives matter": 0.16666666666666666,
+      "donald trump": 0.16666666666666666,
+      "racism": 0.6666666666666666
+    }
   },
   {
     "id": "trump-03",
     "title": "trump sucks",
     "text": [
       "trump sucks"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "trump-04",
@@ -656,7 +914,13 @@
     "text": [
       "\"Plus, with less authentic delicious Mexican food here in the U.S., obesity rates will probably drop.\"",
       "Thankyou"
-    ]
+    ],
+    "aspects": {
+      "god": 0.16666666666666666,
+      "japan": 0.16666666666666666,
+      "mexico": 0.5,
+      "obesity": 0.16666666666666666
+    }
   },
   {
     "id": "trump-05",
@@ -664,21 +928,32 @@
     "text": [
       "(...) The cold-blooded vigilante attacks on immigrants aren't a new development.",
       "So since Trump will cause more terrible organizations like this to form, please vote neg - vote down Trump."
-    ]
+    ],
+    "aspects": {
+      "mexico": 0.3333333333333333,
+      "pat buchanan": 0.16666666666666666,
+      "racism": 0.5
+    }
   },
   {
     "id": "trump-06",
     "title": "Do you support donald trump.",
     "text": [
       "Do you support donald trump."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "trump-07",
     "title": "If elected, Donald Trump will be the greatest president of all time.",
     "text": [
       "If elected, Donald Trump will be the greatest president of all time."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "trump-08",
@@ -686,7 +961,8 @@
     "text": [
       "I think trump is life.",
       "Agree?"
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "trump-09",
@@ -694,14 +970,21 @@
     "text": [
       "It's fair to say they deserve some criticism.",
       "He would also bring in a fresh approach to politics with his say it as it is style."
-    ]
+    ],
+    "aspects": {
+      "donald trump": 0.3333333333333333,
+      "mexico": 0.6666666666666666
+    }
   },
   {
     "id": "trump-10",
     "title": "Well man good sir I'm talking about Donald Trump the greatest man to walk this earth after Jesus",
     "text": [
       "Well man good sir I'm talking about Donald Trump the greatest man to walk this earth after Jesus"
-    ]
+    ],
+    "aspects": {
+      "donald trump": 1.0
+    }
   },
   {
     "id": "vegan-01",
@@ -709,7 +992,11 @@
     "text": [
       "I hold that every person should have the freedom to do what they choose, live the life they want to live, and live with the positive or negative consequences of their decisions.",
       "The foregoing are key pieces to the debate, so I hope that Pro will define his argument much better in the next post."
-    ]
+    ],
+    "aspects": {
+      "god": 0.125,
+      "veganism": 0.875
+    }
   },
   {
     "id": "vegan-02",
@@ -717,7 +1004,8 @@
     "text": [
       "No, being a vegan is not inherently bad, anymore than being a Jewish or gay person makes you inherently bad.",
       "If vegans push their lifestyle upon you, that's wrong, but being a vegan does not make you bad."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "vegan-03",
@@ -725,7 +1013,13 @@
     "text": [
       "In fact, a diet containing almost entirely meat and fish can provide required nutrients.",
       "For one thing, be sure to eat seal brains along with the blubber for good health."
-    ]
+    ],
+    "aspects": {
+      "cancer": 0.5,
+      "controversy": 0.125,
+      "nutrition": 0.25,
+      "obesity": 0.125
+    }
   },
   {
     "id": "vegan-04",
@@ -733,7 +1027,13 @@
     "text": [
       "In fact, a diet containing almost entirely meat and fish can provide required nutrients.",
       "For one thing, be sure to eat seal brains along with the blubber for good health."
-    ]
+    ],
+    "aspects": {
+      "cancer": 0.5,
+      "controversy": 0.125,
+      "nutrition": 0.25,
+      "obesity": 0.125
+    }
   },
   {
     "id": "vegan-05",
@@ -741,7 +1041,8 @@
     "text": [
       "7 billion people need to be fed, and more are being created every day.",
       "In my opinion, you aren't thinking about experiences beyond your own, where eating meat is how people survive."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "vegan-06",
@@ -749,7 +1050,11 @@
     "text": [
       "by people, I mean people.",
       "but instead \"Why not?\""
-    ]
+    ],
+    "aspects": {
+      "god": 0.3333333333333333,
+      "veganism": 0.6666666666666666
+    }
   },
   {
     "id": "vegan-07",
@@ -757,7 +1062,8 @@
     "text": [
       "Why wouldn't everyone be vegan?",
       "Think of all the fluffy animals that will be grateful."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "vegan-08",
@@ -765,7 +1071,8 @@
     "text": [
       "This does not include primitive tribes.",
       "I am also not saying we should force everyone to become vegan, but I am saying that if everybody in the world was vegan, we would be much better off and the world would be a much more loving place."
-    ]
+    ],
+    "aspects": {}
   },
   {
     "id": "vegan-09",
@@ -773,7 +1080,13 @@
     "text": [
       "However, I never said these were sources of B12.",
       "1 2 3 (conclusion)"
-    ]
+    ],
+    "aspects": {
+      "cancer": 0.3333333333333333,
+      "longevity": 0.3333333333333333,
+      "nutrition": 0.2222222222222222,
+      "obesity": 0.1111111111111111
+    }
   },
   {
     "id": "vegan-10",
@@ -781,6 +1094,9 @@
     "text": [
       "Con Since pro decided to skip a round of debate, I will be very brief.",
       "I hope pro will join the debate once again and give valid reasons for why he believes going vegan is the right thing."
-    ]
+    ],
+    "aspects": {
+      "veganism": 1.0
+    }
   }
 ]
