@@ -23,7 +23,7 @@ with open(os.path.join(script_dir, "data/arguments.txt"), 'w', encoding='utf-8')
 
 
 """
-script_dir = os.path.dirname(__file__)
+script_dir = os.path.dirname
 stored_snippets = json.load(open(os.path.join(script_dir, "data/arguments.txt")))
 data_snippets = json.load(open(os.path.join(script_dir, "data/snippets.txt")))
 
@@ -40,8 +40,8 @@ def get_snippets(json_arguments):
         # print(argument["sentences"])
         arg = Argument()
         argument_text = " ".join(argument["sentences"])
-        # aspects = AspectsDetection().get_aspects(argument_text)
-        # print(aspects)
+        aspects = AspectsDetection().get_aspects(argument_text)
+        print(aspects)
 
         arg.premises = argument_text
         arg.id = argument["arg_id"]
@@ -62,7 +62,7 @@ snippet_gen_app = argsrank.ArgsRank()
 snippets = get_snippets(data_snippets)
 
 
-# with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
-    #json.dump(snippets, f,indent=2)
-
-#print(snippets)
+with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
+    json.dump(snippets, f, indent=2)
+    q
+print(snippets)

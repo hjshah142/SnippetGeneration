@@ -199,22 +199,25 @@ class ArgsRank:
 
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
-            snippet_title_span = self.find_span(arg_text, snippet_title)
-            arg_snippet['title'] = {'span': snippet_title_span, 'text': snippet_title}
+            # snippet_title_span = self.find_span(arg_text, snippet_title)
+            arg_snippet['id'] = arg.id
+            arg_snippet['title'] = snippet_title
 
             # processing snippet body
             snippet_body_sentences = arg.get_topK(2).tolist()
 
-            snippet_body = []
-            for sentence in snippet_body_sentences:
+            # snippet_body = []
+            """
+             sentence in snippet_body_sentences:
                 try:
                     sentence_span = self.find_span(arg_text, sentence)
                     snippet_body.append({'span': sentence_span, 'text': sentence})
                 except Exception as e:
                     print('Exection in sem_similarity score')
                     #self.flask_app.logger.error(str(e))
+            """
+            arg_snippet['text'] = snippet_body_sentences
 
-            arg_snippet['body'] = snippet_body
 
             output.append(arg_snippet)
 
