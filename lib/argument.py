@@ -15,7 +15,7 @@ class Argument:
         :param context:
         :param id:
         :param conclusion: (str) conclustion of the argument
-        :param
+        :param aspects: (dict)
         cluster_map: dictionary with keys being the debate ids from the arguments. Value: List of arguments
         """
 

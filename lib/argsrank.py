@@ -1,16 +1,9 @@
 import json
-import re
-import sys
 import os
-
-import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
-
 from sklearn.preprocessing import MinMaxScaler
 from discreteMarkovChain import markovChain
-
-from flask import current_app, g
 
 
 class ArgsRank:
@@ -167,8 +160,6 @@ class ArgsRank:
             else:
                 cluster.score = [1]
 
-
-
         # TODO modelling the context of argument
         # TODO Add more similar arguments in cluster
 
@@ -208,19 +199,7 @@ class ArgsRank:
         return output
 
 
-def init_snippet_gen_app():
-    print('test')
-    g.snippet_gen_app = ArgsRank()
-
-
 def get_stored_snippets():
     script_dir = os.path.dirname(__file__)
     stored_snippets = json.load(open(os.path.join(script_dir, "../data/snippets.txt")))
     return stored_snippets
-
-
-def get_snippet_gen_app():
-    if 'snippet_gen_app' not in g:
-        g.snippet_gen_app = ArgsRank()
-
-    return g.snippet_gen_app
