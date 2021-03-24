@@ -14,7 +14,6 @@ class AspectsDetection:
         aspect_detected = {}
         for aspect in self.aspect_list:
             if re.search(r"\b" + re.escape(aspect) + r"\b", text):
-                print(aspect)
                 aspect_count = len(re.findall(r"\b" + re.escape(aspect) + r"\b", text))
                 # print(aspect_count)
                 aspect_detected[aspect] = aspect_count

@@ -92,7 +92,7 @@ class ArgsRank:
         # plot_similarity(messages_, message_embeddings_, 0)
         return message_embeddings_
 
-    def add_tp_ratio(self, cluster):
+    def add_tp_ratio(self, sentences):
         """
         Create numpy array with aij = argumentativeness of sentence j
 
@@ -103,21 +103,20 @@ class ArgsRank:
         # TODO research for other methods
         row = []
 
-        for argument_j in cluster:
-            for idx, sentence_j in enumerate(argument_j):
-                value = 1.0
-                for marker in self.discourse_markers:
-                    if marker in sentence_j.lower():
-                        value += 1
-                if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
+        for idx, sentence_j in enumerate(sentences):
+            value = 1.0
+            for marker in self.discourse_markers:
+                if marker in sentence_j.lower():
                     value += 1
+            if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
+                value += 1
 
-                row.append(value)
+            row.append(value)
 
         message_embedding = []
-        for argument in cluster:
-            for sentence in argument:
-                message_embedding.append(row)
+
+        for sentence_j in sentences:
+            message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
         message_embedding = self.normalize_by_rowsum(message_embedding)
@@ -125,85 +124,67 @@ class ArgsRank:
 
     def sem_similarty_scoring(self, clusters):
         """
-        Run biased PageRank using Universal Sentence Encoder to receive embedding.
-        Calls add add_tp_ratio() and add_syn_similarity().
-        Computes similarity to conclusion.
+                Run biased PageRank using Universal Sentence Encoder to receive embedding.
+                Calls add add_tp_ratio() and add_syn_similarity().
+                Computes similarity to conclusion.
+                :param clusters:
+                :return:
+                """
 
-        :param clusters:
-        :return:
-        """
-        print(clusters)
         messages = []
-        # TODO modelling the context of argument
-        # TODO Add more similar arguments in cluster
-        for idx, cluster in enumerate(clusters):
-            messages = []
-            for argument in cluster:
-                messages = messages + argument.sentences
-            print(messages)
-            print(argument.sentences)
+        print(clusters)
+        for cluster in clusters:
+
+            messages = cluster.sentences
             message_embedding = [message.numpy() for message in self.embed(messages)]
-            # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
-            # Centality Score
             sim = np.inner(message_embedding, message_embedding)
-            sim_message = self.normalize_by_rowsum(sim)
-            # Argumentative Score
-            # TODO test another methods for argummentative score computation
-            matrix = self.add_tp_ratio(cluster)
-            # TODO Question regarding need of adding argumentative score
+            # sim_message = self.normalize_by_rowsum(sim)
+            matrix = self.add_tp_ratio(cluster.sentences)
             M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
 
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi('power')
             p = mc.pi
-
             x = 0
-            for i in range(len(cluster)):
-                if not cluster[i].score:
-                    score_exists = False
-                else:
-                    score_exists = True
-                for j in range(len(cluster[i].sentences)):
-                    if score_exists:
-                        cluster[i].score[j] += p[x]
-                        cluster[i].score[j] = cluster[i].score[j]
 
-                    else:
-                        cluster[i].score.append(p[x])
-                    x += 1
-                if (len(cluster[i].score) > 1):
-                    cluster[i].score = list(
-                        (cluster[i].score - min(cluster[i].score)) / (
-                                max(cluster[i].score) - min(cluster[i].score)))
-                else:
-                    cluster[i].score = [1]
+            if not cluster.score:
+                score_exists = False
+            else:
+                score_exists = True
+            for j in range(len(cluster.sentences)):
+                if score_exists:
+                    cluster.score[j] += p[x]
+                    cluster.score[j] = cluster.score[j]
 
-    def find_span(self, arg_txt, sent_txt):
-        try:
-            p = re.compile(re.escape(sent_txt))
-            m = p.search(arg_txt)
-            return list(m.span())
-        except Exception as e:
-            # self.flask_app.logger.info('Failed in matching sentence in argument..')
-            # self.flask_app.logger.error(str(e))
-            print('Execption in find_span()')
-            return None
+                else:
+                    cluster.score.append(p[x])
+                x += 1
+            if len(cluster.score) > 1:
+                cluster.score = list(
+                    (cluster.score - min(cluster.score)) / (
+                            max(cluster.score) - min(cluster.score)))
+            else:
+                cluster.score = [1]
+
+
+
+        # TODO modelling the context of argument
+        # TODO Add more similar arguments in cluster
 
     def generate_snippet(self, args):
 
         output = []
-        print(args)
-        self.sem_similarty_scoring([args])
-        for arg in args:
 
+        self.sem_similarty_scoring(args)
+        for arg in args:
             arg_snippet = {}
 
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)
             arg_snippet['id'] = arg.id
-            arg_snippet['title'] = snippet_title
+            arg_snippet['snippet-title'] = snippet_title
 
             # processing snippet body
             snippet_body_sentences = arg.get_topK(2).tolist()
@@ -218,8 +199,9 @@ class ArgsRank:
                     print('Exection in sem_similarity score')
                     #self.flask_app.logger.error(str(e))
             """
-            arg_snippet['text'] = snippet_body_sentences
+            arg_snippet['snippets-text'] = snippet_body_sentences
             arg_snippet['aspects'] = arg.aspects
+            arg_snippet['sentences'] = arg.premises
 
             output.append(arg_snippet)
 
