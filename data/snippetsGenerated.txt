@@ -3,7 +3,7 @@
     "id": "abortion-01",
     "snippet-title": "In the U.S. black women are 3.3 times likely to have an abortion than white women.",
     "snippets-text": [
-      "Women who already had abortion earlier in there life time have abortion again.",
+      "There are about 1.7% of abortion of women's ages from 15-44 each year.",
       "In the U.S. black women are 3.3 times likely to have an abortion than white women."
     ],
     "aspects": {
@@ -14,10 +14,10 @@
   },
   {
     "id": "abortion-02",
-    "snippet-title": "Abortion is wrong!",
+    "snippet-title": "!",
     "snippets-text": [
-      "Abortion is wrong!",
-      "Abortion Is gross!"
+      "Abortion is MURDER!!!",
+      "!"
     ],
     "aspects": {
       "abortion": 1.0
@@ -26,10 +26,10 @@
   },
   {
     "id": "abortion-03",
-    "snippet-title": "Why would someone want to kill an innocent little life?",
+    "snippet-title": "Abortion should have never been legal.",
     "snippets-text": [
-      "\"The greatest destroyer of peace is abortion because if a mother can kill her own child, what is left for me to kill you and you to kill me?",
-      "Why would someone want to kill an innocent little life?"
+      "Abortion, what does this really mean?",
+      "Abortion should have never been legal."
     ],
     "aspects": {
       "abortion": 0.8,
@@ -40,7 +40,7 @@
   },
   {
     "id": "abortion-04",
-    "snippet-title": "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
+    "snippet-title": "*the fetus is a person because there is no way to determine that it is not a person.",
     "snippets-text": [
       "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
       "*the fetus is a person because there is no way to determine that it is not a person."
@@ -55,10 +55,10 @@
   },
   {
     "id": "abortion-05",
-    "snippet-title": "Therefore, the resolution is not set to be taken non-literally, and thus my interpretation remains legitimate in this debate.",
+    "snippet-title": "References [1] [2]",
     "snippets-text": [
-      "Hence, my opponent's resolution falls under the logical fallacy classification of false equivalence [1].",
-      "Therefore, the resolution is not set to be taken non-literally, and thus my interpretation remains legitimate in this debate."
+      "Counter-arguments \"Note: My firs round was not meant to be taken literally, I just thought it did a fairly good job of summing up my point.",
+      "References [1] [2]"
     ],
     "aspects": {
       "abortion": 1.0
@@ -67,10 +67,10 @@
   },
   {
     "id": "abortion-06",
-    "snippet-title": "However, in most states you can ask a judge to excuse you from these requirements.",
+    "snippet-title": "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood.",
     "snippets-text": [
-      "However, in most states you can ask a judge to excuse you from these requirements.",
-      "Each movement has, with varying results, sought to influence public opinion and to attain legal support for its position, with small numbers of anti-abortion advocates sometimes using violence."
+      "In fact, 3 out of 10 women in the U.S. have an abortion by the time they are 45 years old.",
+      "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood."
     ],
     "aspects": {
       "abortion": 0.8461538461538461,
@@ -81,9 +81,9 @@
   },
   {
     "id": "abortion-07",
-    "snippet-title": "The Supreme Court decided that states can't outlaw abortion because Prohibiting abortion is a violation of the 14th Amendment, according to the Court, and the constitution.",
+    "snippet-title": "If the child has no organs developed that would be vital for the baby to survive outside the wound, than having an abortion is not murder.",
     "snippets-text": [
-      "The Supreme Court decided that states can't outlaw abortion because Prohibiting abortion is a violation of the 14th Amendment, according to the Court, and the constitution.",
+      "Outlawing abortion is taking away a human right given to women.",
       "If the child has no organs developed that would be vital for the baby to survive outside the wound, than having an abortion is not murder."
     ],
     "aspects": {
@@ -94,10 +94,10 @@
   },
   {
     "id": "abortion-08",
-    "snippet-title": "The term abortion means the deliberate termination of a human pregnancy.",
+    "snippet-title": "1st round acceptance.",
     "snippets-text": [
-      "Early term abortion and late term abortion should be allowed due to a womans choice.",
-      "The term abortion means the deliberate termination of a human pregnancy."
+      "The term abortion means the deliberate termination of a human pregnancy.",
+      "1st round acceptance."
     ],
     "aspects": {
       "abortion": 1.0
@@ -106,10 +106,10 @@
   },
   {
     "id": "abortion-09",
-    "snippet-title": "Women have a higher rate of suicide in China because of this reason and in almost every other country, men have a higher rate of suicide.",
+    "snippet-title": "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women.",
     "snippets-text": [
       "By the 22 century, the population estimated to be 11.2 billion people and if abortion were illegal, the population would be so much higher.",
-      "Women have a higher rate of suicide in China because of this reason and in almost every other country, men have a higher rate of suicide."
+      "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women."
     ],
     "aspects": {
       "abortion": 0.5384615384615384,
@@ -119,10 +119,10 @@
   },
   {
     "id": "abortion-10",
-    "snippet-title": "They would be extremely likely to have to leave school, rely on society for raising their child, develop health problems, end up separating or have psychological problems like depression or anxiety.",
+    "snippet-title": "Don't hate too hard",
     "snippets-text": [
-      "They would be extremely likely to have to leave school, rely on society for raising their child, develop health problems, end up separating or have psychological problems like depression or anxiety.",
-      "However, if abortion were to remain legal, then abortions can be carried out in safe and clean environments, where the prime concern is welfare rather than money."
+      "10% of women that go through with abortion have immediate complications.",
+      "Don't hate too hard"
     ],
     "aspects": {
       "abortion": 0.8529411764705882,
@@ -153,10 +153,10 @@
   },
   {
     "id": "brexit-02",
-    "snippet-title": "Thus, unless you provide an adequate rebuttal in later rounds, you concede all of these points as true.",
+    "snippet-title": "Seeing as you don't appear to have made any actual arguments as to why a Brexit will be beneficial, I shall refrain from expanding my arguments this round, seeing as I have nothing to respond to.",
     "snippets-text": [
-      "Thus, unless you provide an adequate rebuttal in later rounds, you concede all of these points as true.",
-      "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice."
+      "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
+      "Seeing as you don't appear to have made any actual arguments as to why a Brexit will be beneficial, I shall refrain from expanding my arguments this round, seeing as I have nothing to respond to."
     ],
     "aspects": {
       "political correctness": 1.0
@@ -165,10 +165,10 @@
   },
   {
     "id": "brexit-03",
-    "snippet-title": "But considering the UK makes 13% of it's GDP from selling commodties to the EU this seems unlikely.",
+    "snippet-title": "Sources:",
     "snippets-text": [
-      "Britain clearly needs migrants considering it's own workers don't want to work the dirty jobs such as farming so migrants need to do it for them.",
-      "But considering the UK makes 13% of it's GDP from selling commodties to the EU this seems unlikely."
+      "So for the leave side to be economically superior leaving would not be able to affect the UK by more than 0.3%.",
+      "Sources:"
     ],
     "aspects": {
       "free trade": 1.0
@@ -177,10 +177,10 @@
   },
   {
     "id": "brexit-04",
-    "snippet-title": "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title.",
+    "snippet-title": "I strongly encourage voters to vote Con!",
     "snippets-text": [
-      "Well, it appears that my opponent has again chosen to refrain from posting anything substantive.",
-      "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title."
+      "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title.",
+      "I strongly encourage voters to vote Con!"
     ],
     "aspects": {},
     "sentences": "Well, it appears that my opponent has again chosen to refrain from posting anything substantive. Since he has not responded to any of my points, he has conceded all of them. He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title. I strongly encourage voters to vote Con!"
@@ -189,7 +189,7 @@
     "id": "brexit-05",
     "snippet-title": "So I say again, if you refuse to actually write anything substantive, I see no point in the further continuance of this debate.",
     "snippets-text": [
-      "You titled this debate \"Brexit,\" and you have not even mentioned the word in any of your argument.",
+      "However, this is not a conversation.",
       "So I say again, if you refuse to actually write anything substantive, I see no point in the further continuance of this debate."
     ],
     "aspects": {},
@@ -229,30 +229,30 @@
   },
   {
     "id": "brexit-09",
-    "snippet-title": "[4] Sources: [1] [2] [3] [4] That's it for now, due to space, and that I have to refute Con's arguments, as well as refute his rebuttals.",
+    "snippet-title": "Come check them out!)",
     "snippets-text": [
-      "Yes, this debate format is nice, but a little bit tight, if you know what I mean?",
-      "[4] Sources: [1] [2] [3] [4] That's it for now, due to space, and that I have to refute Con's arguments, as well as refute his rebuttals."
+      "Thus, investors look elsewhere than UK.",
+      "Come check them out!)"
     ],
     "aspects": {},
     "sentences": "It's an honour, Envisage. Yes, this debate format is nice, but a little bit tight, if you know what I mean? Brexit's Disadvantages: Most Foreign Direct Investment comes from the EU. UK's FDI is worth 1 trillion [1]. Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit). Brexit makes it harder for UK to trade with EU. Deals can be made but will probably not be as good as it was before Brexit. Thus, investors look elsewhere than UK. UK loses a varied amount of FDI. Graph: Any deals made, is likely to be complicated. The leaders of the EU have already said that in order for UK to access the single market, it must allow free movement of EU workers (for them to easily immigrate to the UK). [2] Brexit means EU workers may not meet requirements for working in the UK, especially filling out the infamous UK visa test for non-EU citizens. About 3/4 of EU workers would fail this test, those in the primary and secondary sector (farming, hotel staff etc.). [3] It's not just a problem of foreign workers. It's also the UK's own workforce, which relies on the EU as well. Being out of the EU means British workers need to apply for a work visa to work abroad. [4] Sources: [1] [2] [3] [4] That's it for now, due to space, and that I have to refute Con's arguments, as well as refute his rebuttals. (small ad: fanfics are being revived in the Entertainment section. Come check them out!)"
   },
   {
     "id": "brexit-10",
-    "snippet-title": "This round is just for acceptance.",
+    "snippet-title": "All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU.",
     "snippets-text": [
-      "This round is just for acceptance.",
-      "I will be arguing that Brexit was a good thing for the UK."
+      "I will be arguing that Brexit was a good thing for the UK.",
+      "All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU."
     ],
     "aspects": {},
     "sentences": "This round is just for acceptance. I will be arguing that Brexit was a good thing for the UK. All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU."
   },
   {
     "id": "climate change-01",
-    "snippet-title": "There was never enough research done on the natural causes of climate change, so we just naturally assumed it was man caused.",
+    "snippet-title": "I thank you for the debate.",
     "snippets-text": [
       "Climate change is happening, but is it man caused?",
-      "There was never enough research done on the natural causes of climate change, so we just naturally assumed it was man caused."
+      "I thank you for the debate."
     ],
     "aspects": {},
     "sentences": "Climate change is quite complicated and requires more than two minds. Climate change is happening, but is it man caused? Again, we don't know, but I have come to argue it is not. There was never enough research done on the natural causes of climate change, so we just naturally assumed it was man caused. You see where I'm going with this. It is conditional on evidence. I thank you for the debate."
@@ -268,10 +268,10 @@
   },
   {
     "id": "climate change-03",
-    "snippet-title": "Nevertheless some people think we should jail climate change deniers.",
+    "snippet-title": "1.",
     "snippets-text": [
-      "Nevertheless some people think we should jail climate change deniers.",
-      "[0] What's next jailing flat Earth people and hate speech?"
+      "It is a violation of free speech.",
+      "1."
     ],
     "aspects": {},
     "sentences": "I'm against jailing Climate change deniers. It is a violation of free speech. I also think it sets a bad precedence. I would hate to see a 15 year old teenager go to jail for running off at the mouth. Nevertheless some people think we should jail climate change deniers. [0] What's next jailing flat Earth people and hate speech? [1] 0. 1."
@@ -296,10 +296,10 @@
   },
   {
     "id": "climate change-06",
-    "snippet-title": "Also the arguments stated by Human-caused climate change deniers are pointless and not fact driven.",
+    "snippet-title": "Global Climate Change: Consensus.",
     "snippets-text": [
-      "My position on climate change is that not only do I believe in it but I believe it is man caused.",
-      "Also the arguments stated by Human-caused climate change deniers are pointless and not fact driven."
+      "97% of scientists believe that climate change is primarily human caused.",
+      "Global Climate Change: Consensus."
     ],
     "aspects": {
       "global warming": 1.0
@@ -310,7 +310,7 @@
     "id": "climate change-07",
     "snippet-title": "If need be yes.",
     "snippets-text": [
-      "There is also overwhelming scientific consensus climate change is being caused by human activity.",
+      "There are a limited number of circumstances under which free speech can be restricted.",
       "If need be yes."
     ],
     "aspects": {
@@ -320,20 +320,20 @@
   },
   {
     "id": "climate change-08",
-    "snippet-title": "I argue that this is happening because there are scientific facts to prove it.",
+    "snippet-title": "This proves that climate change is happening, but scientists are having trouble conveying the information and other data to the people of the world.",
     "snippets-text": [
-      "I argue that this is happening because there are scientific facts to prove it.",
-      "Out of 918 peer-reviewed scientific papers on this subject, 0% disagreed that climate change is happening, but in newspaper articles, 53% were unsure."
+      "Out of 918 peer-reviewed scientific papers on this subject, 0% disagreed that climate change is happening, but in newspaper articles, 53% were unsure.",
+      "This proves that climate change is happening, but scientists are having trouble conveying the information and other data to the people of the world."
     ],
     "aspects": {},
     "sentences": "Climate Change is causing the Earth to warm up measurably, and there are already signs of disaster. I argue that this is happening because there are scientific facts to prove it. Out of 918 peer-reviewed scientific papers on this subject, 0% disagreed that climate change is happening, but in newspaper articles, 53% were unsure. This proves that climate change is happening, but scientists are having trouble conveying the information and other data to the people of the world."
   },
   {
     "id": "climate change-09",
-    "snippet-title": "Because force = mass * acceleration, a constant net force of one Newton can accelerate a 1,000 kilogram car to 299,792,458 meters per second (speed of light) in 83 hours, 12 minutes [299,792,458 ms^2 / (1,000 kg * 60 s * 60 min) = 83.2 hr], but in the first hour will only bring the speed of the car to 3.6 meters per second [(60 s * 60 m) / 1,000 kg), or just over eight miles an hour.",
+    "snippet-title": "[5] 8.",
     "snippets-text": [
-      "The source has fifteen authors, but none are named Von Storch.",
-      "Because force = mass * acceleration, a constant net force of one Newton can accelerate a 1,000 kilogram car to 299,792,458 meters per second (speed of light) in 83 hours, 12 minutes [299,792,458 ms^2 / (1,000 kg * 60 s * 60 min) = 83.2 hr], but in the first hour will only bring the speed of the car to 3.6 meters per second [(60 s * 60 m) / 1,000 kg), or just over eight miles an hour."
+      "Pro argues that past climate doesn't count because we are only discussing the past century and the next century.\"",
+      "[5] 8."
     ],
     "aspects": {
       "al gore": 0.3333333333333333,
@@ -377,7 +377,7 @@
     "id": "death_penalty-03",
     "snippet-title": "So why then would we implement a law that clearly is not working?",
     "snippets-text": [
-      "Sorry about the forfeit, I have been very busy with finals.",
+      "The above link proves that inmates have been proven innocent while on death row, and sadly some have been killed and then later found innocent.",
       "So why then would we implement a law that clearly is not working?"
     ],
     "aspects": {
@@ -387,7 +387,7 @@
   },
   {
     "id": "death_penalty-04",
-    "snippet-title": "my burden of proof is to show the death penalty is used not only for the offences my opponent claims is justifiable and to show innocents can and has been convicted with the death penalty as well as prove that the death penalty is hypocritical to the laws of the state.",
+    "snippet-title": "First i will show you the outline of my case as to say that it is to prove in the hands of the government the death penalty can and has been used wrongly.",
     "snippets-text": [
       "First i will show you the outline of my case as to say that it is to prove in the hands of the government the death penalty can and has been used wrongly.",
       "my burden of proof is to show the death penalty is used not only for the offences my opponent claims is justifiable and to show innocents can and has been convicted with the death penalty as well as prove that the death penalty is hypocritical to the laws of the state."
@@ -432,10 +432,10 @@
   },
   {
     "id": "death_penalty-08",
-    "snippet-title": "But i'm not using facts or sources.",
+    "snippet-title": "The chart also documents the years 1950-2002.",
     "snippets-text": [
       "But i'm not using facts or sources.",
-      "One small but important reason on why the death penalty is a good idea is that it decreases the prisoner population, which saves even more tax payers money."
+      "The chart also documents the years 1950-2002."
     ],
     "aspects": {
       "tax": 1.0
@@ -444,7 +444,7 @@
   },
   {
     "id": "death_penalty-09",
-    "snippet-title": "If you think the Death penalty is bad because it kills people you must not know what the purpose of it is.",
+    "snippet-title": "Death penalty should exist because when someone commits a crime that's so violent the end result can cause hundreds to die.",
     "snippets-text": [
       "Death penalty should exist because when someone commits a crime that's so violent the end result can cause hundreds to die.",
       "If you think the Death penalty is bad because it kills people you must not know what the purpose of it is."
@@ -454,7 +454,7 @@
   },
   {
     "id": "death_penalty-10",
-    "snippet-title": "\"But communities would plunge into anarchy if they could not act on moral assumptions less certain than that the sun will rise in the east and set in the west.\"",
+    "snippet-title": "I would like to note that it seems like my opponent simply added some \"smart\" sounding words to buff up her argument.",
     "snippets-text": [
       "I would like to note that it seems like my opponent simply added some \"smart\" sounding words to buff up her argument.",
       "\"But communities would plunge into anarchy if they could not act on moral assumptions less certain than that the sun will rise in the east and set in the west.\""
@@ -477,7 +477,7 @@
   },
   {
     "id": "donald trump-02",
-    "snippet-title": "It is no surprise that you couldn't prove that Donald Trump would be a good president.",
+    "snippet-title": "Pro It would be difficult for anyone to prove that Donald Trump would be a good president-because he wouldn't!",
     "snippets-text": [
       "Pro It would be difficult for anyone to prove that Donald Trump would be a good president-because he wouldn't!",
       "It is no surprise that you couldn't prove that Donald Trump would be a good president."
@@ -492,7 +492,7 @@
     "snippet-title": "He said he will replace Obamacare with \"something terrific\", like what?",
     "snippets-text": [
       "He said he will replace Obamacare with \"something terrific\", like what?",
-      "When he says terrific, it may mean horrible!"
+      "He also called all women gold-diggers."
     ],
     "aspects": {
       "donald trump": 0.47619047619047616,
@@ -507,8 +507,8 @@
     "id": "donald trump-04",
     "snippet-title": "[1] The society's goals were to oppose superstition, obscurantism, religious influence over public life [2].",
     "snippets-text": [
-      "[1] The society's goals were to oppose superstition, obscurantism, religious influence over public life [2].",
-      "Donald Trump is a Presbyterianism [3] and is therefore religious."
+      "Illuminati: \"a Bavarian secret society founded in 1776, organized like the Freemasons.\"",
+      "[1] The society's goals were to oppose superstition, obscurantism, religious influence over public life [2]."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -517,10 +517,10 @@
   },
   {
     "id": "donald trump-05",
-    "snippet-title": "Sources: [1]",
+    "snippet-title": "[2] He meets the Constitutional requirement for President, therefore he is qualified.",
     "snippets-text": [
-      "Pro \" As directed by the Constitution a presidential candidate must be a natural born citizen of the United States, a resident for 14 years, and 35 years of age or older.\"",
-      "Sources: [1]"
+      "[2] Donald Trump was born in the United States, specifically in New York.",
+      "[2] He meets the Constitutional requirement for President, therefore he is qualified."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -531,8 +531,8 @@
     "id": "donald trump-06",
     "snippet-title": "Isn't the reason that Donald Trump is gaining so much support is because the conservatives and republicans in general are becoming fed up with the way the \"Good old boys, \"/ Establishment republicans, and establishment democrats, have been doing business as usual in Washington.",
     "snippets-text": [
-      "Isn't the reason that Donald Trump is gaining so much support is because the conservatives and republicans in general are becoming fed up with the way the \"Good old boys, \"/ Establishment republicans, and establishment democrats, have been doing business as usual in Washington.",
-      "Donald Trump is saying what conservatives and independents wanted to hear, but is it a businessman just doing business and saying what he thinks will sell, again, only time will provide the answer, we can only hope that Donald Trump doesn't turn out to be a spoiler and allow Hillary or some other democrat to be elected to office."
+      "In the same article its stated that Donald Trump has been a contributor to the democrat party and organizations that conservatives were against so that certainly raises the question about who Donald trump reallty is Some have suggested that Donald trump is a spoiler taking away votes that could have gone to another republican candidate running for president who is a more known conservative ruining the republicans chances of winning the White House.",
+      "Isn't the reason that Donald Trump is gaining so much support is because the conservatives and republicans in general are becoming fed up with the way the \"Good old boys, \"/ Establishment republicans, and establishment democrats, have been doing business as usual in Washington."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -541,7 +541,7 @@
   },
   {
     "id": "donald trump-07",
-    "snippet-title": "Is Donald Trump a chameleon changing to suit his purpose",
+    "snippet-title": "\"Who is this man DONALD TRUMP\" \"All the world's a stage, And all the men and women merely players; They have their exits and their entrances, And one man in his time plays many parts,...\" All The World's A Stage...William Shakespeare The trick is to find out which part Donald Trump is now playing.",
     "snippets-text": [
       "\"Who is this man DONALD TRUMP\" \"All the world's a stage, And all the men and women merely players; They have their exits and their entrances, And one man in his time plays many parts,...\" All The World's A Stage...William Shakespeare The trick is to find out which part Donald Trump is now playing.",
       "Is Donald Trump a chameleon changing to suit his purpose"
@@ -580,7 +580,7 @@
   },
   {
     "id": "donald trump-10",
-    "snippet-title": "That's an undeniable fact, but I'll get back to this issue later.",
+    "snippet-title": "However, they're also illogical.",
     "snippets-text": [
       "However, they're also illogical.",
       "That's an undeniable fact, but I'll get back to this issue later."
@@ -683,7 +683,7 @@
     "id": "feminism-07",
     "snippet-title": "I believe that it is because of these people that so many people do not like feminism.",
     "snippets-text": [
-      "Feminism is definitely something that there needs to be more of in the world.",
+      "People who say they are feminists but say women are better than men are not feminists.",
       "I believe that it is because of these people that so many people do not like feminism."
     ],
     "aspects": {
@@ -734,10 +734,10 @@
   },
   {
     "id": "google-01",
-    "snippet-title": "sounds all happy and jumpy while Gooooooooooogle sounds more like an echo in a cemetery.",
+    "snippet-title": "For all I know, the rest of them might only use Bing now!",
     "snippets-text": [
-      "sounds all happy and jumpy while Gooooooooooogle sounds more like an echo in a cemetery.",
-      "This actually bolsters my case, because it shows that 67% of people would not ever use Bing instead of Google.\""
+      "\"As for Bing sounding better than Google, I'm going to have to disagree ;).\"",
+      "For all I know, the rest of them might only use Bing now!"
     ],
     "aspects": {
       "google": 1.0
@@ -770,7 +770,7 @@
   },
   {
     "id": "google-04",
-    "snippet-title": "But, I like google best, cause on google we can search up anything, even this very website.",
+    "snippet-title": "This website is awesome but google is better.",
     "snippets-text": [
       "But, I like google best, cause on google we can search up anything, even this very website.",
       "This website is awesome but google is better."
@@ -782,10 +782,10 @@
   },
   {
     "id": "google-05",
-    "snippet-title": "Google is technically already a monopoly in Internet services, but is not an absolute monopoly where only one company controlls all the economy.",
+    "snippet-title": "Good luck to CON.",
     "snippets-text": [
-      "Google is technically already a monopoly in Internet services, but is not an absolute monopoly where only one company controlls all the economy.",
-      "I personally don't use Google or any Google services at all (including G. Translate and Maps), since I firmly disagree with the company's policy and actions."
+      "I will be taking the CON side in this debate, because I will provide evidence that Google Inc. and all other services owned/managed by Google simply can't take over the world.",
+      "Good luck to CON."
     ],
     "aspects": {
       "google": 1.0
@@ -794,10 +794,10 @@
   },
   {
     "id": "google-06",
-    "snippet-title": "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
+    "snippet-title": "Isn't that scary?",
     "snippets-text": [
       "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
-      "A guy said (i don't remember his name) \"if google buys Walmart, they can take over the world.\""
+      "Isn't that scary?"
     ],
     "aspects": {
       "google": 1.0
@@ -819,10 +819,10 @@
   },
   {
     "id": "google-08",
-    "snippet-title": "They just made a website called something different but is practically the same thing.",
+    "snippet-title": "sources: your turn...",
     "snippets-text": [
-      "They just made a website called something different but is practically the same thing.",
-      "Such as; Google translate, Google maps and many many more ( Bing on the other hand only has 23 different refined searches."
+      "Bing is just another copy cat trying to be as big as Google and it will not happen.",
+      "sources: your turn..."
     ],
     "aspects": {
       "google": 0.9285714285714286,
@@ -844,7 +844,7 @@
   },
   {
     "id": "google-10",
-    "snippet-title": "Although Microsoft has Bing Maps, which is arguably better than Google Maps, Google adds in several more services, like Google Docs, Blogsearch and News, that easily best Bing's Web services.",
+    "snippet-title": "Microsoft must remember that.",
     "snippets-text": [
       "Although Microsoft has Bing Maps, which is arguably better than Google Maps, Google adds in several more services, like Google Docs, Blogsearch and News, that easily best Bing's Web services.",
       "Microsoft must remember that."
@@ -883,10 +883,10 @@
   },
   {
     "id": "nuclear_energy-04",
-    "snippet-title": "At first glance the only disagreements I could identify were really nitpicky stuff.",
+    "snippet-title": "Can anyone, with any certainty, verify the count of every spent rod or piece of weaponry from the the Former Soviet Union, especially after the breakup of the former into 15 separate and independent nations?",
     "snippets-text": [
-      "At first glance the only disagreements I could identify were really nitpicky stuff.",
-      "Can anyone, with any certainty, verify the count of every spent rod or piece of weaponry from the the Former Soviet Union, especially after the breakup of the former into 15 separate and independent nations?"
+      "Can anyone, with any certainty, verify the count of every spent rod or piece of weaponry from the the Former Soviet Union, especially after the breakup of the former into 15 separate and independent nations?",
+      "At first glance, this seems to make perfect sense."
     ],
     "aspects": {
       "chernobyl": 0.13333333333333333,
@@ -911,10 +911,10 @@
   },
   {
     "id": "nuclear_energy-06",
-    "snippet-title": "Unless Con finds these definitions to be abusive, they are to be accepted.",
+    "snippet-title": "Additional definitions may be added as needed throughout the entire debate.",
     "snippets-text": [
-      "Unless Con finds these definitions to be abusive, they are to be accepted.",
-      "If Con finds them abusive, Con is free to present alternative definitions, but then it will be up to the voters to agree if my definitions are abusive or not."
+      "No specific resolution, just the broad subject of using nuclear energy.",
+      "Additional definitions may be added as needed throughout the entire debate."
     ],
     "aspects": {},
     "sentences": "This is going to be a simple Pro Nuclear Energy vs Con Nuclear Energy. No specific resolution, just the broad subject of using nuclear energy. Burden of Proof - The BoP falls equally on both debaters to support and defend their arguments while refuting their opponent's. For example, Con can focus on negative effects to the environment, safety issues, or better alternatives rendering Nuclear obsolete, but Con cannot just disagree with everything Pro puts up (and vise versa). I will go ahead and present some definitions. Unless Con finds these definitions to be abusive, they are to be accepted. If Con finds them abusive, Con is free to present alternative definitions, but then it will be up to the voters to agree if my definitions are abusive or not. Nuclear energy (as it pertains to this debate) - The gathering of energy from nuclear fission or nuclear fusion to use in commercial purposes (such as electricity). Nuclear fission - A nuclear reaction in which a heavy nucleus splits spontaneously or on impact with another particle, with the release of energy. [1] Nuclear fusion - A nuclear reaction in which atomic nuclei of low atomic number fuse to form a heavier nucleus with the release of energy. [2] Con may present any additional definitions that they choose and may start debating in their R1, however, they are also free to pass it back to me to start in my R2. Additional definitions may be added as needed throughout the entire debate. [1] [2]"
@@ -930,10 +930,10 @@
   },
   {
     "id": "nuclear_energy-08",
-    "snippet-title": "Thx for reading and good luck to my opponent",
+    "snippet-title": "1.",
     "snippets-text": [
-      "This source of energy creates a low impact on the environment anyway.",
-      "Thx for reading and good luck to my opponent"
+      "1.",
+      "3."
     ],
     "aspects": {
       "nuclear power": 1.0
@@ -970,10 +970,10 @@
   },
   {
     "id": "trump-02",
-    "snippet-title": "Source 2: ( Racism has a significant impact both on the individuals who experience it and the wider community.",
+    "snippet-title": "It destroys communities, causes crime, etc.. Why would you EVER support Trump?",
     "snippets-text": [
-      "Source 2: ( Racism has a significant impact both on the individuals who experience it and the wider community.",
-      "Research shows that there are significant links between experiences of racism and discrimination and poor physical and mental health, reduced productivity and reduced life expectancy."
+      "They're a threat, people to be surveilled and harassed and hated and feared.",
+      "It destroys communities, causes crime, etc.. Why would you EVER support Trump?"
     ],
     "aspects": {
       "black lives matter": 0.16666666666666666,
@@ -1008,9 +1008,9 @@
   },
   {
     "id": "trump-05",
-    "snippet-title": "I showed clear harms from racism - shattered communities, (look at Ferguson if you want proof lol) poor mental and physical health, economic downturns, etc..",
+    "snippet-title": "So since Trump will cause more terrible organizations like this to form, please vote neg - vote down Trump.",
     "snippets-text": [
-      "I showed clear harms from racism - shattered communities, (look at Ferguson if you want proof lol) poor mental and physical health, economic downturns, etc..",
+      "(...) The cold-blooded vigilante attacks on immigrants aren't a new development.",
       "So since Trump will cause more terrible organizations like this to form, please vote neg - vote down Trump."
     ],
     "aspects": {
@@ -1044,7 +1044,7 @@
   },
   {
     "id": "trump-08",
-    "snippet-title": "I think trump is life.",
+    "snippet-title": "Agree?",
     "snippets-text": [
       "I think trump is life.",
       "Agree?"
@@ -1054,10 +1054,10 @@
   },
   {
     "id": "trump-09",
-    "snippet-title": "It is also fair to say these three countries have acted unethically in a variety of ways such as human rights abuses and acting with military aggression.",
+    "snippet-title": "He would also bring in a fresh approach to politics with his say it as it is style.",
     "snippets-text": [
-      "Yes he is negative about Russia, China and Iran but it is fair to say these three states do not currently have good relations with the USA anyway, so his policy towards them is no significant change to the previous administration.",
-      "It is also fair to say these three countries have acted unethically in a variety of ways such as human rights abuses and acting with military aggression."
+      "It's fair to say they deserve some criticism.",
+      "He would also bring in a fresh approach to politics with his say it as it is style."
     ],
     "aspects": {
       "donald trump": 0.3333333333333333,
@@ -1078,10 +1078,10 @@
   },
   {
     "id": "vegan-01",
-    "snippet-title": "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
+    "snippet-title": "The foregoing are key pieces to the debate, so I hope that Pro will define his argument much better in the next post.",
     "snippets-text": [
-      "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
-      "I hold that every person should have the freedom to do what they choose, live the life they want to live, and live with the positive or negative consequences of their decisions."
+      "I hold that every person should have the freedom to do what they choose, live the life they want to live, and live with the positive or negative consequences of their decisions.",
+      "The foregoing are key pieces to the debate, so I hope that Pro will define his argument much better in the next post."
     ],
     "aspects": {
       "god": 0.125,
@@ -1131,7 +1131,7 @@
   },
   {
     "id": "vegan-05",
-    "snippet-title": "Being vegan is a luxury and wouldn't solve any problems at all.",
+    "snippet-title": "Everyone being vegan is not going to create a better society, it would just exacarbate a food shortage that is killing people around the world.",
     "snippets-text": [
       "Everyone being vegan is not going to create a better society, it would just exacarbate a food shortage that is killing people around the world.",
       "Being vegan is a luxury and wouldn't solve any problems at all."
@@ -1154,7 +1154,7 @@
   },
   {
     "id": "vegan-07",
-    "snippet-title": "Vegan is healthy, saves animals, and the planet.",
+    "snippet-title": "Why wouldn't everyone be vegan?",
     "snippets-text": [
       "Vegan is healthy, saves animals, and the planet.",
       "Why wouldn't everyone be vegan?"
@@ -1174,7 +1174,7 @@
   },
   {
     "id": "vegan-09",
-    "snippet-title": "His response to this was that vegans must seek out fortified foods (like soymilk) though he doesn't explain why this is any harder than non-vegans seeking animal milk fortified with omega-3s and/or vitamin D. Con quotes a source that said legumes, nuts and seeds don't contain B12 and omega-3s.",
+    "snippet-title": "Likewise, I have shown that plant-based foods both actively and passively work to lower the risks of these diseases.",
     "snippets-text": [
       "His response to this was that vegans must seek out fortified foods (like soymilk) though he doesn't explain why this is any harder than non-vegans seeking animal milk fortified with omega-3s and/or vitamin D. Con quotes a source that said legumes, nuts and seeds don't contain B12 and omega-3s.",
       "Likewise, I have shown that plant-based foods both actively and passively work to lower the risks of these diseases."

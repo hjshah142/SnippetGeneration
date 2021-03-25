@@ -90,6 +90,7 @@ class ArgsRank:
         Create numpy array with aij = argumentativeness of sentence j
 
 
+        :param sentences: argument premise
         :param cluster: cluster of arguments
         :return: (numpy array) teleportation marix
         """
@@ -107,7 +108,7 @@ class ArgsRank:
             row.append(value)
 
         message_embedding = []
-
+        print(len(sentences))
         for sentence_j in sentences:
             message_embedding.append(row)
 
@@ -117,30 +118,47 @@ class ArgsRank:
 
     def sem_similarty_scoring(self, clusters):
         """
-                Run biased PageRank using Universal Sentence Encoder to receive embedding.
-                Calls add add_tp_ratio() and add_syn_similarity().
-                Computes similarity to conclusion.
-                :param clusters:
-                :return:
-                """
+        Run biased PageRank using Universal Sentence Encoder to receive embedding.
+        Calls add add_tp_ratio() and add_syn_similarity().
+        Computes similarity to conclusion.
+        :param clusters:
+        :return:
+        """
+        # TODO modelling the context of argument
+        # TODO Add more similar arguments in cluster
 
         messages = []
-        print(clusters)
         for cluster in clusters:
 
             messages = cluster.sentences
-            message_embedding = [message.numpy() for message in self.embed(messages)]
+            context_text = messages + cluster.context_args
+
+            message_embedding = [message.numpy() for message in self.embed(context_text)]
+
+            print(context_text)
+            print('Sentences')
+            print(messages)
+
             sim = np.inner(message_embedding, message_embedding)
-            # sim_message = self.normalize_by_rowsum(sim)
-            matrix = self.add_tp_ratio(cluster.sentences)
-            M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
+            matrix = self.add_tp_ratio(messages)
+            shape = np.shape(matrix)
+            matrix_context = np.zeros(sim.shape)
+            matrix_context[:shape[0], :shape[1]] = matrix
+            # print(matrix.shape)
+            # print(sim)
+            # print(matrix_context.shape)
+
+            M = np.array(sim) * (1 - self.d) + np.array(matrix_context) * self.d
+
+            print(M)
 
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi('power')
             p = mc.pi
-            x = 0
 
+            print(p.shape)
+            x = 0
             if not cluster.score:
                 score_exists = False
             else:
@@ -159,9 +177,6 @@ class ArgsRank:
                             max(cluster.score) - min(cluster.score)))
             else:
                 cluster.score = [1]
-
-        # TODO modelling the context of argument
-        # TODO Add more similar arguments in cluster
 
     def generate_snippet(self, args):
 

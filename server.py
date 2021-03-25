@@ -56,7 +56,7 @@ snippet_gen_app = ArgsRank()
 snippets = get_snippets(data_snippets)
 
 
-with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
+with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w') as f:
     json.dump(snippets, f, indent=2)
 # print(snippets)
 print('snippets generated File is created ')
