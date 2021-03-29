@@ -30,7 +30,7 @@ class ArgsRank:
                                   "unless", "except", "apart from", "as long as", "if", "whereas", "instead of",
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
-        self.d = 0.15  # TODO: Figure out the best value for this param..
+        self.d = 1  # TODO: Figure out the best value for this param..
         self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -91,14 +91,13 @@ class ArgsRank:
 
 
         :param sentences: argument premise
-        :param cluster: cluster of arguments
         :return: (numpy array) teleportation marix
         """
         # TODO research for other methods
         row = []
 
         for idx, sentence_j in enumerate(sentences):
-            value = 1.0
+            value = 0.00001
             for marker in self.discourse_markers:
                 if marker in sentence_j.lower():
                     value += 1
@@ -131,7 +130,7 @@ class ArgsRank:
         for cluster in clusters:
 
             messages = cluster.sentences
-            context_text = messages + cluster.context_args
+            context_text = messages
 
             message_embedding = [message.numpy() for message in self.embed(context_text)]
 
@@ -145,12 +144,12 @@ class ArgsRank:
             matrix_context = np.zeros(sim.shape)
             matrix_context[:shape[0], :shape[1]] = matrix
             # print(matrix.shape)
-            # print(sim)
-            # print(matrix_context.shape)
+            print("Argumentative Score")
+            print(matrix_context)
 
             M = np.array(sim) * (1 - self.d) + np.array(matrix_context) * self.d
 
-            print(M)
+            # print(M)
 
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
