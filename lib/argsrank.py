@@ -30,7 +30,7 @@ class ArgsRank:
                                   "unless", "except", "apart from", "as long as", "if", "whereas", "instead of",
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
-        self.d = 1  # TODO: Figure out the best value for this param..
+        self.d = 0.15  # TODO: Figure out the best value for this param..
         self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -85,31 +85,30 @@ class ArgsRank:
         # plot_similarity(messages_, message_embeddings_, 0)
         return message_embeddings_
 
-    def add_tp_ratio(self, sentences):
+    def add_tp_ratio(self, cluster):
         """
         Create numpy array with aij = argumentativeness of sentence j
-
-
-        :param sentences: argument premise
+        :param cluster: cluster of arguments
         :return: (numpy array) teleportation marix
         """
-        # TODO research for other methods
+
         row = []
 
-        for idx, sentence_j in enumerate(sentences):
-            value = 0.00001
-            for marker in self.discourse_markers:
-                if marker in sentence_j.lower():
+        for argument_j in cluster:
+            for idx, sentence_j in enumerate(argument_j):
+                value = 1.0
+                for marker in self.discourse_markers:
+                    if marker in sentence_j.lower():
+                        value += 1
+                if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
                     value += 1
-            if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
-                value += 1
 
-            row.append(value)
+                row.append(value)
 
         message_embedding = []
-        print(len(sentences))
-        for sentence_j in sentences:
-            message_embedding.append(row)
+        for argument in cluster:
+            for sentence in argument:
+                message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
         message_embedding = self.normalize_by_rowsum(message_embedding)
@@ -125,64 +124,54 @@ class ArgsRank:
         """
         # TODO modelling the context of argument
         # TODO Add more similar arguments in cluster
-
         messages = []
-        for cluster in clusters:
-
-            messages = cluster.sentences
-            context_text = messages
-
-            message_embedding = [message.numpy() for message in self.embed(context_text)]
-
-            print(context_text)
-            print('Sentences')
+        for idx, cluster in enumerate(clusters):
+            messages = []
+            for argument in cluster:
+                messages = messages + argument.sentences
             print(messages)
 
+            message_embedding = [message.numpy() for message in self.embed(
+                messages)]  # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+
             sim = np.inner(message_embedding, message_embedding)
-            matrix = self.add_tp_ratio(messages)
-            shape = np.shape(matrix)
-            matrix_context = np.zeros(sim.shape)
-            matrix_context[:shape[0], :shape[1]] = matrix
-            # print(matrix.shape)
-            print("Argumentative Score")
-            print(matrix_context)
-
-            M = np.array(sim) * (1 - self.d) + np.array(matrix_context) * self.d
-
-            # print(M)
+            # sim_message = self.normalize_by_rowsum(sim)
+            matrix = self.add_tp_ratio(cluster)
+            M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
 
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi('power')
             p = mc.pi
 
-            print(p.shape)
             x = 0
-            if not cluster.score:
-                score_exists = False
-            else:
-                score_exists = True
-            for j in range(len(cluster.sentences)):
-                if score_exists:
-                    cluster.score[j] += p[x]
-                    cluster.score[j] = cluster.score[j]
-
+            for i in range(len(cluster)):
+                if not cluster[i].score:
+                    score_exists = False
                 else:
-                    cluster.score.append(p[x])
-                x += 1
-            if len(cluster.score) > 1:
-                cluster.score = list(
-                    (cluster.score - min(cluster.score)) / (
-                            max(cluster.score) - min(cluster.score)))
-            else:
-                cluster.score = [1]
+                    score_exists = True
+                for j in range(len(cluster[i].sentences)):
+                    if score_exists:
+                        cluster[i].score[j] += p[x]
+                        cluster[i].score[j] = cluster[i].score[j]
+
+                    else:
+                        cluster[i].score.append(p[x])
+                    x += 1
+                if (len(cluster[i].score) > 1):
+                    cluster[i].score = list(
+                        (cluster[i].score - min(cluster[i].score)) / (
+                                max(cluster[i].score) - min(cluster[i].score)))
+                else:
+                    cluster[i].score = [1]
 
     def generate_snippet(self, args):
 
         output = []
 
         self.sem_similarty_scoring(args)
-        for arg in args:
+        for arguments in args:
+            arg = arguments[0]
             arg_snippet = {}
 
             # processing snippet title

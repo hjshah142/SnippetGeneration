@@ -25,7 +25,7 @@ data_snippets = json.load(open(os.path.join(script_dir, "data/snippets.txt")))
 
 
 def get_snippets(json_arguments):
-    cluster = []
+    clusters = []
     # json.loads(json_arguments, encoding='latin1')
 
     for argument in json_arguments:
@@ -38,17 +38,20 @@ def get_snippets(json_arguments):
         # Argument Text
         arg.context = argument["query"]
         arg.set_sentences(argument_text)
-        context_ids, context_args = ContextModelling().get_similar_args(arg.context, arg.id)
+        context_ids, context_args = ContextModelling().get_similar_args(arg)
         # print(context_ids, "      ", context_args)
-        arg.context_args = context_args
         # print(arg.context_args)
         # print(arg.aspects)
         # print(arg.sentences)
-        cluster.append(arg)
-    print(len(cluster))
-    # print(cluster)
+        # print(context_args)
+        arg_cluster = context_args
+        #arg_cluster = arg_cluster.insert(0,arg)
+        # print(len(arg_cluster))
+        clusters.append(arg_cluster)
+    print(len(clusters))
+    print(clusters)
     print('generated snippets...')
-    snippets = snippet_gen_app.generate_snippet(cluster)
+    snippets = snippet_gen_app.generate_snippet(clusters)
     return snippets
 
 

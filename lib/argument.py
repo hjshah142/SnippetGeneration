@@ -6,7 +6,7 @@ import re
 
 class Argument:
 
-    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None, context_args=None):
+    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None):
         """
         Object representation of the args.me corpus.
         Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein. Data Acquisition for Argument Search: The args.me corpus. In 42nd German Conference on Artificial Intelligence (KI 2019), September 2019. Springer.
@@ -27,8 +27,6 @@ class Argument:
         self.conclusion = conclusion
         self.sentences = []
         self.score = []
-        self.context_args = context_args
-
         if premises != None:
             self.set_sentences(premises)
         # cluster_map= { 1: ['Argument 1','Argument 2'] }
@@ -52,7 +50,7 @@ class Argument:
         # Remove sentences that are less than 3 words length
         # return none if words are less than 3
         # TODO to handle  if words are less than 3
-        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 0]
+        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 1]
         # self.sentences = self.sentences + self.context_args
 
     @classmethod
