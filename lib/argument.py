@@ -50,8 +50,8 @@ class Argument:
         # Remove sentences that are less than 3 words length
         # return none if words are less than 3
         # TODO to handle  if words are less than 3
-        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 1]
-        # self.sentences = self.sentences + self.context_args
+        self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 2]
+
 
     @classmethod
     def from_json(cls, data, cluster_map=None):

@@ -19,7 +19,7 @@ class ArgsRank:
 
         self.discourse_markers = ["for example", "such as", "for instance", "in the case of", "as revealed by",
                                   "illustrated by",
-                                  "because", "so", "therefore", "thus", "consequently", "hence", "similariy",
+                                  "because", "so", "therefore", "thus", "consequently", "hence", "similarly",
                                   "likewise",
                                   "as with",
                                   "like", "equally", "in the same way", "first", "second ",
@@ -89,13 +89,14 @@ class ArgsRank:
         """
         Create numpy array with aij = argumentativeness of sentence j
         :param cluster: cluster of arguments
-        :return: (numpy array) teleportation marix
+        :return: (numpy array) teleportation matrix
         """
 
         row = []
-
+        print(len(cluster))
         for argument_j in cluster:
-            for idx, sentence_j in enumerate(argument_j):
+            print(len(argument_j.sentences))
+            for idx, sentence_j in enumerate(argument_j.sentences):
                 value = 1.0
                 for marker in self.discourse_markers:
                     if marker in sentence_j.lower():
@@ -107,7 +108,7 @@ class ArgsRank:
 
         message_embedding = []
         for argument in cluster:
-            for sentence in argument:
+            for sentence in argument.sentences:
                 message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
@@ -129,20 +130,22 @@ class ArgsRank:
             messages = []
             for argument in cluster:
                 messages = messages + argument.sentences
-            print(messages)
+            # messages = cluster[0].sentences
+            print(len(messages))
 
-            message_embedding = [message.numpy() for message in self.embed(
-                messages)]  # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+            message_embedding = [message.numpy() for message in self.embed(messages)]
+            # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
 
             sim = np.inner(message_embedding, message_embedding)
-            # sim_message = self.normalize_by_rowsum(sim)
+            sim_message = self.normalize_by_rowsum(sim)
             matrix = self.add_tp_ratio(cluster)
             M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
-
+            print("M", M)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi('power')
             p = mc.pi
+            print("P", p)
 
             x = 0
             for i in range(len(cluster)):
@@ -173,7 +176,7 @@ class ArgsRank:
         for arguments in args:
             arg = arguments[0]
             arg_snippet = {}
-
+            print(arg.id)
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)
@@ -182,17 +185,6 @@ class ArgsRank:
 
             # processing snippet body
             snippet_body_sentences = arg.get_topK(2).tolist()
-
-            # snippet_body = []
-            """
-             sentence in snippet_body_sentences:
-                try:
-                    sentence_span = self.find_span(arg_text, sentence)
-                    snippet_body.append({'span': sentence_span, 'text': sentence})
-                except Exception as e:
-                    print('Exection in sem_similarity score')
-                    #self.flask_app.logger.error(str(e))
-            """
             arg_snippet['snippets-text'] = snippet_body_sentences
             arg_snippet['aspects'] = arg.aspects
             arg_snippet['sentences'] = arg.premises

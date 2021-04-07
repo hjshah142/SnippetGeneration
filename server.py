@@ -17,26 +17,22 @@ with open(os.path.join(script_dir, "data/arguments.txt"), 'w', encoding='utf-8')
 
 """
 script_dir = os.path.dirname(__file__)
-stored_snippets = json.load(open(os.path.join(script_dir, "data/arguments.txt")))
-data_snippets = json.load(open(os.path.join(script_dir, "data/snippets.txt")))
-
-
-# print(len(stored_snippets))
+stored_snippets = json.load(open(os.path.join(script_dir, "data/arguments.txt")), encoding='utf-8')
+data_snippets = json.load(open(os.path.join(script_dir, "data/snippets.txt")), encoding='utf-8')
 
 
 def get_snippets(json_arguments):
-    clusters = []
     # json.loads(json_arguments, encoding='latin1')
-
-    for argument in json_arguments:
+    clusters = []
+    for arguments in json_arguments:
         # print(argument["sentences"])
         arg = Argument()
-        argument_text = " ".join(argument["sentences"])
+        argument_text = " ".join(arguments["sentences"])
         arg.premises = argument_text
-        arg.id = argument["arg_id"]
+        arg.id = arguments["arg_id"]
         arg.aspects = AspectsDetection().get_aspects(argument_text)
         # Argument Text
-        arg.context = argument["query"]
+        arg.context = arguments["query"]
         arg.set_sentences(argument_text)
         context_ids, context_args = ContextModelling().get_similar_args(arg)
         # print(context_ids, "      ", context_args)
@@ -45,21 +41,27 @@ def get_snippets(json_arguments):
         # print(arg.sentences)
         # print(context_args)
         arg_cluster = context_args
-        #arg_cluster = arg_cluster.insert(0,arg)
+        # arg_cluster = arg_cluster.insert(0,arg)
         # print(len(arg_cluster))
         clusters.append(arg_cluster)
     print(len(clusters))
     print(clusters)
     print('generated snippets...')
+    snippet_gen_app = ArgsRank()
     snippets = snippet_gen_app.generate_snippet(clusters)
     return snippets
 
 
-snippet_gen_app = ArgsRank()
+# removing arguments with sentences less then 3
+print(len(data_snippets))
+for argument in data_snippets:
+    if len(argument['sentences']) < 3:
+        data_snippets.remove(argument)
+print(len(data_snippets))
+
 snippets = get_snippets(data_snippets)
 
-
-with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w') as f:
+with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
     json.dump(snippets, f, indent=2)
 # print(snippets)
 print('snippets generated File is created ')
