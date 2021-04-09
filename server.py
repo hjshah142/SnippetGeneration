@@ -44,7 +44,7 @@ def get_snippets(json_arguments):
         # arg_cluster = arg_cluster.insert(0,arg)
         # print(len(arg_cluster))
         clusters.append(arg_cluster)
-    print(len(clusters))
+    # print(len(clusters))
     print(clusters)
     print('generated snippets...')
     snippet_gen_app = ArgsRank()
@@ -54,12 +54,19 @@ def get_snippets(json_arguments):
 
 # removing arguments with sentences less then 3
 print(len(data_snippets))
+count = 0
+data_snippets_filtered = []
 for argument in data_snippets:
-    if len(argument['sentences']) < 3:
-        data_snippets.remove(argument)
-print(len(data_snippets))
 
-snippets = get_snippets(data_snippets)
+    # print(argument['sentences'])
+    if len(argument['sentences']) > 2:
+        data_snippets_filtered.append(argument)
+        count = count + 1
+
+print(count)
+# print(len(data_snippets_filtered))
+
+snippets = get_snippets(data_snippets_filtered)
 
 with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
     json.dump(snippets, f, indent=2)

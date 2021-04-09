@@ -17,6 +17,6 @@ class ContextModelling:
                 args_ids.append(args['arg_id'])
                 context_arg = Argument()
                 context_arg.set_sentences(" ".join(args["sentences"]))
-                # context_args.append(context_arg)
+                #context_args.append(context_arg)
         # print(context_args)
         return args_ids, context_args

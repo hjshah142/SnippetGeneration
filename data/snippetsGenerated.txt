@@ -259,15 +259,6 @@
     "sentences": "I'm against jailing Climate change deniers. It is a violation of free speech. I also think it sets a bad precedence. I would hate to see a 15 year old teenager go to jail for running off at the mouth. Nevertheless some people think we should jail climate change deniers. [0] What's next jailing flat Earth people and hate speech? [1] 0. 1."
   },
   {
-    "id": "climate change-05",
-    "snippet-title": "Acting to `mitigate' climate change will cost a fortune.",
-    "snippets-text": [
-      "Acting to `mitigate' climate change will cost a fortune."
-    ],
-    "aspects": {},
-    "sentences": "Acting to `mitigate' climate change will cost a fortune."
-  },
-  {
     "id": "climate change-06",
     "snippet-title": "My position on climate change is that not only do I believe in it but I believe it is man caused.",
     "snippets-text": [
@@ -684,18 +675,6 @@
     "sentences": "\"Google gets an average of 188 Million visitors a day. Bing gets a measly 60 million a day. If Bing is better than Google, how come Google gets more visitors?\" Just because Google gets more visitors, that doesn't mean it's necessarily better! Google has just been around longer, so Bing is starting to catch up. \"As for Bing sounding better than Google, I'm going to have to disagree ;).\" Think about it. The word Bing! sounds all happy and jumpy while Gooooooooooogle sounds more like an echo in a cemetery. \"Con said \"33% of Google users saying they'd be using Bing more often after taking part in the tests.\" This actually bolsters my case, because it shows that 67% of people would not ever use Bing instead of Google.\" It doesn't show that 67% of people will never ever use Bing instead of Google, on the website where I got my info, it didn't say anything about the rest of the people liking Google better than Bing. For all I know, the rest of them might only use Bing now!"
   },
   {
-    "id": "google-03",
-    "snippet-title": "Hmmmmm... logical contradiction If google is reliable: Then it says it is unreliable and if we trust it then we know it is not reliable If google is not reliable: I win the debate",
-    "snippets-text": [
-      "Google said it is unreliable.",
-      "Hmmmmm... logical contradiction If google is reliable: Then it says it is unreliable and if we trust it then we know it is not reliable If google is not reliable: I win the debate"
-    ],
-    "aspects": {
-      "google": 1.0
-    },
-    "sentences": "Google said it is unreliable. Hmmmmm... logical contradiction If google is reliable: Then it says it is unreliable and if we trust it then we know it is not reliable If google is not reliable: I win the debate"
-  },
-  {
     "id": "google-04",
     "snippet-title": "But, I like google best, cause on google we can search up anything, even this very website.",
     "snippets-text": [
@@ -782,15 +761,6 @@
     "sentences": "Well you see,when it comes to Web services that go beyond simple search, it's hard to bet against Google. Although Microsoft has Bing Maps, which is arguably better than Google Maps, Google adds in several more services, like Google Docs, Blogsearch and News, that easily best Bing's Web services. And until Bing comes up with a StreetView-like service, it will have a hard time attracting those who want to use Google Maps to find out what a particular location looks like. High-quality Web services mean quite a bit in the search space. Microsoft must remember that."
   },
   {
-    "id": "nuclear_energy-02",
-    "snippet-title": ": Nuclear energy detracts resources from superior renewable energy",
-    "snippets-text": [
-      ": Nuclear energy detracts resources from superior renewable energy"
-    ],
-    "aspects": {},
-    "sentences": ": Nuclear energy detracts resources from superior renewable energy"
-  },
-  {
     "id": "nuclear_energy-04",
     "snippet-title": "My opponent has demonstrated that nuclear energy does indeed exceed the effectiveness of fossil fuels.",
     "snippets-text": [
@@ -830,15 +800,6 @@
       "nuclear power": 1.0
     },
     "sentences": "1. Nuclear energy is a good source of energy, if not the best. It creates jobs, more power than many other sources, and has some of the lowest impacts on the environment. Nuclear waste will soon not be an issue due to the rapidly advancing space elevator rt.comnewslunar-space-elevator-2020-646 Sources support it. Getting rid of nuclear waste could be a great way to use this new, great idea. This source of energy creates a low impact on the environment anyway. After refilling a nuclear reactor with more Uranium, the refill can last for years, even decades. Not to mention that Fusion reactions are rapidly coming to a commercial scale for nuclear power plants and with more investment this could make nuclear energy the dominant source of power 2. Nuclear energy requires little space for a large amount of electricity. rt.comnewslunar-space-elevator-2020-646 I realize this is the U.K. and not the U.S., but the U.K. doesn't need near as much energy as the U.S. and therefore can cope to the fact that they have less land. 3. Building a nuclear power plant creates jobs I realize that building a power plant requires time, but time means jobs, which we need. So this also benefits the economy. Thx for reading and good luck to my opponent"
-  },
-  {
-    "id": "nuclear_energy-10",
-    "snippet-title": ": General statements of support for nuclear energy",
-    "snippets-text": [
-      ": General statements of support for nuclear energy"
-    ],
-    "aspects": {},
-    "sentences": ": General statements of support for nuclear energy"
   },
   {
     "id": "trump-01",
@@ -892,17 +853,6 @@
       "racism": 0.5
     },
     "sentences": "First of all, I support O'Malley, but that isn't important. It looks like this debate comes down to Trump's stance on immigration. I showed clear harms from racism - shattered communities, (look at Ferguson if you want proof lol) poor mental and physical health, economic downturns, etc.. If Trump becomes president and embraces racism, all these impacts will go nationwide. My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg. And I showed clear evidence of that, but if you want more, here's how illegal immigrants are treated. Source 3: ( These Minutemen inspired by rightwing Republican Pat Buchanan's claim that urgent action is needed to preserve the U.S. as an ethnically white, Christian-European nation. (...) The cold-blooded vigilante attacks on immigrants aren't a new development. Ranchers in Arizona have killed undocumented immigrants for years. They have terrorized them, hunted them down with dogs, and handed them over to the Border Patrol at gunpoint. (...) they have developed deep ties with powerful forces high in the government\"and are operating in the era where any paranoid appeal for more security quickly gets official backing and a public hearing. (...) Mile by mile, walls and barbed wire have cut off Mexico from the United States, forcing more and more immigrants to cross over in the dangerous desolate stretches of border in Arizona. It has created an intense conflict zone, as desperate immigrant workers try to cross and survive, and an intensified government crackdown hunts them through the dry hills to trap them, capture them, (...) this reactionary Minuteman movement has emerged to demand even more extreme and violent actions against the immigrants. They have criticized the proposals made by President Bush and Mexico's President Vicente Fox to create a legal program for bringing Mexican immigrants into the U.S.. So these Minutemen kill and hunt down not only illegal immigrants, but also innocent Americans. Clearly more anti immigration laws will simply fuel more racism, and the death of innocent people. So since Trump will cause more terrible organizations like this to form, please vote neg - vote down Trump."
-  },
-  {
-    "id": "trump-07",
-    "snippet-title": "If elected, Donald Trump will be the greatest president of all time.",
-    "snippets-text": [
-      "If elected, Donald Trump will be the greatest president of all time."
-    ],
-    "aspects": {
-      "donald trump": 1.0
-    },
-    "sentences": "If elected, Donald Trump will be the greatest president of all time."
   },
   {
     "id": "trump-09",

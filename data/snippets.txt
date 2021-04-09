@@ -1796,6 +1796,15 @@
     ]
   },
   {
+    "topic": "trump ",
+    "query": "trump",
+    "arg_id": "trump-03",
+    "sentences": [
+      "trump sucks"
+    ],
+    "snippet": []
+  },
+  {
     "topic": "Trump",
     "query": "trump",
     "arg_id": "trump-04",
