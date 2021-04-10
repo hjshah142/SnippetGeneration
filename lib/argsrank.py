@@ -143,8 +143,9 @@ class ArgsRank:
             print("M", M)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
-            mc.computePi('power')
+            mc.computePi(method='eigen')
             p = mc.pi
+
             print("P", p)
 
             x = 0
