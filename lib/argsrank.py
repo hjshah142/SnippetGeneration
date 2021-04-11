@@ -50,7 +50,6 @@ class ArgsRank:
     def power_method(self, M, epsilon):
         """
         Apply power methode to calculate stationary distribution for Matrix M
-
         :param M: numpy matrix
         :param epsilon:
         :return:

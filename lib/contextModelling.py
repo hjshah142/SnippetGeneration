@@ -15,13 +15,13 @@ class ContextModelling:
     def get_similar_args(self, arg):
 
         args_ids = []
-        context_args = [arg]
+        context_args = []
         for args in self.context_data:
             if args['query'] == arg.context and args['arg_id'] != arg.id:
                 args_ids.append(args['arg_id'])
                 context_arg = Argument()
                 context_arg.set_sentences(" ".join(args["sentences"]))
-                # context_args.append(context_arg)
+                context_args.append(context_arg)
         # print(context_args)
         return args_ids, context_args
 
@@ -30,10 +30,10 @@ class ContextModelling:
 
         # take first 50 arguments
         argument_similar_ids_list = list(arg_id_score.keys())
-        if len(argument_similar_ids_list) <= 50:
+        if len(argument_similar_ids_list) <= 100:
             argument_similar_ids_top = argument_similar_ids_list
         else:
-            argument_similar_ids_top = argument_similar_ids_list[:50]
+            argument_similar_ids_top = argument_similar_ids_list[:100]
             # print(type(argument_similar_ids_top))
         print(len(argument_similar_ids_top))
         ArgumentativeText_args = []
@@ -84,5 +84,5 @@ class ContextModelling:
         argument_similar_ids_count = len(arg_id_score)
         print(argument_similar_ids_count)
         ArgumentativeText_args = self.retrieve_argumentative_texts(arg_id_score, context_args)
-        
+
         return ArgumentativeText_args

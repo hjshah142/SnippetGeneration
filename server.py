@@ -11,7 +11,6 @@ json_argument = {"arguments":
   "text": "The Supreme Court decided that states can not outlaw abortion because Prohibiting abortion is a crime.},
 {"id": "1",
 "text": "In 2011 there were about 730,322 abortions reported to the centers for disease control."}]}
-
 with open(os.path.join(script_dir, "data/arguments.txt"), 'w', encoding='utf-8') as f:
     json.dump(json_argument, f, ensure_ascii=False, indent=2)
 """
@@ -36,15 +35,16 @@ def get_snippets(json_arguments):
         # Argument Text
         arg.context = arguments["query"]
         arg.set_sentences(argument_text)
-        context_ids, context_args = ContextModelling().get_similar_args(arg)
+
         argumentative_text = ContextModelling().get_argumentative_text_args(arg.aspects, arg)
-        print(argumentative_text)
+        context_ids, context_args = ContextModelling().get_similar_args(arg)
+        # print(argumentative_text)
         # print(arg.context_args)
         # print(arg.aspects)
         # print(arg.sentences)
         # print(context_args)
         # arg_cluster = context_args
-        arg_cluster = argumentative_text
+        arg_cluster = argumentative_text + context_args
         # arg_cluster = arg_cluster.insert(0,arg)
         # print(len(arg_cluster))
         clusters.append(arg_cluster)
