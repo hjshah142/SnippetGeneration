@@ -3,8 +3,8 @@
     "id": "abortion-01",
     "snippet-title": "Women who already had abortion earlier in there life time have abortion again.",
     "snippets-text": [
-      "Women who already had abortion earlier in there life time have abortion again.",
-      "By the 12th week of pregnancies 88.7% of women have abortion."
+      "There are about 1.7% of abortion of women's ages from 15-44 each year.",
+      "Women who already had abortion earlier in there life time have abortion again."
     ],
     "aspects": {
       "abortion": 0.5,
@@ -17,7 +17,7 @@
     "snippet-title": "Abortion is wrong!",
     "snippets-text": [
       "Abortion is wrong!",
-      "Abortion is MURDER!!!"
+      "Abortion is MURDER!!!!"
     ],
     "aspects": {
       "abortion": 1.0
@@ -26,9 +26,9 @@
   },
   {
     "id": "abortion-03",
-    "snippet-title": "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
+    "snippet-title": "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain.",
     "snippets-text": [
-      "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
+      "The definition of abortion is the deliberate termination of a human pregnancy, most often performed during the first 28 weeks.",
       "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain."
     ],
     "aspects": {
@@ -42,8 +42,8 @@
     "id": "abortion-04",
     "snippet-title": "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
     "snippets-text": [
-      "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
-      "The most important argument against abortion would be- can we choose to kill unwanted pregnancies?"
+      "Getting an abortion is periodically wrong and no women should even think of it.",
+      "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong."
     ],
     "aspects": {
       "abortion": 0.7142857142857143,
@@ -55,10 +55,10 @@
   },
   {
     "id": "abortion-05",
-    "snippet-title": "In other words, it would be okay to abort in the first three months, BUT abortion, according to Pro, is the same as not getting pregnant!",
+    "snippet-title": "What this means is that: 1) Abortion is proposed as a singular type 2) However, according to my opponent, there is a difference in the morality/ethics of abortion, varying based on the time of incubation (meaning that there are two types of abortion) 3) Not getting pregnant is a singular type 4) My opponent judged that abortion is (ethically/morally) the equivalent not getting pregnant in the first place, despite there being black-and-white differences (i.e. singular term) in regards to the abortion in question C) Therefore, my opponent has to keep the morality/ethics of abortion either wrong or \"okay\" (due to the construction of the resolution requiring abortion to equal not getting pregnant), yet my opponent has argued that the ethics/morality of abortion varies!",
     "snippets-text": [
       "In other words, it would be okay to abort in the first three months, BUT abortion, according to Pro, is the same as not getting pregnant!",
-      "singular term) in regards to the abortion in question C) Therefore, my opponent has to keep the morality/ethics of abortion either wrong or \"okay\" (due to the construction of the resolution requiring abortion to equal not getting pregnant), yet my opponent has argued that the ethics/morality of abortion varies!"
+      "What this means is that: 1) Abortion is proposed as a singular type 2) However, according to my opponent, there is a difference in the morality/ethics of abortion, varying based on the time of incubation (meaning that there are two types of abortion) 3) Not getting pregnant is a singular type 4) My opponent judged that abortion is (ethically/morally) the equivalent not getting pregnant in the first place, despite there being black-and-white differences (i.e. singular term) in regards to the abortion in question C) Therefore, my opponent has to keep the morality/ethics of abortion either wrong or \"okay\" (due to the construction of the resolution requiring abortion to equal not getting pregnant), yet my opponent has argued that the ethics/morality of abortion varies!"
     ],
     "aspects": {
       "abortion": 1.0
@@ -67,10 +67,10 @@
   },
   {
     "id": "abortion-06",
-    "snippet-title": "Abortion is the ending of pregnancy by the removal or forcing out from the womb of a fetus or embryo before it is able to survive on its own.",
+    "snippet-title": "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood.",
     "snippets-text": [
-      "Abortion is the ending of pregnancy by the removal or forcing out from the womb of a fetus or embryo before it is able to survive on its own.",
-      "The two main groups involved in the abortion debate are the self-described \"pro-choice\" movement (emphasizing the right of women to choose whether to abort a pregnancy or to grow it to term) and the self-described \"pro-life\" movement (emphasizing the right of the embryo or fetus to gestate and be born)."
+      "The two main groups involved in the abortion debate are the self-described \"pro-choice\" movement (emphasizing the right of women to choose whether to abort a pregnancy or to grow it to term) and the self-described \"pro-life\" movement (emphasizing the right of the embryo or fetus to gestate and be born).",
+      "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood."
     ],
     "aspects": {
       "abortion": 0.8461538461538461,
@@ -119,10 +119,10 @@
   },
   {
     "id": "abortion-10",
-    "snippet-title": "One reason for the legalisation of abortion is that if abortion became illegal, it would lead to a lot of `backstreet' abortions.",
+    "snippet-title": "The first reason that deems that abortion should be illegal is due to the fact that abortion is considered immoral.",
     "snippets-text": [
       "The first reason that deems that abortion should be illegal is due to the fact that abortion is considered immoral.",
-      "One reason for the legalisation of abortion is that if abortion became illegal, it would lead to a lot of `backstreet' abortions."
+      "Another reason that abortion should be illegal is due to the fact that there is no such thing as an unwanted child."
     ],
     "aspects": {
       "abortion": 0.8529411764705882,
@@ -223,7 +223,7 @@
     "snippet-title": "Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit).",
     "snippets-text": [
       "Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit).",
-      "Deals can be made but will probably not be as good as it was before Brexit."
+      "Brexit makes it harder for UK to trade with EU."
     ],
     "aspects": {},
     "sentences": "It's an honour, Envisage. Yes, this debate format is nice, but a little bit tight, if you know what I mean? Brexit's Disadvantages: Most Foreign Direct Investment comes from the EU. UK's FDI is worth 1 trillion [1]. Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit). Brexit makes it harder for UK to trade with EU. Deals can be made but will probably not be as good as it was before Brexit. Thus, investors look elsewhere than UK. UK loses a varied amount of FDI. Graph: Any deals made, is likely to be complicated. The leaders of the EU have already said that in order for UK to access the single market, it must allow free movement of EU workers (for them to easily immigrate to the UK). [2] Brexit means EU workers may not meet requirements for working in the UK, especially filling out the infamous UK visa test for non-EU citizens. About 3/4 of EU workers would fail this test, those in the primary and secondary sector (farming, hotel staff etc.). [3] It's not just a problem of foreign workers. It's also the UK's own workforce, which relies on the EU as well. Being out of the EU means British workers need to apply for a work visa to work abroad. [4] Sources: [1] [2] [3] [4] That's it for now, due to space, and that I have to refute Con's arguments, as well as refute his rebuttals. (small ad: fanfics are being revived in the Entertainment section. Come check them out!)"
@@ -320,8 +320,8 @@
     "id": "death_penalty-02",
     "snippet-title": "If the death penalty was not in place, this would give investigators the time necessary to realize and declare the person innocent instead of just killing them.",
     "snippets-text": [
-      "A study has shown that death penalty plays virtually no role in deterring criminals.",
-      "If the death penalty was not in place, this would give investigators the time necessary to realize and declare the person innocent instead of just killing them."
+      "If the death penalty was not in place, this would give investigators the time necessary to realize and declare the person innocent instead of just killing them.",
+      "Frankly, I see absolutely no benefits of the death penalty."
     ],
     "aspects": {
       "capital punishment": 1.0
@@ -432,10 +432,10 @@
   },
   {
     "id": "donald trump-03",
-    "snippet-title": "Donald trump would be a bad candidate.",
+    "snippet-title": "Trying to get Mexico to pay for the wall would put 2 million jobs at risk.",
     "snippets-text": [
-      "Donald trump would be a bad candidate.",
-      "If you take a look at the Republicans' political experience, Donald Trump is one of the few that has none."
+      "Mexican President Vicente Fox said multiple times \"he would not pay for that f--ing wall.\"",
+      "Trying to get Mexico to pay for the wall would put 2 million jobs at risk."
     ],
     "aspects": {
       "donald trump": 0.47619047619047616,
@@ -498,10 +498,10 @@
   },
   {
     "id": "donald trump-08",
-    "snippet-title": "Donald Trump is a successful businessman, right?",
+    "snippet-title": "In closing, we as a union should not vote for Donald Trump.",
     "snippets-text": [
-      "Donald Trump is a successful businessman, right?",
-      "I've done some research and found that Donald Trump has some unstable qualities."
+      "I've done some research and found that Donald Trump has some unstable qualities.",
+      "In closing, we as a union should not vote for Donald Trump."
     ],
     "aspects": {
       "donald trump": 0.8,
@@ -523,10 +523,10 @@
   },
   {
     "id": "donald trump-10",
-    "snippet-title": "Donald Trump Is not anti-Islam.",
+    "snippet-title": "There's no reason to suspect that he would suddenly become bad at getting his way when faced with leaders of foreign countries.",
     "snippets-text": [
-      "Donald Trump Is not anti-Islam.",
-      "His goal now isn't to make money, but to better the lives of the American People Now that the myths are out of the way, I'd like to outline why I think Donald Trump would be a good president."
+      "Thus, the claim that Donald Trump is anti-immigration does not have any supporting evidence.",
+      "There's no reason to suspect that he would suddenly become bad at getting his way when faced with leaders of foreign countries."
     ],
     "aspects": {
       "cult": 0.03125,
@@ -594,7 +594,7 @@
   },
   {
     "id": "feminism-05",
-    "snippet-title": "Feminism is a threat to society.",
+    "snippet-title": "Feminism encourages false rape accusations and stereotyping men as bad.",
     "snippets-text": [
       "Feminism is a threat to society.",
       "Feminism encourages false rape accusations and stereotyping men as bad."
@@ -610,8 +610,8 @@
     "id": "feminism-06",
     "snippet-title": "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality.",
     "snippets-text": [
-      "Feminism Has NO gender.",
-      "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality."
+      "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality.",
+      "And Feminism has no gender, Nor Negative attributes."
     ],
     "aspects": {
       "feminism": 0.5833333333333334,
@@ -624,9 +624,9 @@
   },
   {
     "id": "feminism-07",
-    "snippet-title": "Feminism is definitely something that there needs to be more of in the world.",
+    "snippet-title": "I believe that it is because of these people that so many people do not like feminism.",
     "snippets-text": [
-      "Feminism is definitely something that there needs to be more of in the world.",
+      "Feminists just want to have equal rights, not overpower men.",
       "I believe that it is because of these people that so many people do not like feminism."
     ],
     "aspects": {
@@ -649,10 +649,10 @@
   },
   {
     "id": "feminism-10",
-    "snippet-title": "If you meant absurd, then I would agree that false rape accusations are deplorable, but again I would say that \"false rape reports\" is not a tenant of feminism nor is it a likely to occur.",
+    "snippet-title": "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad.",
     "snippets-text": [
-      "This can be shown in the wage gap[3], rape culture[4] (though men can be victims of rape, rape culture usually targets women), and gender roles[5].",
-      "If you meant absurd, then I would agree that false rape accusations are deplorable, but again I would say that \"false rape reports\" is not a tenant of feminism nor is it a likely to occur."
+      "Maybe you disagree that there is a systematic discrimination against women, the patriarchy.",
+      "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad."
     ],
     "aspects": {
       "feminism": 0.32,
@@ -725,10 +725,10 @@
   },
   {
     "id": "google-08",
-    "snippet-title": "Bing is a resource where you find even more cites that have less to do with your search.",
+    "snippet-title": "Bing is just another copy cat trying to be as big as Google and it will not happen.",
     "snippets-text": [
-      "Bing is a resource where you find even more cites that have less to do with your search.",
-      "Bing is just another copy cat trying to be as big as Google and it will not happen."
+      "Bing is just another copy cat trying to be as big as Google and it will not happen.",
+      "Such as; TV and social (Google has these as well)( Google is connected to to more, popular websites like; youtube.com and an Ereader."
     ],
     "aspects": {
       "google": 0.9285714285714286,
@@ -762,10 +762,10 @@
   },
   {
     "id": "nuclear_energy-04",
-    "snippet-title": "Let's explore!",
+    "snippet-title": "In closing: While nuclear energy is a better alternative than fossil fuels, it has yet to replace them.",
     "snippets-text": [
-      "Let's explore!",
-      "There are alternatives to nuclear energy though."
+      "These are a few \"what if\" or otherwise hypothetical scenarios that challenge nuclear energy safety as well as historical examples such as 3 mile island, Chernobyl, and Japan.",
+      "In closing: While nuclear energy is a better alternative than fossil fuels, it has yet to replace them."
     ],
     "aspects": {
       "chernobyl": 0.13333333333333333,
@@ -803,9 +803,9 @@
   },
   {
     "id": "trump-01",
-    "snippet-title": "They are as follows: It should maintain some balanced conditions in its inner structure Its structure is highly organized.",
+    "snippet-title": "[3] Now as far as I can tell a \"trump\" or \"trump card\" doesn't meet any of these requirements making my opponents statement \"trump is life\" false.",
     "snippets-text": [
-      "They are as follows: It should maintain some balanced conditions in its inner structure Its structure is highly organized.",
+      "\"I think trump is life.",
       "[3] Now as far as I can tell a \"trump\" or \"trump card\" doesn't meet any of these requirements making my opponents statement \"trump is life\" false."
     ],
     "aspects": {},
@@ -816,7 +816,7 @@
     "snippet-title": "Trump is the most openly racist Presidential candidate since pre Civil Rights.",
     "snippets-text": [
       "Trump is the most openly racist Presidential candidate since pre Civil Rights.",
-      "It destroys communities, causes crime, etc.. Why would you EVER support Trump?"
+      "And, racism is wrong."
     ],
     "aspects": {
       "black lives matter": 0.16666666666666666,
@@ -827,10 +827,10 @@
   },
   {
     "id": "trump-04",
-    "snippet-title": "\"Trump is planning to build a great, great wall (yes\"two \"greats\") on our southern border between the U.S. and Mexico.",
+    "snippet-title": "-regardless of of Trump's racist bigotry used to appeal to an old, racist crowd, Immigration IS a problem here in the US and he plans to put an end to it.",
     "snippets-text": [
-      "\"Trump is planning to build a great, great wall (yes\"two \"greats\") on our southern border between the U.S. and Mexico.",
-      "He\"s planning to have Mexico pay for that wall, and mark his words, \"\" I will immediately terminate President Obama\"s illegal executive order on immigration.\"\""
+      "-regardless of of Trump's racist bigotry used to appeal to an old, racist crowd, Immigration IS a problem here in the US and he plans to put an end to it.",
+      "Because he said so."
     ],
     "aspects": {
       "god": 0.16666666666666666,
@@ -842,10 +842,10 @@
   },
   {
     "id": "trump-05",
-    "snippet-title": "My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg.",
+    "snippet-title": "They have criticized the proposals made by President Bush and Mexico's President Vicente Fox to create a legal program for bringing Mexican immigrants into the U.S..",
     "snippets-text": [
-      "My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg.",
-      "So these Minutemen kill and hunt down not only illegal immigrants, but also innocent Americans."
+      "It looks like this debate comes down to Trump's stance on immigration.",
+      "They have criticized the proposals made by President Bush and Mexico's President Vicente Fox to create a legal program for bringing Mexican immigrants into the U.S.."
     ],
     "aspects": {
       "mexico": 0.3333333333333333,
@@ -869,7 +869,7 @@
   },
   {
     "id": "vegan-01",
-    "snippet-title": "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
+    "snippet-title": "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\"",
     "snippets-text": [
       "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
       "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\""

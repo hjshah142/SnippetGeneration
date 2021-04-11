@@ -35,6 +35,7 @@ def get_snippets(json_arguments):
         # Argument Text
         arg.context = arguments["query"]
         arg.set_sentences(argument_text)
+        arg.sentences = arguments["sentences"]
 
         argumentative_text = ContextModelling().get_argumentative_text_args(arg.aspects, arg)
         context_ids, context_args = ContextModelling().get_similar_args(arg)
@@ -46,7 +47,7 @@ def get_snippets(json_arguments):
         # arg_cluster = context_args
         arg_cluster = argumentative_text + context_args
         # arg_cluster = arg_cluster.insert(0,arg)
-        # print(len(arg_cluster))
+        print(len(arg_cluster))
         clusters.append(arg_cluster)
     # print(len(clusters))
     print(len(clusters))

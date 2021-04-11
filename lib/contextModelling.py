@@ -20,7 +20,8 @@ class ContextModelling:
             if args['query'] == arg.context and args['arg_id'] != arg.id:
                 args_ids.append(args['arg_id'])
                 context_arg = Argument()
-                context_arg.set_sentences(" ".join(args["sentences"]))
+                # context_arg.set_sentences(" ".join(args["sentences"]))
+                context_arg.sentences = args["sentences"]
                 context_args.append(context_arg)
         # print(context_args)
         return args_ids, context_args
@@ -39,8 +40,7 @@ class ContextModelling:
         ArgumentativeText_args = []
         for argument_similar_id in argument_similar_ids_top:
             # print(argument_similar_id)
-            ArgumentativeText = Arguments_df['text'][argument_similar_id] + Arguments_df['conclusion'][
-                argument_similar_id]
+            ArgumentativeText = Arguments_df['text'][argument_similar_id] + Arguments_df['conclusion'][argument_similar_id]
 
             Args = Argument()
             Args.set_sentences(ArgumentativeText)
@@ -59,13 +59,13 @@ class ContextModelling:
         for aspect in arg_aspects:
             # aspect_word_count = len(aspect.split())
             aspect_weight = arg_aspects[aspect]
-            if aspect_weight >= 0.33:
+            if aspect_weight >= 0:
 
                 for index, row in self.Arguments_df.iterrows():
                     # x= dict object of aspect detected
                     other_args_dict = row['dict_weighted_args_dataset_list_re']
 
-                    if aspect in other_args_dict and other_args_dict[aspect] > 0.15:
+                    if aspect in other_args_dict and other_args_dict[aspect] > 0:
                         arg_id = row['arg_id']
                         if arg_id in arg_id_score:
                             # print('match found')
@@ -79,7 +79,7 @@ class ContextModelling:
 
         arg_id_score = dict(sorted(arg_id_score.items(), key=lambda item: item[1], reverse=True))
 
-        print(arg_id_score)
+        # print(arg_id_score)
         # argument_similar_ids.append(arg_id_score)
         argument_similar_ids_count = len(arg_id_score)
         print(argument_similar_ids_count)
