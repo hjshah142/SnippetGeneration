@@ -31,7 +31,10 @@ class ArgsRank:
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
         self.d = 0.15  # TODO: Figure out the best value for this param..
-        self.scaler = MinMaxScaler()
+        self.mcMethod = 'eigen'
+        print("d ", self.d)
+        print("Markov Chain Method", self.mcMethod)
+        # self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
 
@@ -92,7 +95,7 @@ class ArgsRank:
         """
 
         row = []
-        # print(len(cluster))
+        print(len(cluster))
         for argument_j in cluster:
             # print(len(argument_j.sentences))
             for idx, sentence_j in enumerate(argument_j.sentences):
@@ -138,11 +141,11 @@ class ArgsRank:
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
             matrix = self.add_tp_ratio(cluster)
-            M = np.array(sim) * (1 - self.d) + np.array(matrix) * self.d
+            M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
             # print("M", M)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
-            mc.computePi(method='eigen')
+            mc.computePi(method=self.mcMethod)
             p = mc.pi
 
             # print("P", p)

@@ -3,8 +3,8 @@
     "id": "abortion-01",
     "snippet-title": "Women who already had abortion earlier in there life time have abortion again.",
     "snippets-text": [
-      "There are about 1.7% of abortion of women's ages from 15-44 each year.",
-      "Women who already had abortion earlier in there life time have abortion again."
+      "Women who already had abortion earlier in there life time have abortion again.",
+      "By the 12th week of pregnancies 88.7% of women have abortion."
     ],
     "aspects": {
       "abortion": 0.5,
@@ -28,8 +28,8 @@
     "id": "abortion-03",
     "snippet-title": "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain.",
     "snippets-text": [
-      "The definition of abortion is the deliberate termination of a human pregnancy, most often performed during the first 28 weeks.",
-      "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain."
+      "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain.",
+      "Abortion should have never been legal."
     ],
     "aspects": {
       "abortion": 0.8,
@@ -40,10 +40,10 @@
   },
   {
     "id": "abortion-04",
-    "snippet-title": "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong.",
+    "snippet-title": "The most important argument against abortion would be- can we choose to kill unwanted pregnancies?",
     "snippets-text": [
-      "Getting an abortion is periodically wrong and no women should even think of it.",
-      "And the mothers life in danger doesn't always have to have a reason to have an abortion she might just have a miscarriage in the early period which could lead to having an abortion but that didn't mean she wanted that to happen, things can go right and wrong."
+      "The most important argument against abortion would be- can we choose to kill unwanted pregnancies?",
+      "::< therefore abortion is morally wrong."
     ],
     "aspects": {
       "abortion": 0.7142857142857143,
@@ -67,10 +67,10 @@
   },
   {
     "id": "abortion-06",
-    "snippet-title": "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood.",
+    "snippet-title": "Abortion is the ending of pregnancy by the removal or forcing out from the womb of a fetus or embryo before it is able to survive on its own.",
     "snippets-text": [
-      "The two main groups involved in the abortion debate are the self-described \"pro-choice\" movement (emphasizing the right of women to choose whether to abort a pregnancy or to grow it to term) and the self-described \"pro-life\" movement (emphasizing the right of the embryo or fetus to gestate and be born).",
-      "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood."
+      "Abortion is the ending of pregnancy by the removal or forcing out from the womb of a fetus or embryo before it is able to survive on its own.",
+      "The two main groups involved in the abortion debate are the self-described \"pro-choice\" movement (emphasizing the right of women to choose whether to abort a pregnancy or to grow it to term) and the self-described \"pro-life\" movement (emphasizing the right of the embryo or fetus to gestate and be born)."
     ],
     "aspects": {
       "abortion": 0.8461538461538461,
@@ -119,10 +119,10 @@
   },
   {
     "id": "abortion-10",
-    "snippet-title": "The first reason that deems that abortion should be illegal is due to the fact that abortion is considered immoral.",
+    "snippet-title": "One reason for the legalisation of abortion is that if abortion became illegal, it would lead to a lot of `backstreet' abortions.",
     "snippets-text": [
       "The first reason that deems that abortion should be illegal is due to the fact that abortion is considered immoral.",
-      "Another reason that abortion should be illegal is due to the fact that there is no such thing as an unwanted child."
+      "One reason for the legalisation of abortion is that if abortion became illegal, it would lead to a lot of `backstreet' abortions."
     ],
     "aspects": {
       "abortion": 0.8529411764705882,
@@ -135,9 +135,9 @@
   },
   {
     "id": "brexit-01",
-    "snippet-title": "After Brexit, other countries are already clamoring to leave the EU as well.",
+    "snippet-title": "There is also a movement starting for the reunification of Ireland (meaning the UK would also lose Northern Ireland).",
     "snippets-text": [
-      "The financial security of Europe and all of its trading partners will be made much weaker because of Brexit.",
+      "There is also a movement starting for the reunification of Ireland (meaning the UK would also lose Northern Ireland).",
       "After Brexit, other countries are already clamoring to leave the EU as well."
     ],
     "aspects": {
@@ -294,7 +294,7 @@
   },
   {
     "id": "climate change-09",
-    "snippet-title": "Pro argues that past climate doesn't count because we are only discussing the past century and the next century.\"",
+    "snippet-title": "Scientists aren't sure exactly how long it takes for deuterium differences to show up in ice caps, which is why CON's fifteenth source states \" Our analyses of ice cores from the ice sheet in Antarctica shows that the concentration of CO2 in the atmosphere follows the rise in Antarctic temperatures very closely and is staggered by a few hundred years at most,\" rather than asserting that they have reversed the Greenhouse Effect.",
     "snippets-text": [
       "Pro argues that past climate doesn't count because we are only discussing the past century and the next century.\"",
       "Scientists aren't sure exactly how long it takes for deuterium differences to show up in ice caps, which is why CON's fifteenth source states \" Our analyses of ice cores from the ice sheet in Antarctica shows that the concentration of CO2 in the atmosphere follows the rise in Antarctic temperatures very closely and is staggered by a few hundred years at most,\" rather than asserting that they have reversed the Greenhouse Effect."
@@ -434,7 +434,7 @@
     "id": "donald trump-03",
     "snippet-title": "Trying to get Mexico to pay for the wall would put 2 million jobs at risk.",
     "snippets-text": [
-      "Mexican President Vicente Fox said multiple times \"he would not pay for that f--ing wall.\"",
+      "I will build a great, great wall on our southern border, and I will make Mexico pay for that wall.",
       "Trying to get Mexico to pay for the wall would put 2 million jobs at risk."
     ],
     "aspects": {
@@ -523,10 +523,10 @@
   },
   {
     "id": "donald trump-10",
-    "snippet-title": "There's no reason to suspect that he would suddenly become bad at getting his way when faced with leaders of foreign countries.",
+    "snippet-title": "His goal now isn't to make money, but to better the lives of the American People Now that the myths are out of the way, I'd like to outline why I think Donald Trump would be a good president.",
     "snippets-text": [
-      "Thus, the claim that Donald Trump is anti-immigration does not have any supporting evidence.",
-      "There's no reason to suspect that he would suddenly become bad at getting his way when faced with leaders of foreign countries."
+      "2-Donald Trump is a liar because he supported many of the people he now opposes while he was a businessman.",
+      "His goal now isn't to make money, but to better the lives of the American People Now that the myths are out of the way, I'd like to outline why I think Donald Trump would be a good president."
     ],
     "aspects": {
       "cult": 0.03125,
@@ -608,9 +608,9 @@
   },
   {
     "id": "feminism-06",
-    "snippet-title": "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality.",
+    "snippet-title": "Feminism Has NO gender.",
     "snippets-text": [
-      "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality.",
+      "Feminism Has NO gender.",
       "And Feminism has no gender, Nor Negative attributes."
     ],
     "aspects": {
@@ -626,7 +626,7 @@
     "id": "feminism-07",
     "snippet-title": "I believe that it is because of these people that so many people do not like feminism.",
     "snippets-text": [
-      "Feminists just want to have equal rights, not overpower men.",
+      "Feminism is definitely something that there needs to be more of in the world.",
       "I believe that it is because of these people that so many people do not like feminism."
     ],
     "aspects": {
@@ -649,10 +649,10 @@
   },
   {
     "id": "feminism-10",
-    "snippet-title": "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad.",
+    "snippet-title": "If you meant absurd, then I would agree that false rape accusations are deplorable, but again I would say that \"false rape reports\" is not a tenant of feminism nor is it a likely to occur.",
     "snippets-text": [
-      "Maybe you disagree that there is a systematic discrimination against women, the patriarchy.",
-      "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad."
+      "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad.",
+      "If you meant absurd, then I would agree that false rape accusations are deplorable, but again I would say that \"false rape reports\" is not a tenant of feminism nor is it a likely to occur."
     ],
     "aspects": {
       "feminism": 0.32,
@@ -725,10 +725,10 @@
   },
   {
     "id": "google-08",
-    "snippet-title": "Bing is just another copy cat trying to be as big as Google and it will not happen.",
+    "snippet-title": "Bing is a resource where you find even more cites that have less to do with your search.",
     "snippets-text": [
-      "Bing is just another copy cat trying to be as big as Google and it will not happen.",
-      "Such as; TV and social (Google has these as well)( Google is connected to to more, popular websites like; youtube.com and an Ereader."
+      "Bing is a resource where you find even more cites that have less to do with your search.",
+      "Bing is just another copy cat trying to be as big as Google and it will not happen."
     ],
     "aspects": {
       "google": 0.9285714285714286,
@@ -762,10 +762,10 @@
   },
   {
     "id": "nuclear_energy-04",
-    "snippet-title": "In closing: While nuclear energy is a better alternative than fossil fuels, it has yet to replace them.",
+    "snippet-title": "These are a few \"what if\" or otherwise hypothetical scenarios that challenge nuclear energy safety as well as historical examples such as 3 mile island, Chernobyl, and Japan.",
     "snippets-text": [
       "These are a few \"what if\" or otherwise hypothetical scenarios that challenge nuclear energy safety as well as historical examples such as 3 mile island, Chernobyl, and Japan.",
-      "In closing: While nuclear energy is a better alternative than fossil fuels, it has yet to replace them."
+      "My opponent has demonstrated that nuclear energy does indeed exceed the effectiveness of fossil fuels."
     ],
     "aspects": {
       "chernobyl": 0.13333333333333333,
@@ -827,10 +827,10 @@
   },
   {
     "id": "trump-04",
-    "snippet-title": "-regardless of of Trump's racist bigotry used to appeal to an old, racist crowd, Immigration IS a problem here in the US and he plans to put an end to it.",
+    "snippet-title": "By building a wall, fighting ISIS, and strengthening the Christian religion, Trump will make the greatest president of all time.",
     "snippets-text": [
       "-regardless of of Trump's racist bigotry used to appeal to an old, racist crowd, Immigration IS a problem here in the US and he plans to put an end to it.",
-      "Because he said so."
+      "By building a wall, fighting ISIS, and strengthening the Christian religion, Trump will make the greatest president of all time."
     ],
     "aspects": {
       "god": 0.16666666666666666,
@@ -869,7 +869,7 @@
   },
   {
     "id": "vegan-01",
-    "snippet-title": "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\"",
+    "snippet-title": "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
     "snippets-text": [
       "Some ethical (orthodox) vegans do not like dietary vegans to be called real vegans because they aren't fully converted to the full vegan lifestyle.",
       "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\""
@@ -948,7 +948,7 @@
     "snippet-title": "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
     "snippets-text": [
       "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
-      "Given all this, can it be doubted that the vegan diet, as long as it is well planned, will be instrumental in reducing the rates of cancer, diabetes, and CVD."
+      "His response to this was that vegans must seek out fortified foods (like soymilk) though he doesn't explain why this is any harder than non-vegans seeking animal milk fortified with omega-3s and/or vitamin D. Con quotes a source that said legumes, nuts and seeds don't contain B12 and omega-3s."
     ],
     "aspects": {
       "cancer": 0.3333333333333333,

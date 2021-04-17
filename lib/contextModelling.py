@@ -8,8 +8,9 @@ class ContextModelling:
     def __init__(self):
         script_dir = os.path.dirname(__file__)
         self.context_data = json.load(open(os.path.join(script_dir, "../data/snippets.txt")))
-
         self.Arguments_df = pd.read_pickle(os.path.join(script_dir, "../data/ArgumentsDatasets.pkl"))
+        self.ContextArgsIds = pd.read_pickle(os.path.join(script_dir, "../data/Context_args_list.pkl"))
+        self.aspectsArgumentsMax = 100
         # print(self.Arguments_df.head(2))
 
     def get_similar_args(self, arg):
@@ -31,16 +32,17 @@ class ContextModelling:
 
         # take first 50 arguments
         argument_similar_ids_list = list(arg_id_score.keys())
-        if len(argument_similar_ids_list) <= 100:
+        if len(argument_similar_ids_list) <= self.aspectsArgumentsMax:
             argument_similar_ids_top = argument_similar_ids_list
         else:
-            argument_similar_ids_top = argument_similar_ids_list[:100]
+            argument_similar_ids_top = argument_similar_ids_list[:self.aspectsArgumentsMax]
             # print(type(argument_similar_ids_top))
         print(len(argument_similar_ids_top))
         ArgumentativeText_args = []
         for argument_similar_id in argument_similar_ids_top:
             # print(argument_similar_id)
-            ArgumentativeText = Arguments_df['text'][argument_similar_id] + Arguments_df['conclusion'][argument_similar_id]
+            ArgumentativeText = Arguments_df['text'][argument_similar_id] + Arguments_df['conclusion'][
+                argument_similar_id]
 
             Args = Argument()
             Args.set_sentences(ArgumentativeText)
@@ -59,13 +61,13 @@ class ContextModelling:
         for aspect in arg_aspects:
             # aspect_word_count = len(aspect.split())
             aspect_weight = arg_aspects[aspect]
-            if aspect_weight >= 0:
+            if aspect_weight >= 0.15:
 
                 for index, row in self.Arguments_df.iterrows():
                     # x= dict object of aspect detected
                     other_args_dict = row['dict_weighted_args_dataset_list_re']
 
-                    if aspect in other_args_dict and other_args_dict[aspect] > 0:
+                    if aspect in other_args_dict and other_args_dict[aspect] > 0.15:
                         arg_id = row['arg_id']
                         if arg_id in arg_id_score:
                             # print('match found')
@@ -86,3 +88,14 @@ class ContextModelling:
         ArgumentativeText_args = self.retrieve_argumentative_texts(arg_id_score, context_args)
 
         return ArgumentativeText_args
+
+    def get_context_args_samePage(self, context_arg_indices):
+        context_args_list = []
+        for args_samePage in self.ContextArgsIds['Context_args_list'][context_arg_indices]:
+            args = Argument()
+            # print(args_samePage)
+            args.set_sentences(args_samePage)
+            # context_args_list.append(args)
+
+        print("arguments in same Pages  ", len(context_args_list))
+        return context_args_list
