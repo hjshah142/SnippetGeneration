@@ -2,13 +2,13 @@ import json
 import os
 import tensorflow_hub as hub
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
 from discreteMarkovChain import markovChain
 
 
 class ArgsRank:
 
-    def __init__(self):
+    def __init__(self, d, mc_method):
         script_dir = os.path.dirname(__file__)
         print(script_dir)
         f = open(os.path.join(script_dir, "../data/ClaimLexicon.txt"))
@@ -30,10 +30,10 @@ class ArgsRank:
                                   "unless", "except", "apart from", "as long as", "if", "whereas", "instead of",
                                   "alternatively", "otherwise", "unlike", "on the other hand", "conversely"]
 
-        self.d = 0.15  # TODO: Figure out the best value for this param..
-        self.mcMethod = 'eigen'
+        self.d = d  # TODO: Figure out the best value for this param..
+        self.mc_method = mc_method
         print("d ", self.d)
-        print("Markov Chain Method", self.mcMethod)
+        print("Markov Chain Method", self.mc_method)
         # self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -145,7 +145,7 @@ class ArgsRank:
             # print("M", M)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
-            mc.computePi(method=self.mcMethod)
+            mc.computePi(method=self.mc_method)
             p = mc.pi
 
             # print("P", p)

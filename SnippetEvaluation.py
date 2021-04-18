@@ -23,7 +23,7 @@ for argument in data_snippets:
 
 data_snippets_df = pd.json_normalize(data_snippets_filtered)
 generated_snippets_df = pd.json_normalize(generated_snippets)
-generated_snippets_df = generated_snippets_df = generated_snippets_df.iloc[:, 0:3]
+generated_snippets_df = generated_snippets_df.iloc[:, 0:3]
 
 generated_snippets_df.insert(2, 'generated_snippets', data_snippets_df['snippet'])
 

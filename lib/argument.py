@@ -6,10 +6,12 @@ import re
 
 class Argument:
 
-    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None):
+    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None, indices= None ):
         """
         Object representation of the args.me corpus.
-        Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein. Data Acquisition for Argument Search: The args.me corpus. In 42nd German Conference on Artificial Intelligence (KI 2019), September 2019. Springer.
+        Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein.
+        Data Acquisition for Argument Search: The args.me corpus.
+        In 42nd German Conference on Artificial Intelligence (KI 2019), September 2019. Springer.
 
         :param premises: list containing dictionary with key "text" containing the argument
         :param context:
@@ -31,6 +33,7 @@ class Argument:
             self.set_sentences(premises)
         # cluster_map= { 1: ['Argument 1','Argument 2'] }
         self.cluster_map = cluster_map
+        self.indices = indices
         """"
         if cluster_map is not None:
             if context["sourceId"] in cluster_map:
@@ -49,9 +52,7 @@ class Argument:
         self.sentences = sent_tokenize(text)
         # Remove sentences that are less than 3 words length
         # return none if words are less than 3
-        # TODO to handle  if words are less than 3
         self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 2]
-
 
     @classmethod
     def from_json(cls, data, cluster_map=None):
@@ -74,8 +75,7 @@ class Argument:
                 return np.array(self.sentences)
 
     def __str__(self):
-        return "%s, %s, %s, %s" % (self.premises, self.context, self.id
-                                   , self.conclusion)
+        return "%s, %s, %s, %s" % (self.premises, self.context, self.id, self.conclusion)
 
     def __iter__(self):
         return iter(self.sentences)
