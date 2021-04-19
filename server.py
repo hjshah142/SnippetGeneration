@@ -5,6 +5,7 @@ from lib.argument import Argument
 from lib.aspectsdetection import AspectsDetection
 from lib.contextModelling import ContextModelling
 
+
 """"
 json_argument = {"arguments": 
 [{"id": "5",
@@ -35,11 +36,11 @@ for argument_x in data_snippets:
 print(count)
 
 
-d = 0
+d = 0.15
 # methodSet = ['power','eigen','linear','krylov']
 mc_method = 'linear'
-aspects_arguments_max = 150
-
+aspects_arguments_max = 100
+aspects_weights = [0,0]
 
 
 def get_snippets(json_arguments):
@@ -55,7 +56,7 @@ def get_snippets(json_arguments):
         arg.context = argument["query"]
         # arg.set_sentences(argument_text)
         arg.sentences = argument["sentences"]
-        contextModelling = ContextModelling(aspects_arguments_max)
+        contextModelling = ContextModelling(aspects_arguments_max, aspects_weights)
         context_args_aspects = contextModelling.get_aspects_args(arg.aspects)
         context_ids, context_args_query = contextModelling.get_similar_args(arg)
         arg.indices = argument["indices"]
@@ -82,3 +83,4 @@ with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding=
     json.dump(snippets, f, indent=2)
 # print(snippets)
 print('snippets generated File is created ')
+

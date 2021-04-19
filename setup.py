@@ -10,3 +10,5 @@ embeddings = embed([
     "I am a sentence for which I would like to get its embedding", "Agree?"])
 
 print(embeddings)
+
+

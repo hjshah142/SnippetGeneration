@@ -5,12 +5,13 @@ import pandas as pd
 
 
 class ContextModelling:
-    def __init__(self, aspects_arguments_max):
+    def __init__(self, aspects_arguments_max,aspects_weights):
         script_dir = os.path.dirname(__file__)
         self.context_data = json.load(open(os.path.join(script_dir, "../data/snippets.txt")))
         self.Arguments_df = pd.read_pickle(os.path.join(script_dir, "../data/ArgumentsDatasets.pkl"))
         self.ContextArgsIds = pd.read_pickle(os.path.join(script_dir, "../data/Context_args_list.pkl"))
         self.aspects_arguments_max = aspects_arguments_max
+        self.aspects_weights = aspects_weights
         # print(self.Arguments_df.head(2))
 
     def get_similar_args(self, arg):
@@ -62,13 +63,13 @@ class ContextModelling:
         for aspect in arg_aspects:
             # aspect_word_count = len(aspect.split())
             aspect_weight = arg_aspects[aspect]
-            if aspect_weight >= 0:
+            if aspect_weight > self.aspects_weights[0]:
 
                 for index, row in self.Arguments_df.iterrows():
                     # x= dict object of aspect detected
                     other_args_dict = row['dict_weighted_args_dataset_list_re']
 
-                    if aspect in other_args_dict and other_args_dict[aspect] > 0:
+                    if aspect in other_args_dict and other_args_dict[aspect] >  self.aspects_weights[1]:
                         arg_id = row['arg_id']
                         if arg_id in arg_id_score:
                             # print('match found')
