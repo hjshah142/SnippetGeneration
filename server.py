@@ -36,7 +36,7 @@ for argument_x in data_snippets:
 print(count)
 
 
-d = 0.15
+d = 0
 # methodSet = ['power','eigen','linear','krylov']
 mc_method = 'linear'
 aspects_arguments_max = 100
@@ -58,6 +58,7 @@ def get_snippets(json_arguments):
         arg.sentences = argument["sentences"]
         contextModelling = ContextModelling(aspects_arguments_max, aspects_weights)
         context_args_aspects = contextModelling.get_aspects_args(arg.aspects)
+       #  context_args_aspects = contextModelling.get_aspects_args2(arg.aspects, arg.id)
         context_ids, context_args_query = contextModelling.get_similar_args(arg)
         arg.indices = argument["indices"]
         print('index', arg.indices)

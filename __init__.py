@@ -25,15 +25,15 @@ print(count)
 # data_snippets_test = data_snippets_filtered[0:2]
 # ---- Test Snippet Generation using different parameters ---
 
-d = 0.15
+d = 0
 # methodSet = ['power','eigen','linear','krylov']
-mc_method = 'linear'
-aspects_arguments_max = 100
+mc_method = 'eigen'
+aspects_arguments_max = 200
 aspects_weights = [0, 0]
 json_arguments = data_snippets_filtered
 
 snippetGenerator = SnippetGenerator(json_arguments, d, mc_method, aspects_arguments_max, aspects_weights)
 snippets = snippetGenerator.get_snippets(json_arguments)
 
-count, accuracy =snippetGenerator.get_accuracy(snippets)
+count, accuracy =snippetGenerator.get_accuracy(data_snippets_filtered,snippets)
 print(count, accuracy)

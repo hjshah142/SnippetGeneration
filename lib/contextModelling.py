@@ -5,11 +5,13 @@ import pandas as pd
 
 
 class ContextModelling:
-    def __init__(self, aspects_arguments_max,aspects_weights):
+    def __init__(self, aspects_arguments_max, aspects_weights):
         script_dir = os.path.dirname(__file__)
         self.context_data = json.load(open(os.path.join(script_dir, "../data/snippets.txt")))
-        self.Arguments_df = pd.read_pickle(os.path.join(script_dir, "../data/ArgumentsDatasets.pkl"))
+        self.Arguments_df = pd.read_pickle(os.path.join(script_dir, "../../argsme_df_aspect_filtered.pkl"))
+        # self.Arguments_df = pd.read_pickle(os.path.join(script_dir, "../data/ArgumentsDatasets.pkl"))
         self.ContextArgsIds = pd.read_pickle(os.path.join(script_dir, "../data/Context_args_list.pkl"))
+        self.aspects_args_similar_ids = pd.read_pickle(os.path.join(script_dir, "../data/aspects_args_similar_ids.pkl"))
         self.aspects_arguments_max = aspects_arguments_max
         self.aspects_weights = aspects_weights
         # print(self.Arguments_df.head(2))
@@ -29,6 +31,7 @@ class ContextModelling:
         return args_ids, context_args_query
 
     def retrieve_argumentative_texts(self, arg_id_score):
+
         context_args_aspects = []
         Arguments_df = self.Arguments_df
 
@@ -45,7 +48,8 @@ class ContextModelling:
             # print(argument_similar_id)
             ArgumentativeText = Arguments_df['text'][argument_similar_id] + Arguments_df['conclusion'][
                 argument_similar_id]
-
+            # print(ArgumentativeText)
+            print(argument_similar_id)
             Args = Argument()
             Args.set_sentences(ArgumentativeText)
             context_args_aspects.append(Args)
@@ -54,39 +58,44 @@ class ContextModelling:
         return context_args_aspects
 
     def get_aspects_args(self, arg_aspects):
-
-        # print(arg_aspects)
-        score = 0
+        Arguments_df = self.Arguments_df
         arg_id_score = dict()
-        # context_args_aspects = [arg_object]
+        for index, row in Arguments_df.iterrows():
+            # x= aspect of another arguments
+            other_args_aspect = row['dict_weighted_args_dataset_list_re']
+            total_score = 0
 
-        for aspect in arg_aspects:
-            # aspect_word_count = len(aspect.split())
-            aspect_weight = arg_aspects[aspect]
-            if aspect_weight > self.aspects_weights[0]:
-
-                for index, row in self.Arguments_df.iterrows():
-                    # x= dict object of aspect detected
-                    other_args_dict = row['dict_weighted_args_dataset_list_re']
-
-                    if aspect in other_args_dict and other_args_dict[aspect] >  self.aspects_weights[1]:
-                        arg_id = row['arg_id']
-                        if arg_id in arg_id_score:
-                            # print('match found')
-                            # print(other_args_dict[aspect])
-                            arg_id_score[arg_id] = score + other_args_dict[aspect]
+            for aspect in arg_aspects:
+                # aspect_word_count = len(aspect.split())
+                aspect_weight = arg_aspects[aspect]
+                if aspect_weight > self.aspects_weights[0]:
+                    if aspect in other_args_aspect:
+                        if other_args_aspect[aspect] > self.aspects_weights[1]:
+                            arg_id = row['arg_id']
+                            total_score = total_score + other_args_aspect[aspect]
+                            arg_id_score[arg_id] = total_score
                             # other_args_dict[aspect]= round(other_args_dict[aspect],2)
-                        else:
 
-                            score = other_args_dict[aspect]
-                            arg_id_score[arg_id] = score
+        print(arg_id_score)
+        # sort the arg_id_score score with score of id in reverese order
+        arg_id_score_sorted = dict(sorted(arg_id_score.items(), key=lambda item: item[1], reverse=True))
+        argument_similar_ids_count = len(arg_id_score_sorted)
+        print(argument_similar_ids_count)
+        print(arg_id_score_sorted)
+        context_args_aspects = self.retrieve_argumentative_texts(arg_id_score_sorted)
+        return context_args_aspects
 
-        arg_id_score = dict(sorted(arg_id_score.items(), key=lambda item: item[1], reverse=True))
+    def get_aspects_args2(self, arg_aspects, arg_id):
+        # retrieved the pre-saved similar arguments ids from the args.me corpus
+        # print(arg_aspects)
+        arg_id_score = dict()
+        for index, row in self.aspects_args_similar_ids.iterrows():
+            if row['id'] == arg_id:
+                arg_id_score = row['id_score_dict']
+                print(row['similar_id_count'])
+
 
         # print(arg_id_score)
-        # argument_similar_ids.append(arg_id_score)
-        argument_similar_ids_count = len(arg_id_score)
-        print(argument_similar_ids_count)
         context_args_aspects = self.retrieve_argumentative_texts(arg_id_score)
 
         return context_args_aspects

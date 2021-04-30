@@ -33,11 +33,12 @@ class SnippetGenerator:
             # arg.set_sentences(argument_text)
             arg.sentences = argument["sentences"]
             contextModelling = ContextModelling(self.aspects_arguments_max, self.aspects_weights)
-            context_args_aspects = contextModelling.get_aspects_args(arg.aspects)
+            # context_args_aspects = contextModelling.get_aspects_args(arg.aspects)
+            context_args_aspects = contextModelling.get_aspects_args2(arg.aspects, arg.id)
             context_ids, context_args_query = contextModelling.get_similar_args(arg)
             arg.indices = argument["indices"]
             print('index', arg.indices)
-            context_args_samePage = contextModelling.get_context_args_samePage(arg.indices)
+           # context_args_samePage = contextModelling.get_context_args_samePage(arg.indices)
             args_object = [arg]
             # print(context_args_samePage)
             arg_cluster = args_object + context_args_aspects + context_args_query
@@ -57,29 +58,19 @@ class SnippetGenerator:
         print('snippets generated File is created ')
         return snippets_generated
 
-    def get_accuracy(self,generated_snippets):
-        data_snippets_df = pd.json_normalize(self.json_arguments)
-        generated_snippets_df = pd.json_normalize(generated_snippets)
-        generated_snippets_df = generated_snippets_df.iloc[:, 0:3]
-
-        generated_snippets_df.insert(2, 'generated_snippets', data_snippets_df['snippet'])
+    def get_accuracy(self, data_snippets_filtered, snippets):
 
         count = 0
-        for index, row in generated_snippets_df.iterrows():
-            snippets_detected = row['generated_snippets']
-            snippets_answer = row['snippets-text']
-            # print(other_args_dict)
-            for x in snippets_answer:
-                for y in snippets_detected:
-                    # print(x)
-                    # print(y)
-                    # print("-------------")
+        for sentence_index in range(0, len(data_snippets_filtered), 1):
+            actual_snippets = data_snippets_filtered[sentence_index]['snippet']
+            generated_snippets = snippets[sentence_index]['snippets-text']
+
+            for x in actual_snippets:
+                for y in generated_snippets:
                     if x == y:
-                        count = count + 1
-                        # print('match')
+                        count += 1
 
         print(count)
-        accuracy = (100.0 * count) / (2 * len(generated_snippets))
+        accuracy = (100.0 * count) / (2 * len(data_snippets_filtered))
         print(accuracy)
         return count, accuracy
-
