@@ -9,20 +9,18 @@ import pandas as pd
 
 class SnippetGenerator:
 
-    def __init__(self, json_arguments, d, mc_method, aspects_arguments_max, aspects_weights):
+    def __init__(self, arguments, d, mc_method, aspects_arguments_max, aspects_weights):
         self.d = d
         # methodSet = ['power','eigen','linear','krylov']
         self.mc_method = mc_method
         self.aspects_arguments_max = aspects_arguments_max
         self.aspects_weights = aspects_weights
-        self.json_arguments = json_arguments
-        # script_dir = os.path.dirname(__file__)
-        # snippets = self.get_snippets(self.json_arguments)
+        self.arguments = arguments
 
-    def get_snippets(self, json_arguments):
+    def get_snippets(self, arguments):
         # json.loads(json_arguments, encoding='latin1')
         clusters = []
-        for argument in json_arguments:
+        for argument in arguments:
             # print(argument["sentences"])
             arg = Argument()
             argument_text = " ".join(argument["sentences"])
@@ -36,12 +34,13 @@ class SnippetGenerator:
             # context_args_aspects = contextModelling.get_aspects_args(arg.aspects)
             context_args_aspects = contextModelling.get_aspects_args2(arg.aspects, arg.id)
             context_ids, context_args_query = contextModelling.get_similar_args(arg)
-            arg.indices = argument["indices"]
-            print('index', arg.indices)
-           # context_args_samePage = contextModelling.get_context_args_samePage(arg.indices)
+            arg.index = argument["index"]
+            print('index', arg.index)
+            # context_args_samePage = contextModelling.get_context_args_same_page(arg.indices)
             args_object = [arg]
             # print(context_args_samePage)
             arg_cluster = args_object + context_args_aspects + context_args_query
+            # arg_cluster = args_object
             # arg_cluster = arg_cluster.insert(0,arg)
             print(len(arg_cluster))
             clusters.append(arg_cluster)

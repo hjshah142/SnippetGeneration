@@ -6,7 +6,7 @@ import re
 
 class Argument:
 
-    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None, indices= None ):
+    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None, index= None ):
         """
         Object representation of the args.me corpus.
         Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein.
@@ -33,7 +33,7 @@ class Argument:
             self.set_sentences(premises)
         # cluster_map= { 1: ['Argument 1','Argument 2'] }
         self.cluster_map = cluster_map
-        self.indices = indices
+        self.index = index
         """"
         if cluster_map is not None:
             if context["sourceId"] in cluster_map:
@@ -64,7 +64,7 @@ class Argument:
         :param k:
         :return:
         """
-        print(self.score, "-----------", self.sentences)
+        # print(self.score, "-----------", self.sentences)
         if self.sentences and self.score:
             if k <= len(self.score) and k <= len(self.sentences):
                 # print(self.score)

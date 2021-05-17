@@ -10,7 +10,7 @@ class ArgsRank:
 
     def __init__(self, d, mc_method):
         script_dir = os.path.dirname(__file__)
-        print(script_dir)
+        # print(script_dir)
         f = open(os.path.join(script_dir, "../data/ClaimLexicon.txt"))
         self.claim_markers = f.read().split(", ")
         # for m in CLAIM_MARKERS:
@@ -179,7 +179,7 @@ class ArgsRank:
         for arguments in args:
             arg = arguments[0]
             arg_snippet = {}
-            print(arg.id)
+            #print(arg.id)
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)

@@ -62,7 +62,7 @@ def get_snippets(json_arguments):
         context_ids, context_args_query = contextModelling.get_similar_args(arg)
         arg.indices = argument["indices"]
         print('index', arg.indices)
-        context_args_samePage = contextModelling.get_context_args_samePage(arg.indices)
+        context_args_samePage = contextModelling.get_context_args_same_page(arg.indices)
         args_object = [arg]
         # print(context_args_samePage)
         arg_cluster = args_object + context_args_aspects + context_args_query
