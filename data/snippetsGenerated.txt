@@ -29,7 +29,7 @@
     "snippet-title": "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
     "snippets-text": [
       "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
-      "Abortion should have never been legal."
+      "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain."
     ],
     "aspects": {
       "abortion": 0.8,
@@ -57,8 +57,8 @@
     "id": "abortion-05",
     "snippet-title": "I am arguing for the right to have an abortion, not whether it is ok to abort a seven month developed child.",
     "snippets-text": [
-      "I am arguing for the right to have an abortion, not whether it is ok to abort a seven month developed child.",
-      "You see, my opponent argues that abortion is not a singular colour, in regards to metaphysical ethics/morals (i.e. not being \"okay\" to abort during the last two months)."
+      "It follows that \"having an abortion is the equivalent of not getting pregnant in the first place\" is contradictory.",
+      "I am arguing for the right to have an abortion, not whether it is ok to abort a seven month developed child."
     ],
     "aspects": {
       "abortion": 1.0
@@ -108,8 +108,8 @@
     "id": "abortion-09",
     "snippet-title": "If our country stops the use of abortion, we will end like china, forcing women that don't want to have an abortion to have an abortion to control the population.",
     "snippets-text": [
-      "If our country stops the use of abortion, we will end like china, forcing women that don't want to have an abortion to have an abortion to control the population.",
-      "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women."
+      "Abortion is needed to control the population so that the population doesn't get too excess.",
+      "If our country stops the use of abortion, we will end like china, forcing women that don't want to have an abortion to have an abortion to control the population."
     ],
     "aspects": {
       "abortion": 0.5384615384615384,
@@ -156,7 +156,7 @@
     "snippet-title": "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
     "snippets-text": [
       "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
-      "Seeing as you don't appear to have made any actual arguments as to why a Brexit will be beneficial, I shall refrain from expanding my arguments this round, seeing as I have nothing to respond to."
+      "It's one thing to be against something passing and quite another to try to override the will of the people by undemocratic means."
     ],
     "aspects": {
       "political correctness": 1.0
@@ -296,8 +296,8 @@
     "id": "climate change-09",
     "snippet-title": "It would be a drastic mistake to argue that \"past climate doesn't count,\" and I thank CON for bringing this potential misunderstanding to my attention.",
     "snippets-text": [
-      "Pro argues that past climate doesn't count because we are only discussing the past century and the next century.\"",
-      "It would be a drastic mistake to argue that \"past climate doesn't count,\" and I thank CON for bringing this potential misunderstanding to my attention."
+      "It would be a drastic mistake to argue that \"past climate doesn't count,\" and I thank CON for bringing this potential misunderstanding to my attention.",
+      "[7] I think we can all agree that Michael Mann was wrong ten years ago, and that the graph of climate anomalies is not shaped like a hockey stick, especially since that's not the topic of the debate I instigated, of the points I have argued, or of the sources I have cited."
     ],
     "aspects": {
       "al gore": 0.3333333333333333,
@@ -434,7 +434,7 @@
     "id": "donald trump-03",
     "snippet-title": "Here is the link: This is proof that Donald Trump would be the worst president if he wins, worse than any other president in history.",
     "snippets-text": [
-      "That's why Donald trump would be an inexperienced and bad candidate.",
+      "Trying to get Mexico to pay for the wall would put 2 million jobs at risk.",
       "Here is the link: This is proof that Donald Trump would be the worst president if he wins, worse than any other president in history."
     ],
     "aspects": {
@@ -460,7 +460,7 @@
   },
   {
     "id": "donald trump-05",
-    "snippet-title": "[2] Donald Trump was born in the United States, specifically in New York.",
+    "snippet-title": "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life.",
     "snippets-text": [
       "[2] Donald Trump was born in the United States, specifically in New York.",
       "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life."
@@ -511,7 +511,7 @@
   },
   {
     "id": "donald trump-09",
-    "snippet-title": "[2] Donald Trump was born in the United States, specifically in New York.",
+    "snippet-title": "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life.",
     "snippets-text": [
       "[2] Donald Trump was born in the United States, specifically in New York.",
       "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life."
@@ -526,7 +526,7 @@
     "snippet-title": "The point of the wall isn't to show the world that the US doesn't want people coming into it; rather, it is a statement that coming in legally will be EASIER than coming in the other way.",
     "snippets-text": [
       "The point of the wall isn't to show the world that the US doesn't want people coming into it; rather, it is a statement that coming in legally will be EASIER than coming in the other way.",
-      "There's no reason to suspect that he would suddenly become bad at getting his way when faced with leaders of foreign countries."
+      "Those are a few of the reasons why I think you are wrong about Donald Trump, and why I am right."
     ],
     "aspects": {
       "cult": 0.03125,
@@ -556,8 +556,8 @@
     "id": "feminism-02",
     "snippet-title": "They do want equality just as men, but feminism is more just than opportunities.",
     "snippets-text": [
-      "They do want equality just as men, but feminism is more just than opportunities.",
-      "It is about equality or more likely dominating men."
+      "Women don't need feminism.",
+      "They do want equality just as men, but feminism is more just than opportunities."
     ],
     "aspects": {
       "feminism": 0.42857142857142855,
@@ -596,8 +596,8 @@
     "id": "feminism-05",
     "snippet-title": "I'm not saying that women don't have the same rights as men.",
     "snippets-text": [
-      "I'm not saying that women don't have the same rights as men.",
-      "I didn't know who to debate so I just put a random name lol"
+      "Feminism encourages false rape accusations and stereotyping men as bad.",
+      "I'm not saying that women don't have the same rights as men."
     ],
     "aspects": {
       "feminism": 0.5,
@@ -700,7 +700,7 @@
   },
   {
     "id": "google-06",
-    "snippet-title": "Google wants us to think like Google and that how they will take over the world.A279;",
+    "snippet-title": "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
     "snippets-text": [
       "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
       "Google wants us to think like Google and that how they will take over the world.A279;"
@@ -715,7 +715,7 @@
     "snippet-title": "People tend to prefer Google, so I would say Google is better than Bing.",
     "snippets-text": [
       "People tend to prefer Google, so I would say Google is better than Bing.",
-      "Google is much better than Bing."
+      "There is a reason why \"Google that\" is a common phrase."
     ],
     "aspects": {
       "google": 0.875,
@@ -791,7 +791,7 @@
   },
   {
     "id": "nuclear_energy-08",
-    "snippet-title": "Nuclear energy is a good source of energy, if not the best.",
+    "snippet-title": "Not to mention that Fusion reactions are rapidly coming to a commercial scale for nuclear power plants and with more investment this could make nuclear energy the dominant source of power 2.",
     "snippets-text": [
       "Nuclear energy is a good source of energy, if not the best.",
       "Not to mention that Fusion reactions are rapidly coming to a commercial scale for nuclear power plants and with more investment this could make nuclear energy the dominant source of power 2."
@@ -842,7 +842,7 @@
   },
   {
     "id": "trump-05",
-    "snippet-title": "My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg.",
+    "snippet-title": "Clearly more anti immigration laws will simply fuel more racism, and the death of innocent people.",
     "snippets-text": [
       "My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg.",
       "Clearly more anti immigration laws will simply fuel more racism, and the death of innocent people."
@@ -882,10 +882,10 @@
   },
   {
     "id": "vegan-03",
-    "snippet-title": "There are No Examples of Vegan Populations with Better Health If a vegan diet is healthier than surely Pro would lead off by pointing to some group of vegans somewhere who have better health than the average non-planning meat eater who survives on the typical dietary disasters overloaded with fat, cholesterol, and surplus calories.",
+    "snippet-title": "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
     "snippets-text": [
-      "There are No Examples of Vegan Populations with Better Health If a vegan diet is healthier than surely Pro would lead off by pointing to some group of vegans somewhere who have better health than the average non-planning meat eater who survives on the typical dietary disasters overloaded with fat, cholesterol, and surplus calories.",
-      "But being theoretically able to have good health on a vegan diet does not suggest that a vegan diet is healthier than a non-vegan All the vegetables are available to those who also consume meat."
+      "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
+      "Vegan diet is in practice less healthy, and at best it can only equal a low-meat balanced diet."
     ],
     "aspects": {
       "cancer": 0.5,
@@ -897,10 +897,10 @@
   },
   {
     "id": "vegan-04",
-    "snippet-title": "There are No Examples of Vegan Populations with Better Health If a vegan diet is healthier than surely Pro would lead off by pointing to some group of vegans somewhere who have better health than the average non-planning meat eater who survives on the typical dietary disasters overloaded with fat, cholesterol, and surplus calories.",
+    "snippet-title": "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
     "snippets-text": [
-      "There are No Examples of Vegan Populations with Better Health If a vegan diet is healthier than surely Pro would lead off by pointing to some group of vegans somewhere who have better health than the average non-planning meat eater who survives on the typical dietary disasters overloaded with fat, cholesterol, and surplus calories.",
-      "But being theoretically able to have good health on a vegan diet does not suggest that a vegan diet is healthier than a non-vegan All the vegetables are available to those who also consume meat."
+      "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
+      "Vegan diet is in practice less healthy, and at best it can only equal a low-meat balanced diet."
     ],
     "aspects": {
       "cancer": 0.5,
@@ -924,8 +924,8 @@
     "id": "vegan-06",
     "snippet-title": "If pro doesn't redefine, I will take \"people\" to mean all people on Earth.",
     "snippets-text": [
-      "I can only assume he meant that becoming a vegan is the best lifestyle over all other lifestyles until he states otherwise.",
-      "If pro doesn't redefine, I will take \"people\" to mean all people on Earth."
+      "If pro doesn't redefine, I will take \"people\" to mean all people on Earth.",
+      "After all, God did give us freewill."
     ],
     "aspects": {
       "god": 0.3333333333333333,
@@ -948,7 +948,7 @@
     "snippet-title": "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
     "snippets-text": [
       "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
-      "I pointed out that vegans, being on average untutored in dietary matters, likely do not obtain enough B12 and omega-3 fatty acids."
+      "Given all this, can it be doubted that the vegan diet, as long as it is well planned, will be instrumental in reducing the rates of cancer, diabetes, and CVD."
     ],
     "aspects": {
       "cancer": 0.3333333333333333,

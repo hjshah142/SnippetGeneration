@@ -26,8 +26,8 @@ print(count)
 
 d = 0
 # methodSet = ['power','eigen','linear','krylov']
-mc_method = 'eigen'
-aspects_arguments_max = 100
+mc_method = 'linear'
+aspects_arguments_max = 200
 aspects_weights = [0, 0]
 arguments = data_snippets_filtered
 

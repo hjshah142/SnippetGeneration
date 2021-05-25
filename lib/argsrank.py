@@ -48,6 +48,7 @@ class ArgsRank:
 
         # self.tf_session = tf.Session(graph=g)
         # self.tf_session.run(init_op)
+        # tf.config.list_physical_devices('GPU')
         self.embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 
     def power_method(self, M, epsilon):
@@ -95,7 +96,7 @@ class ArgsRank:
         """
 
         row = []
-        print(len(cluster))
+        # print(len(cluster))
         for argument_j in cluster:
             # print(len(argument_j.sentences))
             for idx, sentence_j in enumerate(argument_j.sentences):
@@ -125,8 +126,7 @@ class ArgsRank:
         :param clusters:
         :return:
         """
-        # TODO modelling the context of argument
-        # TODO Add more similar arguments in cluster
+
         messages = []
         for idx, cluster in enumerate(clusters):
             messages = []
@@ -179,7 +179,6 @@ class ArgsRank:
         for arguments in args:
             arg = arguments[0]
             arg_snippet = {}
-            #print(arg.id)
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)

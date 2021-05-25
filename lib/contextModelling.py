@@ -41,15 +41,11 @@ class ContextModelling:
             argument_similar_ids_top = argument_similar_ids_list
         else:
             argument_similar_ids_top = argument_similar_ids_list[:self.aspects_arguments_max]
-            # print(type(argument_similar_ids_top))
-        # print(len(argument_similar_ids_top))
         argumentative_text_args = []
         for argument_similar_id in argument_similar_ids_top:
             # print(argument_similar_id)
             argumentative_text = arguments_df['text'][argument_similar_id] + arguments_df['conclusion'][
                 argument_similar_id]
-            # print(ArgumentativeText)
-            # print(argument_similar_id)
             args = Argument()
             args.set_sentences(argumentative_text)
             context_args_aspects.append(args)
@@ -86,7 +82,7 @@ class ContextModelling:
         return context_args_aspects
 
     def get_aspects_args2(self, arg_aspects, arg_id):
-        # retrieved the pre-saved similar arguments ids from the args.me corpus
+        # retrieves the pre-saved similar arguments ids from the args.me corpus
         # print(arg_aspects)
         arg_id_score = dict()
         for index, row in self.aspects_args_similar_ids.iterrows():

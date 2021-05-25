@@ -6,7 +6,8 @@ import re
 
 class Argument:
 
-    def __init__(self, premises=None, context=None, id=None, conclusion=None, cluster_map=None, aspects=None, index= None ):
+    def __init__(self, premises=None, context=None, id=None, conclusion=None,aspects=None,
+                 index=None):
         """
         Object representation of the args.me corpus.
         Yamen Ajjour, Henning Wachsmuth, Johannes Kiesel, Martin Potthast, Matthias Hagen, and Benno Stein.
@@ -32,7 +33,6 @@ class Argument:
         if premises != None:
             self.set_sentences(premises)
         # cluster_map= { 1: ['Argument 1','Argument 2'] }
-        self.cluster_map = cluster_map
         self.index = index
         """"
         if cluster_map is not None:
@@ -46,12 +46,10 @@ class Argument:
         """
         Split text into list of sentences using NLTK
         :param text:
-        :return:
+        :return: list of sentecnes if words length are less than 3
         """
-        # print(text)
+        # text_clean = clean(text)
         self.sentences = sent_tokenize(text)
-        # Remove sentences that are less than 3 words length
-        # return none if words are less than 3
         self.sentences = [sen for sen in self.sentences if len(word_tokenize(sen)) > 2]
 
     @classmethod
@@ -89,7 +87,6 @@ REMAP = {"-LRB-": "(", "-RRB-": ")", "-LCB-": "{", "-RCB-": "}",
 
 
 def clean(x):
-    print('test clean')
     return re.sub(
         r"-LRB-|-RRB-|-LCB-|-RCB-|-LSB-|-RSB-|``|''",
         lambda m: REMAP.get(m.group()), x)
