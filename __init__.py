@@ -24,14 +24,14 @@ print(count)
 # data_snippets_test = data_snippets_filtered[0:2]
 # ---- Test Snippet Generation using different parameters ---
 
-d = 0
+d = 1
 # methodSet = ['power','eigen','linear','krylov']
 mc_method = 'linear'
-aspects_arguments_max = 200
+aspects_arguments_max = 0
 aspects_weights = [0, 0]
 arguments = data_snippets_filtered
 
 snippet_generator = SnippetGenerator(arguments, d, mc_method, aspects_arguments_max, aspects_weights)
 snippets = snippet_generator.get_snippets(arguments)
-count, accuracy = snippet_generator.get_accuracy(data_snippets_filtered, snippets)
+count, accuracy = snippet_generator.get_accuracy(arguments, snippets)
 print(count, accuracy)

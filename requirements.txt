@@ -1,8 +1,9 @@
-numpy
-scipy
-scikit-learn
-nltk==3.6.1
-tensorflow=0.12.0
-tensorflow_hub=2.4.0
-discreteMarkovChain=0.22
-pandas~=1.2.3
+numpy==1.18.5
+scikit-learn==0.24.2
+nltk==3.6.2
+tensorflow==2.3.1
+tensorflow_hub==0.12.0
+discreteMarkovChain==0.22
+pandas==1.2.4
+transformers~=4.6.1
+fastai==1.0.61

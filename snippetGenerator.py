@@ -16,7 +16,6 @@ class SnippetGenerator:
         self.aspects_weights = aspects_weights
         self.arguments = arguments
 
-
     def get_snippets(self, arguments):
         # json.loads(json_arguments, encoding='latin1')
         clusters = []
@@ -52,7 +51,6 @@ class SnippetGenerator:
         # snippets = self.get_snippets(self.json_arguments)
         with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
             json.dump(snippets_generated, f, indent=2)
-        # print(snippets)
         print('snippets generated File is created ')
         return snippets_generated
 

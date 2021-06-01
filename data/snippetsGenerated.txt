@@ -4,7 +4,7 @@
     "snippet-title": "Women who already had abortion earlier in there life time have abortion again.",
     "snippets-text": [
       "Women who already had abortion earlier in there life time have abortion again.",
-      "At the age of 45 a women will have at least one abortion."
+      "In the U.S. black women are 3.3 times likely to have an abortion than white women."
     ],
     "aspects": {
       "abortion": 0.5,
@@ -26,10 +26,10 @@
   },
   {
     "id": "abortion-03",
-    "snippet-title": "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
+    "snippet-title": "\"The greatest destroyer of peace is abortion because if a mother can kill her own child, what is left for me to kill you and you to kill me?",
     "snippets-text": [
-      "Abortion is a big controversial topic, people believe abortion should be illegal and others think it should stay legal.",
-      "Abortion should be illegal because abortions are not safe, laws are protecting unborn babies, and fetuses can feel pain."
+      "\"The greatest destroyer of peace is abortion because if a mother can kill her own child, what is left for me to kill you and you to kill me?",
+      "Why would someone want to kill an innocent little life?"
     ],
     "aspects": {
       "abortion": 0.8,
@@ -40,10 +40,10 @@
   },
   {
     "id": "abortion-04",
-    "snippet-title": "The most important argument against abortion would be- can we choose to kill unwanted pregnancies?",
+    "snippet-title": "As I stated before abortion is a big deal, it can cause serious psychological impairment to the woman in the form of depression an guilt.",
     "snippets-text": [
-      "The most important argument against abortion would be- can we choose to kill unwanted pregnancies?",
-      "::< therefore abortion is morally wrong."
+      "As I stated before abortion is a big deal, it can cause serious psychological impairment to the woman in the form of depression an guilt.",
+      "P1:: It is always wrong to kill an innocent person."
     ],
     "aspects": {
       "abortion": 0.7142857142857143,
@@ -55,10 +55,10 @@
   },
   {
     "id": "abortion-05",
-    "snippet-title": "I am arguing for the right to have an abortion, not whether it is ok to abort a seven month developed child.",
+    "snippet-title": "A fetus in the first few months is not mentally developed, and to abort it is the equivalent of not getting pregnant in the first place.",
     "snippets-text": [
-      "It follows that \"having an abortion is the equivalent of not getting pregnant in the first place\" is contradictory.",
-      "I am arguing for the right to have an abortion, not whether it is ok to abort a seven month developed child."
+      "There is no child in not getting pregnant, yet there is a child involved with an abortion.",
+      "A fetus in the first few months is not mentally developed, and to abort it is the equivalent of not getting pregnant in the first place."
     ],
     "aspects": {
       "abortion": 1.0
@@ -69,7 +69,7 @@
     "id": "abortion-06",
     "snippet-title": "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood.",
     "snippets-text": [
-      "If you are trying to decide if abortion is the right choice for you, you probably have many things to think about.",
+      "If you are pregnant, you have options.",
       "I believe a women should be able to decide, without consequences, whether to end the life of their unborn child or proceed with motherhood."
     ],
     "aspects": {
@@ -106,10 +106,10 @@
   },
   {
     "id": "abortion-09",
-    "snippet-title": "If our country stops the use of abortion, we will end like china, forcing women that don't want to have an abortion to have an abortion to control the population.",
+    "snippet-title": "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women.",
     "snippets-text": [
-      "Abortion is needed to control the population so that the population doesn't get too excess.",
-      "If our country stops the use of abortion, we will end like china, forcing women that don't want to have an abortion to have an abortion to control the population."
+      "By the 22 century, the population estimated to be 11.2 billion people and if abortion were illegal, the population would be so much higher.",
+      "If abortion were illegal, the population would grow tremendously, causing abortion to be forced onto women later in life, which will increase the suicide rate of women."
     ],
     "aspects": {
       "abortion": 0.5384615384615384,
@@ -119,10 +119,10 @@
   },
   {
     "id": "abortion-10",
-    "snippet-title": "If it is immoral to kill a human, how could it be considered acceptable to terminate a fetus No civilized society allows one human to intentionally take the life of another human freely, and according to the aforementioned definition, abortion should not be different.",
+    "snippet-title": "Having a child with severe medical problems would not only be detrimental to the child but also to the mother and father.",
     "snippets-text": [
       "If it is immoral to kill a human, how could it be considered acceptable to terminate a fetus No civilized society allows one human to intentionally take the life of another human freely, and according to the aforementioned definition, abortion should not be different.",
-      "Another reason that abortion should be illegal is due to the fact that there is no such thing as an unwanted child."
+      "Having a child with severe medical problems would not only be detrimental to the child but also to the mother and father."
     ],
     "aspects": {
       "abortion": 0.8529411764705882,
@@ -135,10 +135,10 @@
   },
   {
     "id": "brexit-01",
-    "snippet-title": "If it splits, NATO, the UK, and the US will be much less powerful, both militarily and economically.",
+    "snippet-title": "Over $2 trillion have already been lost just in one day (June 24).",
     "snippets-text": [
-      "If it splits, NATO, the UK, and the US will be much less powerful, both militarily and economically.",
-      "At some point, there will be war in Europe because of this collapse."
+      "Over $2 trillion have already been lost just in one day (June 24).",
+      "This will mean that the whole of Europe just got a whole lot poorer, because Britain no longer has easy access to trade."
     ],
     "aspects": {
       "european union": 0.125,
@@ -153,10 +153,10 @@
   },
   {
     "id": "brexit-02",
-    "snippet-title": "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
+    "snippet-title": "It's one thing to be against something passing and quite another to try to override the will of the people by undemocratic means.",
     "snippets-text": [
-      "I don't know what political correctness has to do with this debate; if you would be so kind as to explain so both of us have some context to argue off of, that would be nice.",
-      "It's one thing to be against something passing and quite another to try to override the will of the people by undemocratic means."
+      "It's one thing to be against something passing and quite another to try to override the will of the people by undemocratic means.",
+      "I respect the will of the British people and hope that the choice they made actually occurs."
     ],
     "aspects": {
       "political correctness": 1.0
@@ -165,10 +165,10 @@
   },
   {
     "id": "brexit-03",
-    "snippet-title": "[2] The problem with this is that economists predict that the UK could lose up to 6% of It's GDP from leaving the EU which is much greatet than 0.3% [3] This isn't even including additional costs for tarrifs that would amount to close of the cost for eu membership after free trade deals are abolished along with eu membership.",
+    "snippet-title": "Britain clearly needs migrants considering it's own workers don't want to work the dirty jobs such as farming so migrants need to do it for them.",
     "snippets-text": [
-      "[2] The problem with this is that economists predict that the UK could lose up to 6% of It's GDP from leaving the EU which is much greatet than 0.3% [3] This isn't even including additional costs for tarrifs that would amount to close of the cost for eu membership after free trade deals are abolished along with eu membership.",
-      "[5] Clealry from this information, Brexit would have accomplished nothing in immigration and would hurt the UK economy in the long run."
+      "Britain clearly needs migrants considering it's own workers don't want to work the dirty jobs such as farming so migrants need to do it for them.",
+      "Limiting immigration radically could have some pernicious effects."
     ],
     "aspects": {
       "free trade": 1.0
@@ -177,7 +177,7 @@
   },
   {
     "id": "brexit-04",
-    "snippet-title": "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title.",
+    "snippet-title": "I strongly encourage voters to vote Con!",
     "snippets-text": [
       "He has not made any of his own arguments, and hasn't even written the word \"Brexit\" save for in the title.",
       "I strongly encourage voters to vote Con!"
@@ -187,20 +187,20 @@
   },
   {
     "id": "brexit-05",
-    "snippet-title": "You titled this debate \"Brexit,\" and you have not even mentioned the word in any of your argument.",
+    "snippet-title": "I understand that conversations never travel in a straight line.",
     "snippets-text": [
-      "You titled this debate \"Brexit,\" and you have not even mentioned the word in any of your argument.",
-      "So I say again, if you refuse to actually write anything substantive, I see no point in the further continuance of this debate."
+      "I understand that conversations never travel in a straight line.",
+      "You haven't even made any actual arguments."
     ],
     "aspects": {},
     "sentences": "I understand that conversations never travel in a straight line. However, this is not a conversation. This is a debate. Debates are meant to stay on point and not meander around pointlessly. You titled this debate \"Brexit,\" and you have not even mentioned the word in any of your argument. You haven't even made any actual arguments. So I say again, if you refuse to actually write anything substantive, I see no point in the further continuance of this debate."
   },
   {
     "id": "brexit-06",
-    "snippet-title": "Thus, one can expect Britain to try extra hard to woo Indian companies to invest there by providing much bigger incentives in terms of tax breaks, lesser regulation and other financial incentives.",
+    "snippet-title": "The Leave Campaign argues that Britain is losing out a big deal by staying in the EU: it has to pay millions of pounds each week as a contribution to the European budget; the extremely bureaucratic nature of the European parliament is hurting British exporters; and finally, that unmitigated migration from the European Union into Britain is creating an imbalance in the welfare schemes of the UK government.",
     "snippets-text": [
-      "Having said that, Britain would not want to lose out on capital coming in from India.",
-      "Thus, one can expect Britain to try extra hard to woo Indian companies to invest there by providing much bigger incentives in terms of tax breaks, lesser regulation and other financial incentives."
+      "The Leave Campaign argues that Britain is losing out a big deal by staying in the EU: it has to pay millions of pounds each week as a contribution to the European budget; the extremely bureaucratic nature of the European parliament is hurting British exporters; and finally, that unmitigated migration from the European Union into Britain is creating an imbalance in the welfare schemes of the UK government.",
+      "Thus, even though Britain stands to suffer from leaving the European Union in terms of reduced trade and a sustained drop in its GDP, the net effect can turn out to be positive for India."
     ],
     "aspects": {
       "european union": 0.8,
@@ -210,7 +210,7 @@
   },
   {
     "id": "brexit-08",
-    "snippet-title": "Resoluton: Brexit was unwise.",
+    "snippet-title": "Definition: Unwise = Bringing about more disadvantages than advantages/benefits.",
     "snippets-text": [
       "Resoluton: Brexit was unwise.",
       "Definition: Unwise = Bringing about more disadvantages than advantages/benefits."
@@ -220,9 +220,9 @@
   },
   {
     "id": "brexit-09",
-    "snippet-title": "Brexit makes it harder for UK to trade with EU.",
+    "snippet-title": "Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit).",
     "snippets-text": [
-      "Brexit makes it harder for UK to trade with EU.",
+      "Foreign investors like investing in the UK because it gives them easy access to the EU's single market (which means less borders in moving goods, less tarriffs, and more profit).",
       "Deals can be made but will probably not be as good as it was before Brexit."
     ],
     "aspects": {},
@@ -232,15 +232,15 @@
     "id": "brexit-10",
     "snippet-title": "I will be arguing that Brexit was a good thing for the UK.",
     "snippets-text": [
-      "I will be arguing that Brexit was a good thing for the UK.",
-      "All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU."
+      "This round is just for acceptance.",
+      "I will be arguing that Brexit was a good thing for the UK."
     ],
     "aspects": {},
     "sentences": "This round is just for acceptance. I will be arguing that Brexit was a good thing for the UK. All I ask is for my opponent to have a knowledge of the EU and the pros and cons of leaving and staying in the EU."
   },
   {
     "id": "climate change-01",
-    "snippet-title": "Climate change is happening, but is it man caused?",
+    "snippet-title": "There was never enough research done on the natural causes of climate change, so we just naturally assumed it was man caused.",
     "snippets-text": [
       "Climate change is happening, but is it man caused?",
       "There was never enough research done on the natural causes of climate change, so we just naturally assumed it was man caused."
@@ -250,19 +250,19 @@
   },
   {
     "id": "climate change-03",
-    "snippet-title": "I'm against jailing Climate change deniers.",
+    "snippet-title": "It is a violation of free speech.",
     "snippets-text": [
-      "I'm against jailing Climate change deniers.",
-      "Nevertheless some people think we should jail climate change deniers."
+      "It is a violation of free speech.",
+      "I would hate to see a 15 year old teenager go to jail for running off at the mouth."
     ],
     "aspects": {},
     "sentences": "I'm against jailing Climate change deniers. It is a violation of free speech. I also think it sets a bad precedence. I would hate to see a 15 year old teenager go to jail for running off at the mouth. Nevertheless some people think we should jail climate change deniers. [0] What's next jailing flat Earth people and hate speech? [1] 0. 1."
   },
   {
     "id": "climate change-06",
-    "snippet-title": "I will start My opening argument to state that global warming is a proven fact and anyone that disagrees with me is ignorant on this subject.",
+    "snippet-title": "97% of scientists believe that climate change is primarily human caused.",
     "snippets-text": [
-      "I will start My opening argument to state that global warming is a proven fact and anyone that disagrees with me is ignorant on this subject.",
+      "97% of scientists believe that climate change is primarily human caused.",
       "Also the arguments stated by Human-caused climate change deniers are pointless and not fact driven."
     ],
     "aspects": {
@@ -274,7 +274,7 @@
     "id": "climate change-07",
     "snippet-title": "The reason that can be banned with violating the 1st Amendment is the harm caused to children in the production of child porn is of such magnitude the normal means of combating bad speech-- more speech is not adequate or sufficient.",
     "snippets-text": [
-      "One of them is child pornography.",
+      "There is an overwhelming scientific consensus climate change presents a serious risk to the future of the Earth and to mankind.",
       "The reason that can be banned with violating the 1st Amendment is the harm caused to children in the production of child porn is of such magnitude the normal means of combating bad speech-- more speech is not adequate or sufficient."
     ],
     "aspects": {
@@ -294,10 +294,10 @@
   },
   {
     "id": "climate change-09",
-    "snippet-title": "It would be a drastic mistake to argue that \"past climate doesn't count,\" and I thank CON for bringing this potential misunderstanding to my attention.",
+    "snippet-title": "Once they heat to a certain point, the oceans are expected to start releasing CO2 back into the atmosphere, which may include massive reserves that have been down there for millions of years.\"",
     "snippets-text": [
-      "It would be a drastic mistake to argue that \"past climate doesn't count,\" and I thank CON for bringing this potential misunderstanding to my attention.",
-      "[7] I think we can all agree that Michael Mann was wrong ten years ago, and that the graph of climate anomalies is not shaped like a hockey stick, especially since that's not the topic of the debate I instigated, of the points I have argued, or of the sources I have cited."
+      "Once they heat to a certain point, the oceans are expected to start releasing CO2 back into the atmosphere, which may include massive reserves that have been down there for millions of years.\"",
+      "Most aspects of climate change will persist for many centuries even if emissions of CO2 are stopped."
     ],
     "aspects": {
       "al gore": 0.3333333333333333,
@@ -308,20 +308,20 @@
   },
   {
     "id": "death_penalty-01",
-    "snippet-title": "Death penalty isn't only method to punish the murderer.",
+    "snippet-title": "However, there are other punishment that can make the murderer painful.",
     "snippets-text": [
-      "Death penalty isn't only method to punish the murderer.",
-      "People who are poor are the one who gets death penalty."
+      "However, there are other punishment that can make the murderer painful.",
+      "Death penalty isn't only method to punish the murderer."
     ],
     "aspects": {},
     "sentences": "However, there are other punishment that can make the murderer painful. Death penalty isn't only method to punish the murderer. Death is an unusual punishment. There are flaws in death penalty. People who are poor are the one who gets death penalty. People who are rich escaped from the death penalty or from the law."
   },
   {
     "id": "death_penalty-02",
-    "snippet-title": "Frankly, I see absolutely no benefits of the death penalty.",
+    "snippet-title": "A study has shown that death penalty plays virtually no role in deterring criminals.",
     "snippets-text": [
-      "A study has shown that death penalty plays virtually no role in deterring criminals.",
-      "Frankly, I see absolutely no benefits of the death penalty."
+      "First, the death penalty is very expensive.",
+      "A study has shown that death penalty plays virtually no role in deterring criminals."
     ],
     "aspects": {
       "capital punishment": 1.0
@@ -332,7 +332,7 @@
     "id": "death_penalty-03",
     "snippet-title": "This link PROVES that the death penalty does NOT bring down crime rates.",
     "snippets-text": [
-      "#1- It costs more for the death penalty than the cost of life in prison.",
+      "California spends an additional $184 million on the death penalty per year because of the additional costs of capital trials, enhanced security on death row, and legal representation.The study\"s authors predict that the cost of the death penalty will reach $9 billion by 2030.",
       "This link PROVES that the death penalty does NOT bring down crime rates."
     ],
     "aspects": {
@@ -345,7 +345,7 @@
     "snippet-title": "Establish that the death penalty has been used to convict innocent people and prove how it is given to people who have lesser offenses than murder.",
     "snippets-text": [
       "Establish that the death penalty has been used to convict innocent people and prove how it is given to people who have lesser offenses than murder.",
-      "my burden of proof is to show the death penalty is used not only for the offences my opponent claims is justifiable and to show innocents can and has been convicted with the death penalty as well as prove that the death penalty is hypocritical to the laws of the state."
+      "That the there is not possible way to prevent a repeating offender till they actually repeat the offence."
     ],
     "aspects": {},
     "sentences": "First i will show you the outline of my case as to say that it is to prove in the hands of the government the death penalty can and has been used wrongly. 1. Establish that the death penalty has been used to convict innocent people and prove how it is given to people who have lesser offenses than murder. 2. That the there is not possible way to prevent a repeating offender till they actually repeat the offence. my burden of proof is to show the death penalty is used not only for the offences my opponent claims is justifiable and to show innocents can and has been convicted with the death penalty as well as prove that the death penalty is hypocritical to the laws of the state."
@@ -355,17 +355,17 @@
     "snippet-title": "The death penalty is a useful and fair punishment.",
     "snippets-text": [
       "The death penalty is a useful and fair punishment.",
-      "If you murder, death penalty."
+      "It shouldn't be used just to get rid of someone, but to repay what they did to someone else."
     ],
     "aspects": {},
     "sentences": "The death penalty is a useful and fair punishment. It shouldn't be used just to get rid of someone, but to repay what they did to someone else. If you murder, death penalty. Breaking and entering along with grand larceny, death penalty."
   },
   {
     "id": "death_penalty-07",
-    "snippet-title": "You also have to take into account gun control and general crime in the area.",
+    "snippet-title": "Ladies And Gentleman, I have proved that: Murders do go down as executions rise Death Penalty is cost-efficient Removing the death penalty will have negative effects The death penalty is morally justified Thank you 1.",
     "snippets-text": [
-      "You also have to take into account gun control and general crime in the area.",
-      "Then you have Texas, Louisiana and Alabama, all who are against gun control."
+      "All of these are cost efficient ways of executing the death penalty.",
+      "Ladies And Gentleman, I have proved that: Murders do go down as executions rise Death Penalty is cost-efficient Removing the death penalty will have negative effects The death penalty is morally justified Thank you 1."
     ],
     "aspects": {
       "gun control": 0.5,
@@ -387,30 +387,30 @@
   },
   {
     "id": "death_penalty-09",
-    "snippet-title": "Death penalty is used to get rid of bad people so bad that hundreds die.",
+    "snippet-title": "Benefits of death penalty - decreases jail over population - puts fear into other criminals and shows a purpose - It avenges innocent lives - It decreases crime.",
     "snippets-text": [
-      "Death penalty is used to get rid of bad people so bad that hundreds die.",
-      "If you think the Death penalty is bad because it kills people you must not know what the purpose of it is."
+      "If there is no death penalty then the maniac will still kill more people.",
+      "Benefits of death penalty - decreases jail over population - puts fear into other criminals and shows a purpose - It avenges innocent lives - It decreases crime."
     ],
     "aspects": {},
     "sentences": "The death penalty has a purpose. People who have killed many and even thousands cant be sentence to death? Death penalty should exist because when someone commits a crime that's so violent the end result can cause hundreds to die. If there is no death penalty then the maniac will still kill more people. Death penalty is used to get rid of bad people so bad that hundreds die. If you think the Death penalty is bad because it kills people you must not know what the purpose of it is. The death penalty is a way to put fear into the criminal and to put fear into others. Crime has decreased and the death penalty still lives. Several tests have shown that the death penalty is an effective deterrent of future crimes. Do people who commit heinous crimes, such as the bombers, really have human rights. To say that we are lowering ourselves to that level is wrong. Killing over 200 innocent lives. We have to look as well at the possibilities of these criminals committing crimes again. In Australia murder, on average, is imprisonment for 12 years. This means many murders are set free, able to commit further crimes. Benefits of death penalty - decreases jail over population - puts fear into other criminals and shows a purpose - It avenges innocent lives - It decreases crime. Without the death penalty -Over population of crime in jail - More criminals roam around - citizen would be feared. Probably could cause strikes on government, - Crime rate goes up It is on to you now"
   },
   {
     "id": "death_penalty-10",
-    "snippet-title": "Death penalty is very expensive 2.",
+    "snippet-title": "Death penalty does not \"scare\" criminals out of doing bad things 6.",
     "snippets-text": [
-      "Death penalty is very expensive 2.",
-      "Death penalty is unnecessary 3."
+      "\"The death penalty honors human dignity by treating the defendant as a free moral actor able to control his own destiny for good or for ill\" I do not see how killing someone allows the defendant to control his own destiny.",
+      "Death penalty does not \"scare\" criminals out of doing bad things 6."
     ],
     "aspects": {},
     "sentences": "briauna forfeited this round. Con Since I have nothing to refute, I will address my opponent's first argument. I would like to note that it seems like my opponent simply added some \"smart\" sounding words to buff up her argument. \"The death penalty honors human dignity by treating the defendant as a free moral actor able to control his own destiny for good or for ill\" I do not see how killing someone allows the defendant to control his own destiny. \"But communities would plunge into anarchy if they could not act on moral assumptions less certain than that the sun will rise in the east and set in the west.\" I agree, but this argument does virtually nothing to support the death penalty. My opponent has, in reality, done almost nothing to support the death penalty. I have no more to say, so I will sum up my arguments: 1. Death penalty is very expensive 2. Death penalty is unnecessary 3. Death penalty can be regarded as mercy, putting the guilty \"out of their misery\" instead of making them sit in jail 4. Death penalty goes against many religions 5. Death penalty does not \"scare\" criminals out of doing bad things 6. Death penalty is used randomly. It depends on the court, not the offense or crime that was committed 7. Innocents have been executed wrongly 8. There are no benefits to death penalty and my opponent has failed to convince me otherwise by providing very vague arguments Thank you for the debate."
   },
   {
     "id": "donald trump-01",
-    "snippet-title": "Donald Trump is a candidate for the Republican party who is often called a racist by many Democrats as a form of argument why he should not be president.",
+    "snippet-title": "That's huge and there are many more ways he not racist.",
     "snippets-text": [
-      "Donald Trump is a candidate for the Republican party who is often called a racist by many Democrats as a form of argument why he should not be president.",
-      "Donald Trump is no racist and may be the least racist candidate."
+      "Donald Trump is no racist and may be the least racist candidate.",
+      "That's huge and there are many more ways he not racist."
     ],
     "aspects": {
       "donald trump": 0.75,
@@ -432,10 +432,10 @@
   },
   {
     "id": "donald trump-03",
-    "snippet-title": "Here is the link: This is proof that Donald Trump would be the worst president if he wins, worse than any other president in history.",
+    "snippet-title": "Trying to get Mexico to pay for the wall would put 2 million jobs at risk.",
     "snippets-text": [
       "Trying to get Mexico to pay for the wall would put 2 million jobs at risk.",
-      "Here is the link: This is proof that Donald Trump would be the worst president if he wins, worse than any other president in history."
+      "He thinks all Mexicans are rapists, is a friend of Ku Klux Klan, and called women fat, pigs, dogs, slobs, disgusting animals, and so on."
     ],
     "aspects": {
       "donald trump": 0.47619047619047616,
@@ -448,9 +448,9 @@
   },
   {
     "id": "donald trump-04",
-    "snippet-title": "Donald Trump is a Presbyterianism [3] and is therefore religious.",
+    "snippet-title": "Due to the fact that Donald Trump is religious this tells us that his beliefs do not coincide with the illuminati's goals.",
     "snippets-text": [
-      "Donald Trump is a Presbyterianism [3] and is therefore religious.",
+      "[1] The society's goals were to oppose superstition, obscurantism, religious influence over public life [2].",
       "Due to the fact that Donald Trump is religious this tells us that his beliefs do not coincide with the illuminati's goals."
     ],
     "aspects": {
@@ -460,10 +460,10 @@
   },
   {
     "id": "donald trump-05",
-    "snippet-title": "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life.",
+    "snippet-title": "[2] He meets the Constitutional requirement for President, therefore he is qualified.",
     "snippets-text": [
-      "[2] Donald Trump was born in the United States, specifically in New York.",
-      "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life."
+      "Pro \" As directed by the Constitution a presidential candidate must be a natural born citizen of the United States, a resident for 14 years, and 35 years of age or older.\"",
+      "[2] He meets the Constitutional requirement for President, therefore he is qualified."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -472,10 +472,10 @@
   },
   {
     "id": "donald trump-06",
-    "snippet-title": "Donald Trump is saying what conservatives and independents wanted to hear, but is it a businessman just doing business and saying what he thinks will sell, again, only time will provide the answer, we can only hope that Donald Trump doesn't turn out to be a spoiler and allow Hillary or some other democrat to be elected to office.",
+    "snippet-title": "In a REDSTATE ARTICLE for instance the author of the article states,\"The Bible says not to put new Christians in leadership positions.",
     "snippets-text": [
-      "In the same article its stated that Donald Trump has been a contributor to the democrat party and organizations that conservatives were against so that certainly raises the question about who Donald trump reallty is Some have suggested that Donald trump is a spoiler taking away votes that could have gone to another republican candidate running for president who is a more known conservative ruining the republicans chances of winning the White House.",
-      "Donald Trump is saying what conservatives and independents wanted to hear, but is it a businessman just doing business and saying what he thinks will sell, again, only time will provide the answer, we can only hope that Donald Trump doesn't turn out to be a spoiler and allow Hillary or some other democrat to be elected to office."
+      "In a REDSTATE ARTICLE for instance the author of the article states,\"The Bible says not to put new Christians in leadership positions.",
+      "Maybe though the Conservative republicans think that those who have been elected to office weren't listening to conservatives and independents and haven't been for a long time and are now willing to take a chance that Donald Trump will listen to them and will promote the things that conservatives believed in."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -484,7 +484,7 @@
   },
   {
     "id": "donald trump-07",
-    "snippet-title": "\"Who is this man DONALD TRUMP\" \"All the world's a stage, And all the men and women merely players; They have their exits and their entrances, And one man in his time plays many parts,...\" All The World's A Stage...William Shakespeare The trick is to find out which part Donald Trump is now playing.",
+    "snippet-title": "Is Donald Trump a chameleon changing to suit his purpose",
     "snippets-text": [
       "\"Who is this man DONALD TRUMP\" \"All the world's a stage, And all the men and women merely players; They have their exits and their entrances, And one man in his time plays many parts,...\" All The World's A Stage...William Shakespeare The trick is to find out which part Donald Trump is now playing.",
       "Is Donald Trump a chameleon changing to suit his purpose"
@@ -498,10 +498,10 @@
   },
   {
     "id": "donald trump-08",
-    "snippet-title": "He declared himself god in his last debate.",
+    "snippet-title": "That could start a world war that would end very badly.",
     "snippets-text": [
-      "I've done some research and found that Donald Trump has some unstable qualities.",
-      "He declared himself god in his last debate."
+      "That could start a world war that would end very badly.",
+      "It's our government's job, also, to help people looking for a better life coming to the states."
     ],
     "aspects": {
       "donald trump": 0.8,
@@ -511,10 +511,10 @@
   },
   {
     "id": "donald trump-09",
-    "snippet-title": "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life.",
+    "snippet-title": "[2] He meets the Constitutional requirement for President, therefore he is qualified.",
     "snippets-text": [
-      "[2] Donald Trump was born in the United States, specifically in New York.",
-      "[2] Donald Trump has been a resident for 14 years, and in fact, he has lived in the United States all his life."
+      "\" As directed by the Constitution a presidential candidate must be a natural born citizen of the United States, a resident for 14 years, and 35 years of age or older.\"",
+      "[2] He meets the Constitutional requirement for President, therefore he is qualified."
     ],
     "aspects": {
       "donald trump": 1.0
@@ -523,10 +523,10 @@
   },
   {
     "id": "donald trump-10",
-    "snippet-title": "The point of the wall isn't to show the world that the US doesn't want people coming into it; rather, it is a statement that coming in legally will be EASIER than coming in the other way.",
+    "snippet-title": "The majority of those people will bring in drugs, or rape, or get government benifits for free (a.k.a. Bankrupting our economy).",
     "snippets-text": [
-      "The point of the wall isn't to show the world that the US doesn't want people coming into it; rather, it is a statement that coming in legally will be EASIER than coming in the other way.",
-      "Those are a few of the reasons why I think you are wrong about Donald Trump, and why I am right."
+      "We all know that not all Muslims are terrorists.",
+      "The majority of those people will bring in drugs, or rape, or get government benifits for free (a.k.a. Bankrupting our economy)."
     ],
     "aspects": {
       "cult": 0.03125,
@@ -541,10 +541,10 @@
   },
   {
     "id": "feminism-01",
-    "snippet-title": "Feminist responses have ranged from bafflement to vitriol or mockery to arguments that these women don\"t know what feminism is.",
+    "snippet-title": "A controversial social media movement called Women Against Feminism features women explaining \" mostly in \"selfies\" with handwritten signs \" why they do not.",
     "snippets-text": [
-      "Feminist responses have ranged from bafflement to vitriol or mockery to arguments that these women don\"t know what feminism is.",
-      "But while this new movement has its silly aspects, it raises some much-needed questions about feminism\"s present and future state \" and, in the weeks since it first attracted notice, many prominent feminists have helped validate some of the criticisms."
+      "A controversial social media movement called Women Against Feminism features women explaining \" mostly in \"selfies\" with handwritten signs \" why they do not.",
+      "Feminist responses have ranged from bafflement to vitriol or mockery to arguments that these women don\"t know what feminism is."
     ],
     "aspects": {
       "feminism": 0.5,
@@ -554,10 +554,10 @@
   },
   {
     "id": "feminism-02",
-    "snippet-title": "They do want equality just as men, but feminism is more just than opportunities.",
+    "snippet-title": "Women who get splashed in the face with acid because they want education.",
     "snippets-text": [
-      "Women don't need feminism.",
-      "They do want equality just as men, but feminism is more just than opportunities."
+      "Women who get splashed in the face with acid because they want education.",
+      "Woman who are mistreated and not respected."
     ],
     "aspects": {
       "feminism": 0.42857142857142855,
@@ -571,7 +571,7 @@
     "snippet-title": "Feminism says they want the equality but the definition of the Feminism doesn't say anything about promoting men's rights so it basically assumes men are not oppressed so it's unnecessary to promote the men's rights.",
     "snippets-text": [
       "Feminism says they want the equality but the definition of the Feminism doesn't say anything about promoting men's rights so it basically assumes men are not oppressed so it's unnecessary to promote the men's rights.",
-      "so modern Feminism is not about equality it's about Female Supremacy to suppress to dominant over men."
+      "but this is completely a myth because men are oppressed all the time from every single way."
     ],
     "aspects": {
       "feminism": 1.0
@@ -582,8 +582,8 @@
     "id": "feminism-04",
     "snippet-title": "Yet many of the women say they reject feminism precisely because they are pro-equality.",
     "snippets-text": [
-      "One might assume that Women Against Feminism is a traditionalist backlash against gender equality.",
-      "Yet many of the women say they reject feminism precisely because they are pro-equality."
+      "Yet many of the women say they reject feminism precisely because they are pro-equality.",
+      "A blogger who goes by AstrokidNJ has analyzed a week\"s worth of posts on Women Against Feminism and found that 46 percent were egalitarian, 19 percent endorsed men\"s issues, and 12 percent criticized feminist intolerance toward dissent."
     ],
     "aspects": {
       "feminism": 0.42857142857142855,
@@ -594,10 +594,10 @@
   },
   {
     "id": "feminism-05",
-    "snippet-title": "I'm not saying that women don't have the same rights as men.",
+    "snippet-title": "Feminism is a threat to society.",
     "snippets-text": [
-      "Feminism encourages false rape accusations and stereotyping men as bad.",
-      "I'm not saying that women don't have the same rights as men."
+      "Feminism is a threat to society.",
+      "Feminism encourages false rape accusations and stereotyping men as bad."
     ],
     "aspects": {
       "feminism": 0.5,
@@ -610,8 +610,8 @@
     "id": "feminism-06",
     "snippet-title": "{ It is not an act of feminism to defend a slut who enabled an adulterous man.",
     "snippets-text": [
-      "{ It is not an act of feminism to defend a slut who enabled an adulterous man.",
-      "I am Pro Feminism, that is why I accepted this debate."
+      "Feminism is the ACT of Advocating (though perhaps passively in some circumstances) against Woman Abuse, and EVERYTHING which leads to women being slandered - Including False propaganda of Feminism by SLuts who enable womanizers and glorify perverts such as homosexuality.",
+      "{ It is not an act of feminism to defend a slut who enabled an adulterous man."
     ],
     "aspects": {
       "feminism": 0.5833333333333334,
@@ -624,10 +624,10 @@
   },
   {
     "id": "feminism-07",
-    "snippet-title": "I believe that it is because of these people that so many people do not like feminism.",
+    "snippet-title": "Feminists just want to have equal rights, not overpower men.",
     "snippets-text": [
       "Feminists just want to have equal rights, not overpower men.",
-      "I believe that it is because of these people that so many people do not like feminism."
+      "Feminism is about equality, nothing else."
     ],
     "aspects": {
       "feminism": 0.75,
@@ -637,10 +637,10 @@
   },
   {
     "id": "feminism-09",
-    "snippet-title": "I accept this debate and will be presenting my case for why Feminism is necessary in modern society.",
+    "snippet-title": "good luck",
     "snippets-text": [
-      "I accept this debate and will be presenting my case for why Feminism is necessary in modern society.",
-      "and to clearly show to me what they believe feminism to be."
+      "and to clearly show to me what they believe feminism to be.",
+      "good luck"
     ],
     "aspects": {
       "feminism": 1.0
@@ -649,10 +649,10 @@
   },
   {
     "id": "feminism-10",
-    "snippet-title": "If you think that trying to remove the bias towards men is trying to say they are bad, then I am going to have to ask you go to timeout because that idea is downright childish.",
+    "snippet-title": "If it is obscure, then false rape accusations don't happen often and thus shouldn't be a problem.",
     "snippets-text": [
       "If we are going of the definition of feminism I stated earlier, then feminists aren't trying to put men as stereotypically bad.",
-      "If you think that trying to remove the bias towards men is trying to say they are bad, then I am going to have to ask you go to timeout because that idea is downright childish."
+      "If it is obscure, then false rape accusations don't happen often and thus shouldn't be a problem."
     ],
     "aspects": {
       "feminism": 0.32,
@@ -664,10 +664,10 @@
   },
   {
     "id": "google-01",
-    "snippet-title": "Just because Google gets more visitors, that doesn't mean it's necessarily better!",
+    "snippet-title": "It doesn't show that 67% of people will never ever use Bing instead of Google, on the website where I got my info, it didn't say anything about the rest of the people liking Google better than Bing.",
     "snippets-text": [
-      "Just because Google gets more visitors, that doesn't mean it's necessarily better!",
-      "\"As for Bing sounding better than Google, I'm going to have to disagree ;).\""
+      "This actually bolsters my case, because it shows that 67% of people would not ever use Bing instead of Google.\"",
+      "It doesn't show that 67% of people will never ever use Bing instead of Google, on the website where I got my info, it didn't say anything about the rest of the people liking Google better than Bing."
     ],
     "aspects": {
       "google": 1.0
@@ -700,10 +700,10 @@
   },
   {
     "id": "google-06",
-    "snippet-title": "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
+    "snippet-title": "Google makes our lives better to take away our freedom.",
     "snippets-text": [
-      "If everyone uses google classroom every document would be on the internet and paper would be like extinct.",
-      "Google wants us to think like Google and that how they will take over the world.A279;"
+      "Google makes our lives better to take away our freedom.",
+      "When they have all the education they will have the ability to change it."
     ],
     "aspects": {
       "google": 1.0
@@ -712,10 +712,10 @@
   },
   {
     "id": "google-07",
-    "snippet-title": "People tend to prefer Google, so I would say Google is better than Bing.",
+    "snippet-title": "Google is much better than Bing.",
     "snippets-text": [
-      "People tend to prefer Google, so I would say Google is better than Bing.",
-      "There is a reason why \"Google that\" is a common phrase."
+      "Google has a vastly larger following, Bing is tiny in comparison.",
+      "Google is much better than Bing."
     ],
     "aspects": {
       "google": 0.875,
@@ -725,10 +725,10 @@
   },
   {
     "id": "google-08",
-    "snippet-title": "Bing is just another copy cat trying to be as big as Google and it will not happen.",
+    "snippet-title": "Bing is advertised to be a faster, more efficient way to find things.",
     "snippets-text": [
-      "Bing is just another copy cat trying to be as big as Google and it will not happen.",
-      "Such as; Google translate, Google maps and many many more ( Bing on the other hand only has 23 different refined searches."
+      "Bing is advertised to be a faster, more efficient way to find things.",
+      "This is wrong."
     ],
     "aspects": {
       "google": 0.9285714285714286,
@@ -738,10 +738,10 @@
   },
   {
     "id": "google-09",
-    "snippet-title": "As for Bing sounding better than Google, i'm going to have to disagree ;).",
+    "snippet-title": "This clearly shows that google is better.",
     "snippets-text": [
       "This actually bolsters my case, because it shows that 67% of people would not ever use bing instead of google.",
-      "As for Bing sounding better than Google, i'm going to have to disagree ;)."
+      "This clearly shows that google is better."
     ],
     "aspects": {
       "google": 1.0
@@ -750,10 +750,10 @@
   },
   {
     "id": "google-10",
-    "snippet-title": "Well you see,when it comes to Web services that go beyond simple search, it's hard to bet against Google.",
+    "snippet-title": "And until Bing comes up with a StreetView-like service, it will have a hard time attracting those who want to use Google Maps to find out what a particular location looks like.",
     "snippets-text": [
       "Well you see,when it comes to Web services that go beyond simple search, it's hard to bet against Google.",
-      "Although Microsoft has Bing Maps, which is arguably better than Google Maps, Google adds in several more services, like Google Docs, Blogsearch and News, that easily best Bing's Web services."
+      "And until Bing comes up with a StreetView-like service, it will have a hard time attracting those who want to use Google Maps to find out what a particular location looks like."
     ],
     "aspects": {
       "google": 1.0
@@ -762,10 +762,10 @@
   },
   {
     "id": "nuclear_energy-04",
-    "snippet-title": "SOLAR: Especially with so many \"experts\" verifying the existence of greenhouse gases and global warming, you would think that would open the door even wider for good ol' solar power.",
+    "snippet-title": "All of which can be done at a fraction of the cost of nuclear energy, and boast a much better safety record.",
     "snippets-text": [
-      "My opponent has demonstrated that nuclear energy does indeed exceed the effectiveness of fossil fuels.",
-      "SOLAR: Especially with so many \"experts\" verifying the existence of greenhouse gases and global warming, you would think that would open the door even wider for good ol' solar power."
+      ":o) There is no doubt that nuclear energy can offer power to communities.",
+      "All of which can be done at a fraction of the cost of nuclear energy, and boast a much better safety record."
     ],
     "aspects": {
       "chernobyl": 0.13333333333333333,
@@ -781,20 +781,20 @@
   },
   {
     "id": "nuclear_energy-06",
-    "snippet-title": "This is going to be a simple Pro Nuclear Energy vs Con Nuclear Energy.",
+    "snippet-title": "Nuclear fission - A nuclear reaction in which a heavy nucleus splits spontaneously or on impact with another particle, with the release of energy.",
     "snippets-text": [
-      "This is going to be a simple Pro Nuclear Energy vs Con Nuclear Energy.",
-      "Nuclear energy (as it pertains to this debate) - The gathering of energy from nuclear fission or nuclear fusion to use in commercial purposes (such as electricity)."
+      "Nuclear fission - A nuclear reaction in which a heavy nucleus splits spontaneously or on impact with another particle, with the release of energy.",
+      "[1] Nuclear fusion - A nuclear reaction in which atomic nuclei of low atomic number fuse to form a heavier nucleus with the release of energy."
     ],
     "aspects": {},
     "sentences": "This is going to be a simple Pro Nuclear Energy vs Con Nuclear Energy. No specific resolution, just the broad subject of using nuclear energy. Burden of Proof - The BoP falls equally on both debaters to support and defend their arguments while refuting their opponent's. For example, Con can focus on negative effects to the environment, safety issues, or better alternatives rendering Nuclear obsolete, but Con cannot just disagree with everything Pro puts up (and vise versa). I will go ahead and present some definitions. Unless Con finds these definitions to be abusive, they are to be accepted. If Con finds them abusive, Con is free to present alternative definitions, but then it will be up to the voters to agree if my definitions are abusive or not. Nuclear energy (as it pertains to this debate) - The gathering of energy from nuclear fission or nuclear fusion to use in commercial purposes (such as electricity). Nuclear fission - A nuclear reaction in which a heavy nucleus splits spontaneously or on impact with another particle, with the release of energy. [1] Nuclear fusion - A nuclear reaction in which atomic nuclei of low atomic number fuse to form a heavier nucleus with the release of energy. [2] Con may present any additional definitions that they choose and may start debating in their R1, however, they are also free to pass it back to me to start in my R2. Additional definitions may be added as needed throughout the entire debate. [1] [2]"
   },
   {
     "id": "nuclear_energy-08",
-    "snippet-title": "Not to mention that Fusion reactions are rapidly coming to a commercial scale for nuclear power plants and with more investment this could make nuclear energy the dominant source of power 2.",
+    "snippet-title": "It creates jobs, more power than many other sources, and has some of the lowest impacts on the environment.",
     "snippets-text": [
-      "Nuclear energy is a good source of energy, if not the best.",
-      "Not to mention that Fusion reactions are rapidly coming to a commercial scale for nuclear power plants and with more investment this could make nuclear energy the dominant source of power 2."
+      "It creates jobs, more power than many other sources, and has some of the lowest impacts on the environment.",
+      "This source of energy creates a low impact on the environment anyway."
     ],
     "aspects": {
       "nuclear power": 1.0
@@ -803,20 +803,20 @@
   },
   {
     "id": "trump-01",
-    "snippet-title": "\"I think trump is life.",
+    "snippet-title": "It should be able to reproduce itself.",
     "snippets-text": [
-      "\"I think trump is life.",
-      "[3] Now as far as I can tell a \"trump\" or \"trump card\" doesn't meet any of these requirements making my opponents statement \"trump is life\" false."
+      "It should be able to break down or build up nutrients to release or store energy based on need.",
+      "It should be able to reproduce itself."
     ],
     "aspects": {},
     "sentences": "Thank you Pro for this interesting topic. \"I think trump is life. Agree?\" Before starting my own arguments let's define a few terms. trump - a card of a suit any of whose cards will win over a card that is not of this suit \"called also trump card. [1] Life - the ability to grow, change, etc., that separates plants and animals from things like water or rocks [2] Now there are 7 qualifications in order for something to have life. They are as follows: It should maintain some balanced conditions in its inner structure Its structure is highly organized. It should be able to break down or build up nutrients to release or store energy based on need. This is called Metabolism It should grow, which means its structure changes as time goes by in an advantageous manner. It should show adaptation to the environment. It should be able to respond to environmental stimuli on demand (as opposed to adaptation, which occurs over time). It should be able to reproduce itself. [3] Now as far as I can tell a \"trump\" or \"trump card\" doesn't meet any of these requirements making my opponents statement \"trump is life\" false. [1] [2] [3]"
   },
   {
     "id": "trump-02",
-    "snippet-title": "Trump is the most openly racist Presidential candidate since pre Civil Rights.",
+    "snippet-title": "It destroys communities, causes crime, etc..",
     "snippets-text": [
-      "Trump is the most openly racist Presidential candidate since pre Civil Rights.",
-      "Trump's rhetoric is dangerous and will destroy the US."
+      "They're a threat, people to be surveilled and harassed and hated and feared.",
+      "It destroys communities, causes crime, etc.."
     ],
     "aspects": {
       "black lives matter": 0.16666666666666666,
@@ -827,10 +827,10 @@
   },
   {
     "id": "trump-04",
-    "snippet-title": "\"I will be the greatest jobs president that God ever created, I tell you that.",
+    "snippet-title": "\"Plus, with less authentic delicious Mexican food here in the U.S., obesity rates will probably drop.\"",
     "snippets-text": [
-      "\"I will be the greatest jobs president that God ever created, I tell you that.",
-      "That is my argument."
+      "\"Plus, with less authentic delicious Mexican food here in the U.S., obesity rates will probably drop.\"",
+      "Sadly, the American dream is dead."
     ],
     "aspects": {
       "god": 0.16666666666666666,
@@ -842,9 +842,9 @@
   },
   {
     "id": "trump-05",
-    "snippet-title": "Clearly more anti immigration laws will simply fuel more racism, and the death of innocent people.",
+    "snippet-title": "Ranchers in Arizona have killed undocumented immigrants for years.",
     "snippets-text": [
-      "My opponent has no response to this, so insofar as I can prove Trump is racist, you vote neg.",
+      "Ranchers in Arizona have killed undocumented immigrants for years.",
       "Clearly more anti immigration laws will simply fuel more racism, and the death of innocent people."
     ],
     "aspects": {
@@ -856,10 +856,10 @@
   },
   {
     "id": "trump-09",
-    "snippet-title": "Illegal immigration is a key problem for the USA and if Mexico could be pursuaded to contribute towards the cost of its construction that would be an excellent economic and political result for the USA.",
+    "snippet-title": "The fact the economy is in a perilous position with national debt and the national budget deficits at record high levels shows the current economic approach is not working.",
     "snippets-text": [
-      "In my view Donald Trump would be an effective president for the USA.",
-      "Illegal immigration is a key problem for the USA and if Mexico could be pursuaded to contribute towards the cost of its construction that would be an excellent economic and political result for the USA."
+      "It is also fair to say these three countries have acted unethically in a variety of ways such as human rights abuses and acting with military aggression.",
+      "The fact the economy is in a perilous position with national debt and the national budget deficits at record high levels shows the current economic approach is not working."
     ],
     "aspects": {
       "donald trump": 0.3333333333333333,
@@ -869,10 +869,10 @@
   },
   {
     "id": "vegan-01",
-    "snippet-title": "If pro doesn't redefine, I will take \"people\" to mean all people on Earth.",
+    "snippet-title": "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\"",
     "snippets-text": [
-      "You'll see me draw several parallels between veganism and religion in my arguments as I will show that vegansim is very much a type of religion.",
-      "If pro doesn't redefine, I will take \"people\" to mean all people on Earth."
+      "I hold that every person should have the freedom to do what they choose, live the life they want to live, and live with the positive or negative consequences of their decisions.",
+      "Pro's argument is that \"people should become vegan because it is a better lifestyle, and that way we don't harm or kill animals.\""
     ],
     "aspects": {
       "god": 0.125,
@@ -882,10 +882,10 @@
   },
   {
     "id": "vegan-03",
-    "snippet-title": "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
+    "snippet-title": "Hence there is no unavoidable risk in a diet that includes meat.",
     "snippets-text": [
-      "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
-      "Vegan diet is in practice less healthy, and at best it can only equal a low-meat balanced diet."
+      "Hence there is no unavoidable risk in a diet that includes meat.",
+      "We know that vegans don't do the needed planning because their health is no better than unplanned meat-eaters."
     ],
     "aspects": {
       "cancer": 0.5,
@@ -897,10 +897,10 @@
   },
   {
     "id": "vegan-04",
-    "snippet-title": "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
+    "snippet-title": "Hence there is no unavoidable risk in a diet that includes meat.",
     "snippets-text": [
-      "Theoretical Nutrition Because Pro has no data showing vegan populations having health better than meat-eaters, he must construct a theoretical argument based upon nutrients that would be in the hypothetical well-planned vegan.",
-      "Vegan diet is in practice less healthy, and at best it can only equal a low-meat balanced diet."
+      "Hence there is no unavoidable risk in a diet that includes meat.",
+      "We know that vegans don't do the needed planning because their health is no better than unplanned meat-eaters."
     ],
     "aspects": {
       "cancer": 0.5,
@@ -912,7 +912,7 @@
   },
   {
     "id": "vegan-05",
-    "snippet-title": "Being vegan is a luxury and wouldn't solve any problems at all.",
+    "snippet-title": "Everyone being vegan is not going to create a better society, it would just exacarbate a food shortage that is killing people around the world.",
     "snippets-text": [
       "Everyone being vegan is not going to create a better society, it would just exacarbate a food shortage that is killing people around the world.",
       "Being vegan is a luxury and wouldn't solve any problems at all."
@@ -922,10 +922,10 @@
   },
   {
     "id": "vegan-06",
-    "snippet-title": "If pro doesn't redefine, I will take \"people\" to mean all people on Earth.",
+    "snippet-title": "It is unnecessary to be killing animals in order to feed and clothe ourselves.",
     "snippets-text": [
-      "If pro doesn't redefine, I will take \"people\" to mean all people on Earth.",
-      "After all, God did give us freewill."
+      "It is unnecessary to be killing animals in order to feed and clothe ourselves.",
+      "Meat production uses up alt of land and water."
     ],
     "aspects": {
       "god": 0.3333333333333333,
@@ -935,7 +935,7 @@
   },
   {
     "id": "vegan-07",
-    "snippet-title": "Why wouldn't everyone be vegan?",
+    "snippet-title": "Vegan is healthy, saves animals, and the planet.",
     "snippets-text": [
       "Vegan is healthy, saves animals, and the planet.",
       "Why wouldn't everyone be vegan?"
@@ -945,9 +945,9 @@
   },
   {
     "id": "vegan-09",
-    "snippet-title": "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
+    "snippet-title": "Given all this, can it be doubted that the vegan diet, as long as it is well planned, will be instrumental in reducing the rates of cancer, diabetes, and CVD.",
     "snippets-text": [
-      "Summary Beyond the Average Person Con argued that vegan and meat-based diets can both be equally healthy though vegan diets are beyond the average person.",
+      "Likewise, I have shown that plant-based foods both actively and passively work to lower the risks of these diseases.",
       "Given all this, can it be doubted that the vegan diet, as long as it is well planned, will be instrumental in reducing the rates of cancer, diabetes, and CVD."
     ],
     "aspects": {
@@ -960,10 +960,10 @@
   },
   {
     "id": "vegan-10",
-    "snippet-title": "I hope pro will join the debate once again and give valid reasons for why he believes going vegan is the right thing.",
+    "snippet-title": "If all people had the same beliefs, DDO would not exist, and how boring would that be!",
     "snippets-text": [
       "Just as it is not good for everybody to join one religion, it is not good for everybody to believe a set of principles such as veganism.",
-      "I hope pro will join the debate once again and give valid reasons for why he believes going vegan is the right thing."
+      "If all people had the same beliefs, DDO would not exist, and how boring would that be!"
     ],
     "aspects": {
       "veganism": 1.0

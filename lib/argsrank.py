@@ -4,6 +4,7 @@ import tensorflow_hub as hub
 import numpy as np
 # from sklearn.preprocessing import MinMaxScaler
 from discreteMarkovChain import markovChain
+from lib.argumentative_computation import ArgumentativeComputation
 
 
 class ArgsRank:
@@ -50,6 +51,7 @@ class ArgsRank:
         # self.tf_session.run(init_op)
         # tf.config.list_physical_devices('GPU')
         self.embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
+        self.argumentative_computation = ArgumentativeComputation()
 
     def power_method(self, M, epsilon):
         """
@@ -100,14 +102,30 @@ class ArgsRank:
         for argument_j in cluster:
             # print(len(argument_j.sentences))
             for idx, sentence_j in enumerate(argument_j.sentences):
-                value = 1.0
-                for marker in self.discourse_markers:
-                    if marker in sentence_j.lower():
-                        value += 1
-                if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
-                    value += 1
 
+
+                # value = 1.0
+                # for marker in self.discourse_markers:
+                #     if marker in sentence_j.lower():
+                #         value += 1
+                # if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
+                #     value += 1
+                    
+
+                # print(sentence_j)
+
+
+                argumentative_score = 0
+                argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
+                # print(type(argumentative_score))
+                # claim_score = ArgumentativeComputation().predict_claim_probability(sentence_j)
+                # value = claim_score
+                value = argumentative_score
+
+                # print(argumentative_score)
                 row.append(value)
+
+
 
         message_embedding = []
         for argument in cluster:
@@ -115,7 +133,7 @@ class ArgsRank:
                 message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
-        message_embedding = self.normalize_by_rowsum(message_embedding)
+        # message_embedding = self.normalize_by_rowsum(message_embedding)
         return np.array(message_embedding)
 
     def sem_similarty_scoring(self, clusters):
@@ -141,6 +159,7 @@ class ArgsRank:
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
             matrix = self.add_tp_ratio(cluster)
+            print(matrix)
             M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
             # print("M", M)
             # p = self.power_method(M, 0.0000001)
