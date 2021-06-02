@@ -110,22 +110,16 @@ class ArgsRank:
                 #         value += 1
                 # if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
                 #     value += 1
-                    
 
-                # print(sentence_j)
-
-
-                argumentative_score = 0
-                argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
+                # argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
                 # print(type(argumentative_score))
-                # claim_score = ArgumentativeComputation().predict_claim_probability(sentence_j)
+                claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
                 # value = claim_score
-                value = argumentative_score
+                # value = argumentative_score
+                value  = claim_score
 
                 # print(argumentative_score)
                 row.append(value)
-
-
 
         message_embedding = []
         for argument in cluster:
@@ -159,7 +153,7 @@ class ArgsRank:
             sim = np.inner(message_embedding, message_embedding)
             sim_message = self.normalize_by_rowsum(sim)
             matrix = self.add_tp_ratio(cluster)
-            print(matrix)
+            # print(matrix)
             M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
             # print("M", M)
             # p = self.power_method(M, 0.0000001)
