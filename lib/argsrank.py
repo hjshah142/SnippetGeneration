@@ -9,7 +9,7 @@ from lib.argumentative_computation import ArgumentativeComputation
 
 class ArgsRank:
 
-    def __init__(self, d, mc_method):
+    def __init__(self, d, mc_method, argumentative_score_method):
         script_dir = os.path.dirname(__file__)
         # print(script_dir)
         f = open(os.path.join(script_dir, "../data/ClaimLexicon.txt"))
@@ -17,6 +17,8 @@ class ArgsRank:
         # for m in CLAIM_MARKERS:
         # print(len(self.claim_markers))
         # print(m)
+
+        self.argumentative_score_method = argumentative_score_method
 
         self.discourse_markers = ["for example", "such as", "for instance", "in the case of", "as revealed by",
                                   "illustrated by",
@@ -33,8 +35,9 @@ class ArgsRank:
 
         self.d = d  # TODO: Figure out the best value for this param..
         self.mc_method = mc_method
-        print("d ", self.d)
-        print("Markov Chain Method", self.mc_method)
+        self.argumentative_score_method = argumentative_score_method
+        print("Markov Chain Method", self.mc_method, "Argumentative Score Method", self.argumentative_score_method,
+              "d:", self.d)
         # self.scaler = MinMaxScaler()
 
         # Create graph and finalize (optional but recommended).
@@ -90,36 +93,50 @@ class ArgsRank:
         # plot_similarity(messages_, message_embeddings_, 0)
         return message_embeddings_
 
-    def add_tp_ratio(self, cluster):
+    def add_argumentative_score(self, cluster):
         """
         Create numpy array with aij = argumentativeness of sentence j
         :param cluster: cluster of arguments
         :return: (numpy array) teleportation matrix
         """
+        # print(self.argumentative_score_method)
 
         row = []
-        # print(len(cluster))
-        for argument_j in cluster:
-            # print(len(argument_j.sentences))
-            for idx, sentence_j in enumerate(argument_j.sentences):
+        if self.argumentative_score_method == "argument_score":
 
+            for argument_j in cluster:
+                # print(len(argument_j.sentences))
+                for idx, sentence_j in enumerate(argument_j.sentences):
+                    argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
+                    value = argumentative_score
+                    row.append(value)
 
-                # value = 1.0
-                # for marker in self.discourse_markers:
-                #     if marker in sentence_j.lower():
-                #         value += 1
-                # if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
-                #     value += 1
+        if self.argumentative_score_method == "claim_score":
+            for argument_j in cluster:
+                # print(len(argument_j.sentences))
+                for idx, sentence_j in enumerate(argument_j.sentences):
+                    claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
+                    value = claim_score
+                    row.append(value)
 
-                # argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
-                # print(type(argumentative_score))
-                claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
-                # value = claim_score
-                # value = argumentative_score
-                value  = claim_score
-
-                # print(argumentative_score)
-                row.append(value)
+        if self.argumentative_score_method == "hybrid_score":
+            for argument_j in cluster:
+                # print(len(argument_j.sentences))
+                for idx, sentence_j in enumerate(argument_j.sentences):
+                    claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
+                    argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
+                    value = claim_score * 0.5 + argumentative_score * 0.5
+                    row.append(value)
+        if self.argumentative_score_method == "discourse_claim_markers":
+            for argument_j in cluster:
+                for idx, sentence_j in enumerate(argument_j.sentences):
+                    value = 1.0
+                    for marker in self.discourse_markers:
+                        if marker in sentence_j.lower():
+                            value += 1
+                    if any(claim_ind in sentence_j.lower() for claim_ind in self.claim_markers):
+                        value += 1
+                    row.append(value)
 
         message_embedding = []
         for argument in cluster:
@@ -127,13 +144,14 @@ class ArgsRank:
                 message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
-        # message_embedding = self.normalize_by_rowsum(message_embedding)
+        if self.argumentative_score_method == "discourse_claim_markers":
+            message_embedding = self.normalize_by_rowsum(message_embedding)
         return np.array(message_embedding)
 
     def sem_similarty_scoring(self, clusters):
         """
         Run biased PageRank using Universal Sentence Encoder to receive embedding.
-        Calls add add_tp_ratio() and add_syn_similarity().
+        Calls add add_argumentative_score() and add_syn_similarity().
         Computes similarity to conclusion.
         :param clusters:
         :return:
@@ -147,15 +165,29 @@ class ArgsRank:
             # messages = cluster[0].sentences
             # print(len(messages))
 
-            message_embedding = [message.numpy() for message in self.embed(messages)]
-            # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+            if self.d == 0:
+                message_embedding = [message.numpy() for message in self.embed(messages)]
+                # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+                sim = np.inner(message_embedding, message_embedding)
+                sim_message = self.normalize_by_rowsum(sim)
+                M = np.array(sim_message) * (1 - self.d)
 
-            sim = np.inner(message_embedding, message_embedding)
-            sim_message = self.normalize_by_rowsum(sim)
-            matrix = self.add_tp_ratio(cluster)
-            # print(matrix)
-            M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
-            # print("M", M)
+            if self.d == 1.0:
+                print("d =1")
+                matrix = self.add_argumentative_score(cluster)
+                M = np.array(matrix) * self.d
+
+            if 0 < self.d < 1.0:
+                message_embedding = [message.numpy() for message in self.embed(messages)]
+                print("d is between 0 to 1")
+                # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+                sim = np.inner(message_embedding, message_embedding)
+                sim_message = self.normalize_by_rowsum(sim)
+                matrix = self.add_argumentative_score(cluster)
+                M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
+
+
+            print("M", M.shape)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi(method=self.mc_method)

@@ -24,14 +24,22 @@ print(count)
 # data_snippets_test = data_snippets_filtered[0:2]
 # ---- Test Snippet Generation using different parameters ---
 
-d = 1
-# methodSet = ['power','eigen','linear','krylov']
-mc_method = 'linear'
-aspects_arguments_max = 0
-aspects_weights = [0, 0]
-arguments = data_snippets_filtered
+d = 0.5
 
-snippet_generator = SnippetGenerator(arguments, d, mc_method, aspects_arguments_max, aspects_weights)
+# methodSet = ['power','eigen','linear','krylov']
+argumentative_score_methods = ['discourse_claim_markers','argument_score', 'claim_score','hybrid_score']
+mc_method = 'eigen'
+aspects_arguments_max = 50
+aspects_weights = [0, 0]
+arguments = data_snippets_filtered[0:9]
+# argument_context =[1,1,1]
+# argument_context_clusters = ['query',same page','aspect']
+argument_context = [1, 0, 1]
+argumentative_score_method = argumentative_score_methods[2]
+
+
+snippet_generator = SnippetGenerator(arguments, d, mc_method, aspects_arguments_max, aspects_weights,
+                                     argument_context, argumentative_score_method)
 snippets = snippet_generator.get_snippets(arguments)
 count, accuracy = snippet_generator.get_accuracy(arguments, snippets)
 print(count, accuracy)

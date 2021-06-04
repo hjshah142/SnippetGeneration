@@ -1,8 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch.nn.functional as F
-import fastai
 import os
-from fastai.text import *
+from fastai.text.learner import load_learner
+import warnings
+
 
 
 class ArgumentativeComputation:
@@ -42,7 +43,8 @@ class ArgumentativeComputation:
 
         awd_lstm model fine-tuned on IMHO claim dataset (IMHO Fine-Tuning Improves Claim Detection Tuhin Chakrabarty, Christopher Hidey, Kathy McKeown )
         """
-
+        # ignore fastai optmization 64 bit tensor error
+        warnings.filterwarnings("ignore")
         preds = self.claim_classifier.predict(text)
         prob_tensor = preds[2][1]
         prob = prob_tensor.item()
