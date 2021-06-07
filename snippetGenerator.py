@@ -31,10 +31,12 @@ class SnippetGenerator:
     def get_snippets(self, arguments):
         # json.loads(json_arguments, encoding='latin1')
         clusters = []
+
         context_modelling = ContextModelling(self.aspects_arguments_max, self.aspects_weights)
         aspect_detection = AspectsDetection()
+        print("Context_array",self.argument_context)
         snippet_gen_app = ArgsRank(self.d, self.mc_method, self.argumentative_score_method)
-        # argument_context_clusters = ['query',same page','aspect']
+
 
         print("aspects_weights:", self.aspects_weights, "aspects_arguments_max", self.aspects_arguments_max)
         for argument in arguments:
@@ -49,7 +51,7 @@ class SnippetGenerator:
             arg.sentences = argument["sentences"]
             args_object = [arg]
             arg_cluster = args_object
-
+            # argument_context_clusters = ['query',same page','aspect'] default [1,1,1]
             if self.argument_context[0]:
                 context_ids, context_args_query = context_modelling.get_similar_args(arg)
                 arg_cluster = arg_cluster + context_args_query
@@ -63,7 +65,7 @@ class SnippetGenerator:
             # arg_cluster = args_object + context_args_aspects + context_args_query
             # arg_cluster = args_object
             # arg_cluster = arg_cluster.insert(0,arg)
-            print(len(arg_cluster))
+            # print(len(arg_cluster))
             clusters.append(arg_cluster)
 
         # print(len(clusters))
@@ -74,7 +76,7 @@ class SnippetGenerator:
         # snippets = self.get_snippets(self.json_arguments)
         with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
             json.dump(snippets_generated, f, indent=2)
-        print('snippets generated File is created ')
+        print('snippets generated File created ')
         return snippets_generated
 
     def get_accuracy(self, arguments_filtered, snippets):

@@ -14,7 +14,7 @@ class ArgumentativeComputation:
         self.tokenizer = AutoTokenizer.from_pretrained("chkla/roberta-argument")
         self.arg_model = AutoModelForSequenceClassification.from_pretrained("chkla/roberta-argument" )
         # self.model_path = r"C:\Users\harsh\OneDrive - mail.uni-paderborn.de\pretrained_models"
-        self.model_path = os.path.join(script_dir, "../../pretrained_models")
+        self.model_path = os.path.join(script_dir, "../../pretrained_models2")
 
         self.claim_classifier = load_learner(self.model_path)
 

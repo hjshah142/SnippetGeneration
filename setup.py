@@ -13,6 +13,6 @@ print(embeddings)
 tokenizer = AutoTokenizer.from_pretrained("chkla/roberta-argument")
 arg_model = AutoModelForSequenceClassification.from_pretrained("chkla/roberta-argument")
 print(arg_model.config)
-model_path = "../pretrained_models"
+model_path = "../pretrained_models2"
 claim_classifier = load_learner(model_path)
 print(claim_classifier)

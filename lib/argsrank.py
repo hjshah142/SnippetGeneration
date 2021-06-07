@@ -14,10 +14,6 @@ class ArgsRank:
         # print(script_dir)
         f = open(os.path.join(script_dir, "../data/ClaimLexicon.txt"))
         self.claim_markers = f.read().split(", ")
-        # for m in CLAIM_MARKERS:
-        # print(len(self.claim_markers))
-        # print(m)
-
         self.argumentative_score_method = argumentative_score_method
 
         self.discourse_markers = ["for example", "such as", "for instance", "in the case of", "as revealed by",
@@ -173,28 +169,27 @@ class ArgsRank:
                 M = np.array(sim_message) * (1 - self.d)
 
             if self.d == 1.0:
-                print("d =1")
+                # print("d =1")
                 matrix = self.add_argumentative_score(cluster)
                 M = np.array(matrix) * self.d
 
             if 0 < self.d < 1.0:
                 message_embedding = [message.numpy() for message in self.embed(messages)]
-                print("d is between 0 to 1")
+                # print("d is between 0 to 1")
                 # self.tf_session.run(self.embed_result, feed_dict={self.text_input: messages})
+
                 sim = np.inner(message_embedding, message_embedding)
                 sim_message = self.normalize_by_rowsum(sim)
                 matrix = self.add_argumentative_score(cluster)
                 M = np.array(sim_message) * (1 - self.d) + np.array(matrix) * self.d
 
 
-            print("M", M.shape)
+            # print("M", M)
             # p = self.power_method(M, 0.0000001)
             mc = markovChain(M)
             mc.computePi(method=self.mc_method)
             p = mc.pi
-
             # print("P", p)
-
             x = 0
             for i in range(len(cluster)):
                 if not cluster[i].score:
@@ -209,6 +204,7 @@ class ArgsRank:
                     else:
                         cluster[i].score.append(p[x])
                     x += 1
+
                 if (len(cluster[i].score) > 1):
                     cluster[i].score = list(
                         (cluster[i].score - min(cluster[i].score)) / (

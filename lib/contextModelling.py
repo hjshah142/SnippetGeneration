@@ -82,7 +82,12 @@ class ContextModelling:
         return context_args_aspects
 
     def get_aspects_args2(self, arg_aspects, arg_id):
-        # retrieves the pre-saved similar arguments ids from the args.me corpus
+        """
+        Retrieves the pre-saved similar arguments ids from the args.me corpus
+        :param arg_aspects: argument aspects
+        :param arg_id:  argument index
+        :return: list of argument with same / similar aspects
+        """
         # print(arg_aspects)
         arg_id_score = dict()
         for index, row in self.aspects_args_similar_ids.iterrows():
@@ -102,5 +107,5 @@ class ContextModelling:
             args.set_sentences(args_samePage)
             context_args_list.append(args)
 
-        print("arguments in same Pages  ", len(context_args_list))
+        # print("arguments in same Pages  ", len(context_args_list))
         return context_args_list
