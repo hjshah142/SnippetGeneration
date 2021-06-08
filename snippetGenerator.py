@@ -34,11 +34,10 @@ class SnippetGenerator:
 
         context_modelling = ContextModelling(self.aspects_arguments_max, self.aspects_weights)
         aspect_detection = AspectsDetection()
-        print("Context_array",self.argument_context)
+        print("Context_array", self.argument_context)
         snippet_gen_app = ArgsRank(self.d, self.mc_method, self.argumentative_score_method)
-
-
         print("aspects_weights:", self.aspects_weights, "aspects_arguments_max", self.aspects_arguments_max)
+
         for argument in arguments:
             arg = Argument()
             argument_text = " ".join(argument["sentences"])
