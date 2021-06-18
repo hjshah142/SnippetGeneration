@@ -119,10 +119,14 @@ class ArgsRank:
             for argument_j in cluster:
                 # print(len(argument_j.sentences))
                 for idx, sentence_j in enumerate(argument_j.sentences):
-                    claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
+
                     argumentative_score = self.argumentative_computation.predict_argumentative_score(sentence_j)
-                    value = claim_score * 0.5 + argumentative_score * 0.5
-                    row.append(value)
+                    if argumentative_score >= 0.5:
+                        claim_score = self.argumentative_computation.predict_claim_probability(sentence_j)
+                        value = claim_score * 0.5 + argumentative_score * 0.5
+                        row.append(value)
+                    else:
+                        row.append(argumentative_score)
         if self.argumentative_score_method == "discourse_claim_markers":
             for argument_j in cluster:
                 for idx, sentence_j in enumerate(argument_j.sentences):

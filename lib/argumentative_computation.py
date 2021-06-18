@@ -1,9 +1,9 @@
+import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch.nn.functional as F
 import os
 from fastai.text.learner import load_learner
 import warnings
-
 
 
 class ArgumentativeComputation:
@@ -12,15 +12,17 @@ class ArgumentativeComputation:
         # model_dir = "C:\\Users\\harsh\\Downloads\\HuggingFaceModels"
         ''' Pretrained_model: https://huggingface.co/chkla/roberta-argument'''
         self.tokenizer = AutoTokenizer.from_pretrained("chkla/roberta-argument")
-        self.arg_model = AutoModelForSequenceClassification.from_pretrained("chkla/roberta-argument" )
+        self.arg_model = AutoModelForSequenceClassification.from_pretrained("chkla/roberta-argument")
         # self.model_path = r"C:\Users\harsh\OneDrive - mail.uni-paderborn.de\pretrained_models"
         self.model_path = os.path.join(script_dir, "../../pretrained_models2")
-
+        # specify gpu if available for prediction
+        # self.device = torch.cuda.is_available()
+        """
+        awd_lstm model fine-tuned on IMHO claim dataset
+        (Dataset Reference: IMHO Fine-Tuning Improves Claim Detection 
+        Tuhin Chakrabarty, Christopher Hidey, Kathy McKeown )
+        """
         self.claim_classifier = load_learner(self.model_path)
-
-        # predicted_prob = self.predict_argumentative_score(
-        #  "In 2011 there were about 730,322 abortions reported to the centers for disease control.")
-        # print(predicted_prob)
 
     def predict_argumentative_score(self, sentence):
         """predict probability of sentence representing argumentative structure"""
@@ -31,7 +33,8 @@ class ArgumentativeComputation:
             max_length=512,
             return_tensors="pt"
         )
-
+        # with torch.no_grad():
+        # pt_outputs = self.arg_model(**tokenized_sentence.to(self.device))
         pt_outputs = self.arg_model(**tokenized_sentence)
         pt_predictions = F.softmax(pt_outputs.logits, dim=-1)
         predicted_prob = pt_predictions.detach().numpy()
@@ -40,11 +43,11 @@ class ArgumentativeComputation:
 
     def predict_claim_probability(self, text):
         """predict probability of sentence representing a claim
-
-        awd_lstm model fine-tuned on IMHO claim dataset (IMHO Fine-Tuning Improves Claim Detection Tuhin Chakrabarty, Christopher Hidey, Kathy McKeown )
+           awd_lstm text architecture classification
         """
         # ignore fastai optmization 64 bit tensor error
         warnings.filterwarnings("ignore")
+        # with torch.no_grad():
         preds = self.claim_classifier.predict(text)
         prob_tensor = preds[2][1]
         prob = prob_tensor.item()

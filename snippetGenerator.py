@@ -22,7 +22,7 @@ class SnippetGenerator:
             argumentative_score_method = [True, True, True]
         self.argument_context = argument_context
 
-        # argumentatve_score_methods = ['argument_score','claim_score','hybrid_score']
+        # argumentative_score_methods = ['argument_score','claim_score','hybrid_score']
         if argumentative_score_method is None:
 
             argumentative_score_method = "discourse_claim_markers"

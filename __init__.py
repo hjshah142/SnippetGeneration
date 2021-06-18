@@ -24,17 +24,17 @@ print(count)
 # data_snippets_test = data_snippets_filtered[0:2]
 # ---- Test Snippet Generation using different parameters ---
 
-d = 0
+d = 0.15
 
 # methodSet = ['power','eigen','linear','krylov']
 argumentative_score_methods = ['discourse_claim_markers', 'argument_score', 'claim_score', 'hybrid_score']
 mc_method = 'eigen'
-aspects_arguments_max = 3
+aspects_arguments_max = 0
 aspects_weights = [0, 0]
 arguments = data_snippets_filtered[0:1]
 # argument_context =[1,1,1]
 # argument_context_clusters = ['query',same page','aspect']
-argument_context = [0, 0, 1]
+argument_context = [0, 0, 0]
 argumentative_score_method = argumentative_score_methods[3]
 
 
