@@ -33,13 +33,13 @@ class ArgumentativeComputation:
             max_length=512,
             return_tensors="pt"
         )
-        # with torch.no_grad():
+        with torch.no_grad():
         # pt_outputs = self.arg_model(**tokenized_sentence.to(self.device))
-        pt_outputs = self.arg_model(**tokenized_sentence)
-        pt_predictions = F.softmax(pt_outputs.logits, dim=-1)
-        predicted_prob = pt_predictions.detach().numpy()
-        arg_prob = predicted_prob[0][1]
-        return arg_prob
+            pt_outputs = self.arg_model(**tokenized_sentence)
+            pt_predictions = F.softmax(pt_outputs.logits, dim=-1)
+            predicted_prob = pt_predictions.detach().numpy()
+            arg_prob = predicted_prob[0][1]
+            return arg_prob
 
     def predict_claim_probability(self, text):
         """predict probability of sentence representing a claim
@@ -47,9 +47,9 @@ class ArgumentativeComputation:
         """
         # ignore fastai optmization 64 bit tensor error
         warnings.filterwarnings("ignore")
-        # with torch.no_grad():
-        preds = self.claim_classifier.predict(text)
-        prob_tensor = preds[2][1]
-        prob = prob_tensor.item()
-        # print(type(prob))
-        return prob
+        with torch.no_grad():
+            preds = self.claim_classifier.predict(text)
+            prob_tensor = preds[2][1]
+            prob = prob_tensor.item()
+            # print(type(prob))
+            return prob

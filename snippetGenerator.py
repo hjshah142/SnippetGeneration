@@ -71,10 +71,10 @@ class SnippetGenerator:
         # print('generated snippets...')
 
         snippets_generated = snippet_gen_app.generate_snippet(clusters)
-        script_dir = os.path.dirname(__file__)
+        # script_dir = os.path.dirname(__file__)
         # snippets = self.get_snippets(self.json_arguments)
-        with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
-            json.dump(snippets_generated, f, indent=2)
+        # with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
+            # json.dump(snippets_generated, f, indent=2)
         print('snippets generated File created ')
         return snippets_generated
 

@@ -78,9 +78,9 @@ class ArgsRank:
 
     def normalize_by_rowsum(self, M):
         for i in range(M.shape[0]):
-            sum = np.sum(M[i])
+            row_sum = np.sum(M[i])
             for j in range(M.shape[1]):
-                M[i][j] = M[i][j] / sum
+                M[i][j] = M[i][j] / row_sum
         return M
 
     def run_and_plot(self, session_, input_tensor_, messages_, encoding_tensor):
@@ -144,8 +144,8 @@ class ArgsRank:
                 message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
-        if self.argumentative_score_method == "discourse_claim_markers":
-            message_embedding = self.normalize_by_rowsum(message_embedding)
+        # if self.argumentative_score_method == "discourse_claim_markers":
+        message_embedding = self.normalize_by_rowsum(message_embedding)
         return np.array(message_embedding)
 
     def sem_similarty_scoring(self, clusters):
