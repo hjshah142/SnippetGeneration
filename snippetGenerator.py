@@ -50,7 +50,7 @@ class SnippetGenerator:
             arg.sentences = argument["sentences"]
             args_object = [arg]
             arg_cluster = args_object
-            # argument_context_clusters = ['query',same page','aspect'] default [1,1,1]
+            """ argument_context_clusters = ['query',same page','aspect'] default [1,1,1] """
             if self.argument_context[0]:
                 context_ids, context_args_query = context_modelling.get_similar_args(arg)
                 arg_cluster = arg_cluster + context_args_query
@@ -71,10 +71,10 @@ class SnippetGenerator:
         # print('generated snippets...')
 
         snippets_generated = snippet_gen_app.generate_snippet(clusters)
-        # script_dir = os.path.dirname(__file__)
+        script_dir = os.path.dirname(__file__)
         # snippets = self.get_snippets(self.json_arguments)
-        # with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
-            # json.dump(snippets_generated, f, indent=2)
+        with open(os.path.join(script_dir, "data/snippetsGenerated.txt"), 'w', encoding='utf-8') as f:
+            json.dump(snippets_generated, f, indent=2)
         print('snippets generated File created ')
         return snippets_generated
 

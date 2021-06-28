@@ -31,18 +31,18 @@ for args in data_snippets_filtered:
         test_args.append(args)
 # Test Snippet Generation using different parameters ---
 
-d = 0.4
+d = 0
 
 # methodSet = ['power','eigen','linear','krylov']
 argumentative_score_methods = ['discourse_claim_markers', 'argument_score', 'claim_score', 'hybrid_score']
 mc_method = 'eigen'
-aspects_arguments_max = 0
+aspects_arguments_max = 200
 aspects_weights = [0, 0]
 arguments = test_args
 # argument_context =[1,1,1]
 # argument_context_clusters = ['query',same page','aspect']
 argument_context = [1, 0, 1]
-argumentative_score_method = argumentative_score_methods[3]
+argumentative_score_method = argumentative_score_methods[0]
 
 
 snippet_generator = SnippetGenerator(arguments, d, mc_method, aspects_arguments_max, aspects_weights,

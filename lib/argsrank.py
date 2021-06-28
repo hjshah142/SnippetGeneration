@@ -153,8 +153,8 @@ class ArgsRank:
         Run biased PageRank using Universal Sentence Encoder to receive embedding.
         Calls add add_argumentative_score() and add_syn_similarity().
         Computes similarity to conclusion.
-        :param clusters:
-        :return:
+        :param clusters: arguments
+        :return: imporance score of senteces
         """
 
         messages = []
@@ -227,7 +227,7 @@ class ArgsRank:
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)
-            arg_snippet['id'] = arg.id
+
             arg_snippet['snippet-title'] = snippet_title
 
             # processing snippet body
@@ -235,6 +235,11 @@ class ArgsRank:
             arg_snippet['snippets-text'] = snippet_body_sentences
             arg_snippet['aspects'] = arg.aspects
             arg_snippet['sentences'] = arg.premises
+            arg_snippet['id'] = arg.id
+
+            arg_snippet['Argument :'] = arg.premises
+            arg_snippet['snippet 2'] = " ".join(snippet_body_sentences)
+
 
             output.append(arg_snippet)
 
