@@ -18,6 +18,8 @@ class AspectsDetection:
                 # print(aspect_count)
                 aspect_detected[aspect] = aspect_count
 
+        print(aspect_detected)
         aspects_dict = {k: v / total for total in (sum(aspect_detected.values()),)
                         for k, v in aspect_detected.items()}
+        print(aspects_dict)
         return aspects_dict

@@ -138,14 +138,18 @@ class ArgsRank:
                         value += 1
                     row.append(value)
 
+        # print(row)
         message_embedding = []
+
         for argument in cluster:
             for sentence in argument.sentences:
                 message_embedding.append(row)
 
         message_embedding = np.array(message_embedding)
+        # print(message_embedding)
         # if self.argumentative_score_method == "discourse_claim_markers":
         message_embedding = self.normalize_by_rowsum(message_embedding)
+        # print(message_embedding)
         return np.array(message_embedding)
 
     def sem_similarty_scoring(self, clusters):
@@ -227,22 +231,16 @@ class ArgsRank:
             # processing snippet title
             snippet_title = arg.get_topK(1).tolist()[0]
             # snippet_title_span = self.find_span(arg_text, snippet_title)
-
             arg_snippet['snippet-title'] = snippet_title
-
             # processing snippet body
             snippet_body_sentences = arg.get_topK(2).tolist()
             arg_snippet['snippets-text'] = snippet_body_sentences
             arg_snippet['aspects'] = arg.aspects
             arg_snippet['sentences'] = arg.premises
             arg_snippet['id'] = arg.id
-
-            arg_snippet['Argument :'] = arg.premises
-            arg_snippet['snippet 2'] = " ".join(snippet_body_sentences)
-
-
+            # arg_snippet['Argument :'] = arg.premises
+            # arg_snippet['snippet 2'] = " ".join(snippet_body_sentences)
             output.append(arg_snippet)
-
         return output
 
 
