@@ -2,7 +2,6 @@ import json
 import os
 import tensorflow_hub as hub
 import numpy as np
-# from sklearn.preprocessing import MinMaxScaler
 from discreteMarkovChain import markovChain
 from lib.argumentative_computation import ArgumentativeComputation
 
@@ -90,10 +89,10 @@ class ArgsRank:
         return message_embeddings_
 
     def add_argumentative_score(self, cluster):
-        """
+        """ calculates the argumentativeness for the sentences in the argument
         Create numpy array with aij = argumentativeness of sentence j
         :param cluster: cluster of arguments
-        :return: (numpy array) teleportation matrix
+        :return: Argumentativeness  score in (numpy array) teleportation matrix
         """
         # print(self.argumentative_score_method)
 
@@ -154,11 +153,13 @@ class ArgsRank:
 
     def sem_similarty_scoring(self, clusters):
         """
-        Run biased PageRank using Universal Sentence Encoder to receive embedding.
-        Calls add add_argumentative_score() and add_syn_similarity().
-        Computes similarity to conclusion.
-        :param clusters: arguments
-        :return: imporance score of senteces
+        Use the Universal Sentence Encoder from the TensorFlow
+        library to encode the sentences from the argumentative text into 512-d vector. Measures the semantic similarity
+        by computing  the dot product between sentences embedded using a universal sentence encoder in the vector form.
+        Calls add_argumentative_score() to calculate  argumentativeness score.
+        Run biased PageRank algorithm  to calculate importance score of the senteces.
+        :param clusters: cluster of arguments
+        :return: importance score of sentences in arguments
         """
 
         messages = []

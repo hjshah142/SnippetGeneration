@@ -64,4 +64,5 @@ Stein. 2019b. Data Acquisition for Argument Search: The args.me corpus. In 42nd 
 5. Tuhin Chakrabarty, Christopher Hidey, and Kathleen McKeown. 2019. Imho fine-tuning improves claim detection. arXiv preprint arXiv:1905.07000.
 
 6. https://huggingface.co/chkla/roberta-argument
+7. Stab, Christian, Tristan Miller, and Iryna Gurevych. "Cross-topic argument mining from heterogeneous sources using attention-based neural networks." arXiv preprint arXiv:1802.05758 (2018).
 

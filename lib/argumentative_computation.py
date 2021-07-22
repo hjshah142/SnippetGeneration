@@ -8,6 +8,11 @@ import warnings
 
 class ArgumentativeComputation:
     def __init__(self):
+        """
+        fine-tuned two models from argumentation mining domain to measure the argumentativeness of the sentence:
+        Argumentative SentenceClassifier. In this section we provide implementation details for building this mod
+
+        """
         script_dir = os.path.dirname(__file__)
         # model_dir = "C:\\Users\\harsh\\Downloads\\HuggingFaceModels"
         ''' Pretrained_model: https://huggingface.co/chkla/roberta-argument'''
@@ -17,15 +22,13 @@ class ArgumentativeComputation:
         self.model_path = os.path.join(script_dir, "../../pretrained_models2")
         # specify gpu if available for prediction
         # self.device = torch.cuda.is_available()
-        """
-        awd_lstm model fine-tuned on IMHO claim dataset
-        (Dataset Reference: IMHO Fine-Tuning Improves Claim Detection 
-        Tuhin Chakrabarty, Christopher Hidey, Kathy McKeown )
-        """
         self.claim_classifier = load_learner(self.model_path)
 
     def predict_argumentative_score(self, sentence):
-        """predict probability of sentence representing argumentative structure"""
+        """predict probability of sentence representing argumentative structure.
+        Uses RobERTArg model from the Transformers library (https://huggingface.co/chkla/roberta-argument)[6]
+        to compute the argumentative score of the sentence.Model is fine-tuned on trained on 25k manually annotated
+        sentences from cross topic argumentation mining dataset [7] (Stab et al. 2018 )"""
         tokenized_sentence = self.tokenizer(
             sentence,
             padding=True,
@@ -42,10 +45,14 @@ class ArgumentativeComputation:
             return arg_prob
 
     def predict_claim_probability(self, text):
-        """predict probability of sentence representing a claim
-           awd_lstm text architecture classification
+        """claim classifier model to predict probability of sentence representing a claim
+        Model is implemented using the same approach employed by (Chakrabarty et al.,2019)[5] for claim detection.
+        The model was implemented in the fastai library using the transfer learning technique
+        "Universal Language Model Fine-tuning" .
+        Awd_lstm model is fine-tuned on IMHO claim dataset to predict the probability of sentence  representing a claim
+        (Dataset Reference: IMHO Fine-Tuning Improves Claim Detection [5] (Chakrabarty et al.,2019 )
         """
-        # ignore fastai optmization 64 bit tensor error
+        # to ignore warning of fastai optmization for 64 bit tensor error
         warnings.filterwarnings("ignore")
         with torch.no_grad():
             preds = self.claim_classifier.predict(text)

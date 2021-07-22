@@ -17,6 +17,9 @@ class ContextModelling:
         # print(self.Arguments_df.head(2))
 
     def get_similar_args(self, arg):
+        """
+        retrieves all other arguments in the snippet dataset having the same query and add it to the argumentative text
+        """
 
         args_ids = []
         context_args_query = []
@@ -31,6 +34,12 @@ class ContextModelling:
         return args_ids, context_args_query
 
     def retrieve_argumentative_texts(self, arg_id_score):
+        """
+
+        :param arg_id_score: argument id of aspect matching argument and argument aspect relevance score
+        :return:  Top most  M ("aspects_arguments_max") relevant aspect mating arguments from  pre-saved pickle
+         file of args.me corpus
+        """
 
         context_args_aspects = []
         arguments_df = self.arguments_df
@@ -100,6 +109,12 @@ class ContextModelling:
         return context_args_aspects
 
     def get_context_args_same_page(self, context_arg_indices):
+        """
+        Retrieves all other arguments in the same webpage where given argument is located  from the pre-saved pickle
+        file.
+        :param context_arg_indices: index of the given argument
+        :return: list of the other arguments on the same webpage
+        """
         context_args_list = []
         for args_samePage in self.ContextArgsIds['Context_args_list'][context_arg_indices]:
             args = Argument()
