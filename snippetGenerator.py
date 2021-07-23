@@ -16,7 +16,8 @@ class SnippetGenerator:
         :param d: damping factor value
         :param mc_method: Markov chain method ['power','eigen','linear','krylov']
         :param aspects_arguments_max: M Maximum number of aspect matching arguments extracted from the argument corpus
-        :param aspects_weights:
+        :param aspects_weights:  To set a minimum value for the weight of an aspect in an aspect list
+                                while retrieving  arguments having the same aspects.
         :param argument_context: Argument context Matrix to select the approach for an argument context modelling .
                                  default value ['query',same page','aspect'] -->    [1,1,1]
                                  The context of an argument is selected by mapping the respected value of the context to 1.
