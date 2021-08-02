@@ -54,14 +54,15 @@ After installing the libraries and setting up the python environment for the sni
   __init.py__ calls the class `SnippetGenerator` (snippetGenerator.py) to  generate snippets for the arguments 
         
 2. Python Notebook (Jupyter Notebook): To run snippet generation project on jupyter notebook
-    * Run all the cells of the  [SnippetsEvaluation_topic_split_google_colab.ipynb](SnippetsEvaluation_topic_split_google_colab.ipynb). 
+    * Run all the cells of the  [SnippetsGenerationEvaluation_google_colab.ipynb](SnippetsGenerationEvaluation_google_colab.ipynb). 
     
 #### To run the project using GoogleColab
-Clone the repository in the Google drive and open the notebook file [SnippetsEvaluation_topic_split_google_colab.ipynb](SnippetsEvaluation_topic_split_google_colab.ipynb) in google colaboratory and run the cell of the .
+Clone the repository in the Google drive and open the notebook file [SnippetsGenerationEvaluation_google_colab.ipynb](SnippetsGenerationEvaluation_google_colab.ipynb) in google colaboratory and run the cell of the .
 describes our approaches for argument context modelling and argumentativeness computation. 
     
 `SnippetGenerator` class generates the snippet for the arguments in the file  [snippets.txt](data/snippets.txt) and returns generated snippets and the accuracy of the generated snippets. Generated snippets will be saved in the file 
-[snippetsGenerated.txt](data/snippetsGenerated.txt) automatically. Due to data privacy and security concerns, args.me aspect dataset  and pre-trained model for the claim classifier model are not uploaded to the Github repository.
+[snippetsGenerated.txt](data/snippetsGenerated.txt) automatically.  Codes for aspects detection on args.me, Argumentative Sentence Classifier and Claim classification model can be found in notebook files [ArgumentAspectsContextDataset.ipynb](ArgumentAspectsContextDataset.ipynb), [Argumentative_Classification(RobertArg).ipynb](Argumentative_Classification(RobertArg).ipynb) and   
+[ClaimProbabilityPredictionModel.ipynb](Argumentative_Classification(RobertArg).ipynb) . Due to data privacy and security concerns, args.me aspect dataset  and pre-trained model for the claim classifier model are not uploaded to the Github repository.
 
 Parameters of _SnippetGenerator_ class:
 
