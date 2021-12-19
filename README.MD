@@ -8,7 +8,7 @@ The thesis work is an extended version of the approach of Alshomary et al. [1] f
 ### Table of Contents
 
 
-- [Project Overview](##project-overview)
+- [Project Overview](#project-overview)
 - [Project Setup](#project-setup)
 - [References](#references)
 - [Evaluation](#evaluation)
@@ -17,6 +17,7 @@ The thesis work is an extended version of the approach of Alshomary et al. [1] f
 
 
 ## Project Overview
+
 ### Task Definition
  **Snippet Generation for the arguments.** The task focuses on automatically generating a snippet for an argument search. Snippets are generated from the argument and contain two sentences extracted from an argument. The definition provided by Alshomary et al. for an [extractive snippet generation for arguments ](https://dl.acm.org/doi/10.1145/3397271.3401186 ) is followed for the generation of a snippet for an argument. Alshomary et al. [1] defined the snippet generation task as :
 
@@ -120,19 +121,17 @@ Different values of this parameter can be passed to evaluate snippet generation 
 - Claim probability score approach: Not enhance the accuracy on its own
 - Combining it with an argumentative score approach improves the accuracy score extensively
 - Evaluation of all approaches of argumentativeness Computation:
-- Claim probability score approach: Not enhance the accuracy on its own
--Combining it with an argumentative score approach improves the accuracy score extensively 
-![image](https://user-images.githubusercontent.com/38283252/146688426-114e5d70-e588-4f4f-b09b-197e380e82dd.png)
+- Claim probability score approach: Not enhances the accuracy on its own
+- Combining it with an argumentative score approach improves the accuracy score extensively
 
--Hybrid Score Approach: Increasedin accuracy by 1% then baseline
-
-
+![image](https://user-images.githubusercontent.com/38283252/146688695-b19674d6-70d8-494e-913d-d20924595153.png)
  
 
 
- 
 
-### 3. Automatic Evaluation Topic-wise Evaluation
+-Hybrid Score Approach: Increasedin accuracy by 11% then baseline
+
+### 3. Topic-wise Snippet Generation Evaluation (0 < d < 1)
 
 - Integration of both tasks for snippet generation
 - Argument Context Matrix: [1,0,1] 
@@ -146,19 +145,6 @@ Different values of this parameter can be passed to evaluate snippet generation 
 - Snippet Generation: Evaluation against previous approach   (**Gain 9% Overall**)
 
 ![image](https://user-images.githubusercontent.com/38283252/146688368-5dbe8cde-dec4-4884-8992-79483a68d0e7.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## References
 
