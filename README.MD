@@ -11,6 +11,7 @@ The thesis work is an extended version of the approach of Alshomary et al. [1] f
 - [Project Overview](##project-overview)
 - [Project Setup](#project-setup)
 - [References](#references)
+- [Evaluation](#evaluation)
 
 
 
@@ -86,6 +87,76 @@ Parameters of _SnippetGenerator_ class:
 
 
 Different values of this parameter can be passed to evaluate snippet generation using a different configuration.   
+
+
+## Evaluation
+- Measuerd the Accuracy of argument in selecting sentences from the ground-truth snippet
+ 
+ ![image](https://user-images.githubusercontent.com/38283252/146687846-3983c4a4-5b96-4ab5-86b3-d9a5155e7b1c.png)
+
+- Automatic Evaluation performed for three different tasks by changing the value of d in the following equation:
+
+![image](https://user-images.githubusercontent.com/38283252/146687895-a8477809-bffa-409e-991f-a1baeb119349.png)
+
+1. Argument Context Modelling (d = 0)
+2. Argumentativeness Computation (d = 1)
+3. Topic-wise Snippet Generation Evaluation (0 < d < 1)
+
+
+### 1. Argument Context Modelling Evaluation(d = 0)
+
+- To Find the optimum value of number of aspect matching arguments
+- Argument Context Matrix Set to :  [1, 0, 1]
+- M: Most relevant aspect matching arguments
+- Gradually increasing the value of M Adding more aspect specific arguments (M) increases the accuracy of the snippets till some threshold value Adding more arguments than the threshold value diminishing the accuracy
+![image](https://user-images.githubusercontent.com/38283252/146688252-b3ba7d31-7a3c-465a-b128-5bac34cd066a.png)
+
+- Modelling the context of an argument: Improves the accuracy of the snippet generation leads to 8% Gain then baseline
+
+ ![image](https://user-images.githubusercontent.com/38283252/146688234-d2f9536b-ae3d-4de4-9bce-ba239fc9b7d3.png)
+ 
+### 2. Argumentativeness Computation Evaluation (d = 1)
+- Evaluation of all approaches of argumentativeness Computation:
+- Claim probability score approach: Not enhance the accuracy on its own
+- Combining it with an argumentative score approach improves the accuracy score extensively
+- Evaluation of all approaches of argumentativeness Computation:
+- Claim probability score approach: Not enhance the accuracy on its own
+-Combining it with an argumentative score approach improves the accuracy score extensively 
+![image](https://user-images.githubusercontent.com/38283252/146688426-114e5d70-e588-4f4f-b09b-197e380e82dd.png)
+
+-Hybrid Score Approach: Increasedin accuracy by 1% then baseline
+
+
+ 
+
+
+ 
+
+### 3. Automatic Evaluation Topic-wise Evaluation
+
+- Integration of both tasks for snippet generation
+- Argument Context Matrix: [1,0,1] 
+- M: 200
+- Argumentativeness Computation method: Hybrid Score Approach
+- Optimal Value of damping d : 0.2
+
+![image](https://user-images.githubusercontent.com/38283252/146688356-91dcb072-8d59-4158-a848-48fbe89d31df.png)
+
+- Evaluation of Snippet Generation for each query topic in the test set
+- Snippet Generation: Evaluation against previous approach   (**Gain 9% Overall**)
+
+![image](https://user-images.githubusercontent.com/38283252/146688368-5dbe8cde-dec4-4884-8992-79483a68d0e7.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
